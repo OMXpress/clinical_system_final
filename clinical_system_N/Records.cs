@@ -24,12 +24,19 @@ namespace clinical_system_N
         }
         private void display()
         {
-            string id = Guid.NewGuid().ToString(); 
-            List<Patient> patients = PatientFactory.GetAllPatients();
-            foreach (Patient pat in patients)
+            string id = Guid.NewGuid().ToString();
+            try
             {
-                PatientUserControl control = new PatientUserControl(pat);
-                RecordDisplayer.Controls.Add(control);
+                List<Patient> patients = PatientFactory.GetAllPatients();
+                foreach (Patient pat in patients)
+                {
+                    PatientUserControl control = new PatientUserControl(pat);
+                    RecordDisplayer.Controls.Add(control);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No patients are in the system.");
             }
         }
 
@@ -46,6 +53,44 @@ namespace clinical_system_N
         private void Records_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel46_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_calender(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrthopedicUnit_Calender C215 = new OrthopedicUnit_Calender();
+            C215.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_finance(object sender, EventArgs e)
+        {
+            this.Hide();
+            Finance C216 = new Finance();
+            C216.Show();
+        }
+
+        private void btn_adminsettings(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminSettings C217 = new AdminSettings();
+            C217.Show();
+        }
+
+        private void btn_AddPatient_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Add_Patient C218 = new Add_Patient();
+            C218.Show();
         }
     }
 }

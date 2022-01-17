@@ -185,7 +185,6 @@
     <Compile Include="models\AppendJoin.cs" />
     <Compile Include="models\Appointment.cs" />
     <Compile Include="models\Device.cs" />
-    <Compile Include="models\JsonBin.cs" />
     <Compile Include="models\JsonManager.cs" />
     <Compile Include="models\PatientMetaData.cs" />
     <Compile Include="models\PatientProgram.cs" />
@@ -267,21 +266,6 @@
     </Compile>
     <Compile Include="Services.Designer.cs">
       <DependentUpon>Services.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControlBlank5.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlBlank5.Designer.cs">
-      <DependentUpon>UserControlBlank5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControlDays5.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlDays5.Designer %281%29.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlDays5.Designer.cs">
-      <DependentUpon>UserControlDays5.cs</DependentUpon>
     </Compile>
     <Compile Include="View_Devices.cs">
       <SubType>Form</SubType>
@@ -385,13 +369,6 @@
     <EmbeddedResource Include="Services.resx">
       <DependentUpon>Services.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlBlank5 %281%29.resx" />
-    <EmbeddedResource Include="UserControlBlank5.resx">
-      <DependentUpon>UserControlBlank5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControlDays5.resx">
-      <DependentUpon>UserControlDays5.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View_Devices.resx">
       <DependentUpon>View_Devices.cs</DependentUpon>
     </EmbeddedResource>
@@ -401,7 +378,6 @@
     <EmbeddedResource Include="X_Ray.resx">
       <DependentUpon>X_Ray.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="models\.env" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -416,9 +392,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="models\Bot.py" />
-    <Content Include="models\JsonBin.py" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,11 +10,8 @@ using System.Windows.Forms;
 
 namespace clinical_system_N
 {
-     
     public partial class Physiotherape_Calender : Form
     {
-        int month, year;
-        public static int static_month, static_year;
         public Physiotherape_Calender()
         {
             InitializeComponent();
@@ -22,7 +19,7 @@ namespace clinical_system_N
 
         private void Calendar_Load(object sender, EventArgs e)
         {
-            displaDays();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -76,71 +73,10 @@ namespace clinical_system_N
             Physiotherapy C66 = new Physiotherapy();
             C66.Show();
         }
-        
-        private void displaDays()
-        {
-            
-            DateTime now = DateTime.Now;
-            month = now.Month;
-            year = now.Year;
-            static_month = month;
-            static_year = year;
-            DateTime startofthemonth = new DateTime(year, month, 1);
-            int days = DateTime.DaysInMonth(year, month);
-            int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) +1;
-            
-            for (int i = 1; i <= 36; i++)
-            {
-                UserControlDays5 ucdays2 = new UserControlDays5();
-                
-                ucdays2.days(i);
-                fl_AppContainer.Controls.Add(ucdays2);
-            }
-        }
-
-        
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            fl_AppContainer.Controls.Clear(); 
-            month++;
-            static_month = month;
-            static_year = year;
-            DateTime startofthemonth = new DateTime(year, month, 1);
-            int days = DateTime.DaysInMonth(year, month);
-            int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
-
-            for (int i = 1; i <= 36; i++)
-            {
-                UserControlDays5 ucdays2 = new UserControlDays5();
-               
-                ucdays2.days(i);
-                fl_AppContainer.Controls.Add(ucdays2);
-            }
-        }
 
         private void fl_AppContainer_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            fl_AppContainer.Controls.Clear();
-            month--;
-            static_month = month;
-            static_year = year;
-            DateTime startofthemonth = new DateTime(year, month, 1);
-            int days = DateTime.DaysInMonth(year, month);
-            int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
-
-            for (int i = 1; i <= 36; i++)
-            {
-                UserControlDays5 ucdays2 = new UserControlDays5();
-                
-                ucdays2.days(i);
-                fl_AppContainer.Controls.Add(ucdays2);
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
