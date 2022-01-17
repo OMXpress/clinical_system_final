@@ -42,5 +42,10 @@ namespace clinical_system_N
         {
 
         }
+
+        private void Records_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
