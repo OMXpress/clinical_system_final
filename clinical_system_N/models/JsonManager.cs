@@ -98,22 +98,31 @@ namespace clinical_system_N.models
             }
 
         }
+        public void AddMetaData(string patientID, PatientInformation toJson)
+        {
+            string DataPath = Path.Combine(Path.Combine(GlobalVariables.PathToPatients, patientID), "Data");
+            string output = Newtonsoft.Json.JsonConvert.SerializeObject(toJson);
+            string PathFile = Path.Combine(DataPath, "MetaData.json");
 
-        /*
-            Deserialize deserialize = new Deserialize();
-            deserialize.LoadJson(JsonType enumType, string patientID);
-
-#pragma warning disable CS8604 // Possible null reference argument.
-            Dictionary<string, object> values = deserialize.deserializeToDictionary(deserialize.json);
-#pragma warning restore CS8604 // Possible null reference argument.
-
-
-            //print dictionary
-            foreach (KeyValuePair<string, object> kvp in values)
+            using (StreamWriter sw = new StreamWriter(PathFile))
             {
-                //textBox3.Text += ("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
-                Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
+                sw.WriteLine(output);
             }
-         */
+        }
+        public List<PatientInformation> GetAllInfo()
+        {
+            var paths = Directory.GetDirectories(GlobalVariables.PathToPatients);
+            var result = new List<PatientInformation>();
+            foreach (var path in paths)
+            {;
+                var json = LoadJson(JsonType.MetaData, path);
+                var x = JsonConvert.DeserializeObject<PatientInformation>(json);
+                result.Add(x);
+
+            }
+            return result;
+        }
+
+
     }
 }

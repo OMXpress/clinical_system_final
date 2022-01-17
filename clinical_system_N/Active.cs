@@ -53,8 +53,8 @@ namespace clinical_system_N
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            General C74 = new General();
-            C74.Show();
+           // General C74 = new General();
+           // C74.Show();
         }
 
         private void button7_Click(object sender, EventArgs e)

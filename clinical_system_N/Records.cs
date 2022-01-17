@@ -24,11 +24,11 @@ namespace clinical_system_N
         }
         private void display()
         {
-            PatientInformation info = new PatientInformation("sfsfdr564", "Omar", "1999", "123144562", Gender.male, "dafjadj@desk.com", "01068037112", "7oby", MaritialStatus.Single, "Student");
-            Patient patientTest = new Patient(info);
-            for (int i = 0; i < 5 ; i++)
+            string id = Guid.NewGuid().ToString(); 
+            List<Patient> patients = PatientFactory.GetAllPatients();
+            foreach (Patient pat in patients)
             {
-                PatientUserControl control = new PatientUserControl(patientTest);
+                PatientUserControl control = new PatientUserControl(pat);
                 RecordDisplayer.Controls.Add(control);
             }
         }
@@ -39,6 +39,11 @@ namespace clinical_system_N
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Records_Load(object sender, EventArgs e)
         {
 
         }

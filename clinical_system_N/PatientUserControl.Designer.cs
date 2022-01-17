@@ -72,6 +72,7 @@
             this.BtnOpenRecord.TabIndex = 3;
             this.BtnOpenRecord.Text = "Open";
             this.BtnOpenRecord.UseVisualStyleBackColor = true;
+            this.BtnOpenRecord.Click += new System.EventHandler(this.BtnOpenRecord_Click);
             // 
             // PatientUserControl
             // 
