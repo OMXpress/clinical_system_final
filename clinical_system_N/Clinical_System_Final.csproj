@@ -217,6 +217,12 @@
     <Compile Include="OrthopedicUnit_Calender.Designer.cs">
       <DependentUpon>OrthopedicUnit_Calender.cs</DependentUpon>
     </Compile>
+    <Compile Include="PatientUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientUserControl.Designer.cs">
+      <DependentUpon>PatientUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient_Record.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrthopedicUnit_Calender.resx">
       <DependentUpon>OrthopedicUnit_Calender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientUserControl.resx">
+      <DependentUpon>PatientUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient_Record.resx">
       <DependentUpon>Patient_Record.cs</DependentUpon>

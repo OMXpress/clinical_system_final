@@ -37,7 +37,7 @@ namespace clinical_system_N
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            patient_record C3 = new patient_record();
+            Records C3 = new Records();
             C3.Show();
         }
 
