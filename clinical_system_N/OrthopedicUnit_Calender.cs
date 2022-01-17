@@ -17,7 +17,7 @@ namespace clinical_system_N
             InitializeComponent();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btn_physio_calender(object sender, EventArgs e)
         {
             this.Hide();
             Physiotherape_Calender C2 = new Physiotherape_Calender();
@@ -34,21 +34,21 @@ namespace clinical_system_N
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_records(object sender, EventArgs e)
         {
             this.Hide();
             Records C3 = new Records();
             C3.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_finance(object sender, EventArgs e)
         {
             this.Hide();
             Finance C4 = new Finance();
             C4.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_adminsettings(object sender, EventArgs e)
         {
             this.Hide();
             AdminSettings C5 = new AdminSettings();
@@ -67,7 +67,7 @@ namespace clinical_system_N
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btn_ortho(object sender, EventArgs e)
         {
             this.Hide();
             OrthopedicUnit C11 = new OrthopedicUnit();

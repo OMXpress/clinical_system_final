@@ -67,7 +67,7 @@ namespace clinical_system_N
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_login(object sender, EventArgs e)
         {
             bool validation = Validation();
             if (validation)

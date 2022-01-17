@@ -17,7 +17,7 @@ namespace clinical_system_N
             InitializeComponent();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btn_investigation(object sender, EventArgs e)
         {
             this.Hide();
             Investigation C81 = new Investigation();
@@ -94,35 +94,35 @@ namespace clinical_system_N
 
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void btn_assesment(object sender, EventArgs e)
         {
             this.Hide();
             Assesment C82 = new Assesment();
             C82.Show();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btn_services(object sender, EventArgs e)
         {
             this.Hide();
             Services C83 = new Services();
             C83.Show();
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void btn_x_ray(object sender, EventArgs e)
         {
             this.Hide();
             X_Ray C84 = new X_Ray();
             C84.Show();
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btn_doctor_prescription(object sender, EventArgs e)
         {
             this.Hide();
-            prescription C85 = new prescription();
+            Doctor_Prescription C85 = new Doctor_Prescription();
             C85.Show();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void btn_app(object sender, EventArgs e)
         {
             this.Hide();
             App C99 = new App();
@@ -134,28 +134,28 @@ namespace clinical_system_N
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_calender(object sender, EventArgs e)
         {
             this.Hide();
             OrthopedicUnit_Calender C77 = new OrthopedicUnit_Calender();
             C77.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_records(object sender, EventArgs e)
         {
             this.Hide();
             Records C78 = new Records();
             C78.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_finance(object sender, EventArgs e)
         {
             this.Hide();
             Finance C79 = new Finance();
             C79.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_adminsettings(object sender, EventArgs e)
         {
             this.Hide();
             AdminSettings C80 = new AdminSettings();

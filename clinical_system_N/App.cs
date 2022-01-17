@@ -22,35 +22,35 @@ namespace clinical_system_N
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_calender(object sender, EventArgs e)
         {
             this.Hide();
             OrthopedicUnit_Calender C85 = new OrthopedicUnit_Calender();
             C85.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_records(object sender, EventArgs e)
         {
             this.Hide();
             Records C86 = new Records();
             C86.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_finance(object sender, EventArgs e)
         {
             this.Hide();
             Finance C87 = new Finance();
             C87.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_adminsettings(object sender, EventArgs e)
         {
             this.Hide();
             AdminSettings C88 = new AdminSettings();
             C88.Show();
         }
 
-        private void btn_AddPatient_Click(object sender, EventArgs e)
+        private void btn_AddAppointment(object sender, EventArgs e)
         {
             this.Hide();
             AddAppointment C89 = new AddAppointment();

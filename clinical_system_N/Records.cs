@@ -42,5 +42,33 @@ namespace clinical_system_N
         {
 
         }
+
+        private void btn_calender(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrthopedicUnit_Calender C173 = new OrthopedicUnit_Calender();
+            C173.Show();
+        }
+
+        private void btn_finance(object sender, EventArgs e)
+        {
+            this.Hide();
+            Finance C174 = new Finance();
+            C174.Show();
+        }
+
+        private void btn_adminsettings(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminSettings C175 = new AdminSettings();
+            C175.Show();
+        }
+
+        private void btn_AddPatient_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Add_Patient C176 = new Add_Patient();
+            C176.Show();
+        }
     }
 }

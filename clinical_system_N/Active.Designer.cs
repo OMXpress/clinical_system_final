@@ -49,9 +49,9 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.label2 = new System.Windows.Forms.Label();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label2 = new System.Windows.Forms.Label();
             this.panel43.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -80,7 +80,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Admin";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.btn_adminsettings);
             // 
             // button4
             // 
@@ -91,7 +91,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "Finance";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.btn_finance);
             // 
             // button2
             // 
@@ -102,7 +102,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Records";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.btn_records);
             // 
             // button6
             // 
@@ -113,13 +113,13 @@
             this.button6.TabIndex = 0;
             this.button6.Text = "Calendar";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.btn_physio_calender);
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.panel2);
-            this.panel3.Location = new System.Drawing.Point(156, 122);
+            this.panel3.Location = new System.Drawing.Point(156, 84);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1302, 64);
             this.panel3.TabIndex = 44;
@@ -149,7 +149,7 @@
             this.button9.TabIndex = 60;
             this.button9.Text = "Perscriptions";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Click += new System.EventHandler(this.btn_prescription);
             // 
             // button8
             // 
@@ -164,6 +164,7 @@
             this.button8.TabIndex = 60;
             this.button8.Text = "Active";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -178,7 +179,7 @@
             this.button7.TabIndex = 60;
             this.button7.Text = "History ";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.btn_history);
             // 
             // button1
             // 
@@ -193,7 +194,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "General ";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.btn_general);
             // 
             // label19
             // 
@@ -221,7 +222,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(156, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1302, 122);
+            this.panel1.Size = new System.Drawing.Size(1302, 84);
             this.panel1.TabIndex = 48;
             // 
             // label1
@@ -229,7 +230,7 @@
             this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(598, 38);
+            this.label1.Location = new System.Drawing.Point(586, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 46);
             this.label1.TabIndex = 2;
@@ -282,16 +283,6 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1163, 198);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 46);
-            this.label2.TabIndex = 54;
-            this.label2.Text = "Visits";
-            // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Date";
@@ -301,6 +292,16 @@
             // 
             this.columnHeader2.Text = "Clinic";
             this.columnHeader2.Width = 154;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1163, 198);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(116, 46);
+            this.label2.TabIndex = 54;
+            this.label2.Text = "Visits";
             // 
             // Active
             // 
