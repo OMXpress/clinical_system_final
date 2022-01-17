@@ -47,5 +47,10 @@ namespace clinical_system_N
         {
 
         }
+
+        private void panel46_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -56,6 +56,7 @@
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(1301, 84);
             this.panel46.TabIndex = 11;
+            this.panel46.Paint += new System.Windows.Forms.PaintEventHandler(this.panel46_Paint);
             // 
             // label1
             // 
