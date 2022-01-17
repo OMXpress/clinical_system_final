@@ -58,8 +58,8 @@ namespace clinical_system_N
         private void btn_general(object sender, EventArgs e)
         {
             this.Hide();
-            General C125 = new General();
-            C125.Show();
+            //General C125 = new General();
+            //C125.Show();
         }
 
         private void btn_active(object sender, EventArgs e)

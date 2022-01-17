@@ -58,8 +58,8 @@ namespace clinical_system_N
         private void btn_general(object sender, EventArgs e)
         {
             this.Hide();
-            General C170 = new General();
-            C170.Show();
+            //General C170 = new General();
+            //C170.Show();
         }
 
         private void btn_history(object sender, EventArgs e)

@@ -55,6 +55,7 @@
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(1301, 84);
             this.panel46.TabIndex = 11;
+            this.panel46.Paint += new System.Windows.Forms.PaintEventHandler(this.panel46_Paint);
             // 
             // label1
             // 
@@ -111,6 +112,7 @@
             this.button9.TabIndex = 27;
             this.button9.Text = "Records";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button4
             // 
@@ -199,4 +201,3 @@
         private System.Windows.Forms.FlowLayoutPanel RecordDisplayer;
     }
 }
-
