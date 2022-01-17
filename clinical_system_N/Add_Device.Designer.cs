@@ -61,10 +61,10 @@ namespace clinical_system_N
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Font = new System.Drawing.Font("Ebrima", 8.25F);
-            this.panel2.Location = new System.Drawing.Point(149, 0);
+            this.panel2.Location = new System.Drawing.Point(156, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1309, 96);
+            this.panel2.Size = new System.Drawing.Size(1302, 84);
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -158,6 +158,7 @@ namespace clinical_system_N
             this.button12.TabIndex = 10;
             this.button12.Text = "Edit";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.btn_edit);
             // 
             // button11
             // 
@@ -168,7 +169,7 @@ namespace clinical_system_N
             this.button11.TabIndex = 9;
             this.button11.Text = "Confirm";
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button11.Click += new System.EventHandler(this.btn_confirm);
             // 
             // version
             // 
@@ -265,7 +266,7 @@ namespace clinical_system_N
             this.panel4.Controls.Add(this.button15);
             this.panel4.Controls.Add(this.button14);
             this.panel4.Controls.Add(this.button13);
-            this.panel4.Location = new System.Drawing.Point(1306, 92);
+            this.panel4.Location = new System.Drawing.Point(1306, 121);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(152, 690);
@@ -295,7 +296,7 @@ namespace clinical_system_N
             this.button14.TabIndex = 12;
             this.button14.Text = "Add Doctor";
             this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.button14.Click += new System.EventHandler(this.btn_add_doctor);
             // 
             // button13
             // 
@@ -308,7 +309,7 @@ namespace clinical_system_N
             this.button13.TabIndex = 11;
             this.button13.Text = "Add Emploee";
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.button13.Click += new System.EventHandler(this.btn_add_emploee);
             // 
             // panel43
             // 
@@ -318,10 +319,10 @@ namespace clinical_system_N
             this.panel43.Controls.Add(this.button4);
             this.panel43.Controls.Add(this.button2);
             this.panel43.Controls.Add(this.button1);
-            this.panel43.Location = new System.Drawing.Point(0, 92);
+            this.panel43.Location = new System.Drawing.Point(0, 122);
             this.panel43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(151, 691);
+            this.panel43.Size = new System.Drawing.Size(152, 691);
             this.panel43.TabIndex = 10;
             // 
             // button3
@@ -334,7 +335,7 @@ namespace clinical_system_N
             this.button3.TabIndex = 3;
             this.button3.Text = "Admin";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.btn_adminsettings);
             // 
             // button4
             // 
@@ -346,7 +347,7 @@ namespace clinical_system_N
             this.button4.TabIndex = 2;
             this.button4.Text = "Finance";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.btn_finance);
             // 
             // button2
             // 
@@ -358,7 +359,7 @@ namespace clinical_system_N
             this.button2.TabIndex = 1;
             this.button2.Text = "Records";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.btn_records);
             // 
             // button1
             // 
@@ -370,7 +371,7 @@ namespace clinical_system_N
             this.button1.TabIndex = 0;
             this.button1.Text = "Calendar";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.btn_calender);
             // 
             // Add_Device
             // 

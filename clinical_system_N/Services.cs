@@ -61,6 +61,98 @@ namespace clinical_system_N
         {
 
         }
+
+        private void btn_calender(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrthopedicUnit_Calender C177 = new OrthopedicUnit_Calender();
+            C177.Show();
+        }
+
+        private void btn_records(object sender, EventArgs e)
+        {
+            this.Hide();
+            Records C178 = new Records();
+            C178.Show();
+        }
+
+        private void btn_finance(object sender, EventArgs e)
+        {
+            this.Hide();
+            Finance C179 = new Finance();
+            C179.Show();
+        }
+
+        private void btn_adminsettings(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminSettings C180 = new AdminSettings();
+            C180.Show();
+        }
+
+        private void btn_AddPatient_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Add_Patient C181 = new Add_Patient();
+            C181.Show();
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_investigation(object sender, EventArgs e)
+        {
+            this.Hide();
+            Investigation C182 = new Investigation();
+            C182.Show();
+        }
+
+        private void btn_assesment(object sender, EventArgs e)
+        {
+            this.Hide();
+            Assesment C182 = new Assesment();
+            C182.Show();
+        }
+
+        private void btn_diagnosis(object sender, EventArgs e)
+        {
+            this.Hide();
+            diagnosisdoc C183 = new diagnosisdoc();
+            C183.Show();
+        }
+
+        private void btn_x_ray(object sender, EventArgs e)
+        {
+            this.Hide();
+            X_Ray C184 = new X_Ray();
+            C184.Show();
+        }
+
+        private void btn_doctor_prescription(object sender, EventArgs e)
+        {
+            this.Hide();
+            Doctor_Prescription C185 = new Doctor_Prescription();
+            C185.Show();
+        }
+
+        private void btn_app(object sender, EventArgs e)
+        {
+            this.Hide();
+            App C186 = new App();
+            C186.Show();
+        }
     }
 }
 

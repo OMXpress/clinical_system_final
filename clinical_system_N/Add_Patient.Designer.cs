@@ -87,14 +87,14 @@ namespace clinical_system_N
             this.panel1.Location = new System.Drawing.Point(157, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1301, 84);
+            this.panel1.Size = new System.Drawing.Size(1302, 84);
             this.panel1.TabIndex = 11;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.label1.Location = new System.Drawing.Point(429, 4);
+            this.label1.Location = new System.Drawing.Point(440, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(322, 54);
             this.label1.TabIndex = 8;
@@ -349,6 +349,7 @@ namespace clinical_system_N
             this.button7.TabIndex = 68;
             this.button7.Text = "Cancel";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
             // 
             // button6
             // 
@@ -359,7 +360,7 @@ namespace clinical_system_N
             this.button6.TabIndex = 69;
             this.button6.Text = "Save";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.btn_save);
             // 
             // panel5
             // 
@@ -371,7 +372,7 @@ namespace clinical_system_N
             this.panel5.Location = new System.Drawing.Point(0, 122);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(152, 690);
+            this.panel5.Size = new System.Drawing.Size(152, 691);
             this.panel5.TabIndex = 107;
             // 
             // Admin
@@ -396,7 +397,7 @@ namespace clinical_system_N
             this.button1.TabIndex = 109;
             this.button1.Text = "Finance";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.btn_finance);
             // 
             // button2
             // 
@@ -408,7 +409,7 @@ namespace clinical_system_N
             this.button2.TabIndex = 110;
             this.button2.Text = "Records";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.btn_records);
             // 
             // Calender
             // 
@@ -536,7 +537,7 @@ namespace clinical_system_N
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1459, 811);
+            this.ClientSize = new System.Drawing.Size(1458, 811);
             this.Controls.Add(this.label_Patient_Employer);
             this.Controls.Add(this.label_Gender);
             this.Controls.Add(this.label_City);

@@ -201,7 +201,7 @@ namespace clinical_system_N
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btn_save(object sender, EventArgs e)
         {
             bool validation = Validation();
             //if all inputs are true proceed to database
@@ -225,7 +225,7 @@ namespace clinical_system_N
                     MessageBox.Show(ex.Message);
                 }
                 this.Hide();
-                patient_record C31 = new patient_record();
+                Records C31 = new Records();
                 C31.Show();
             }
         }
@@ -237,14 +237,14 @@ namespace clinical_system_N
             C32.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_records(object sender, EventArgs e)
         {
             this.Hide();
             Records C33 = new Records();
             C33.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_finance(object sender, EventArgs e)
         {
             this.Hide();
             Finance C34 = new Finance();
@@ -270,6 +270,11 @@ namespace clinical_system_N
         }
 
         private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -26,5 +26,82 @@ namespace clinical_system_N
         {
 
         }
+
+        private void btn_calender(object sender, EventArgs e)
+        {
+            this.Hide();
+            Physiotherape_Calender C187 = new Physiotherape_Calender();
+            C187.Show();
+        }
+
+        private void btn_records(object sender, EventArgs e)
+        {
+            this.Hide();
+            Records C188 = new Records();
+            C188.Show();
+        }
+
+        private void btn_finance(object sender, EventArgs e)
+        {
+            this.Hide();
+            Finance C189 = new Finance();
+            C189.Show();
+        }
+
+        private void btn_adminsettings(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminSettings C190 = new AdminSettings();
+            C190.Show();
+        }
+
+        private void btn_investigation(object sender, EventArgs e)
+        {
+            this.Hide();
+            Investigation C191 = new Investigation();
+            C191.Show();
+        }
+
+        private void btn_assesment(object sender, EventArgs e)
+        {
+            this.Hide();
+            Assesment C192 = new Assesment();
+            C192.Show();
+        }
+
+        private void btn_physio(object sender, EventArgs e)
+        {
+            this.Hide();
+            Physiotherapy C193 = new Physiotherapy();
+            C193.Show();
+        }
+
+        private void btn_services(object sender, EventArgs e)
+        {
+            this.Hide();
+            Services C194 = new Services();
+            C194.Show();
+        }
+
+        private void btn_x_ray(object sender, EventArgs e)
+        {
+            this.Hide();
+            X_Ray C195 = new X_Ray();
+            C195.Show();
+        }
+
+        private void btn_doctor_prescription(object sender, EventArgs e)
+        {
+            this.Hide();
+            Doctor_Prescription C196 = new Doctor_Prescription();
+            C196.Show();
+        }
+
+        private void btn_app(object sender, EventArgs e)
+        {
+            this.Hide();
+            App C197 = new App();
+            C197.Show();
+        }
     }
 }

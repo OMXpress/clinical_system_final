@@ -111,6 +111,7 @@ namespace clinical_system_N.models
         }
         public List<PatientInformation> GetAllInfo()
         {
+
             var paths = Directory.GetDirectories(GlobalVariables.PathToPatients);
             var result = new List<PatientInformation>();
             foreach (var path in paths)

@@ -83,7 +83,7 @@ namespace clinical_system_N
             this.panel1.Location = new System.Drawing.Point(157, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1301, 66);
+            this.panel1.Size = new System.Drawing.Size(1302, 84);
             this.panel1.TabIndex = 11;
             this.panel1.UseWaitCursor = true;
             // 
@@ -91,7 +91,7 @@ namespace clinical_system_N
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.label1.Location = new System.Drawing.Point(429, 4);
+            this.label1.Location = new System.Drawing.Point(427, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(319, 54);
             this.label1.TabIndex = 8;
@@ -307,7 +307,7 @@ namespace clinical_system_N
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.UseWaitCursor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.btn_save);
             // 
             // button3
             // 
@@ -328,10 +328,10 @@ namespace clinical_system_N
             this.panel5.Controls.Add(this.button6);
             this.panel5.Controls.Add(this.button7);
             this.panel5.Controls.Add(this.Calender);
-            this.panel5.Location = new System.Drawing.Point(0, 98);
+            this.panel5.Location = new System.Drawing.Point(0, 122);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(152, 713);
+            this.panel5.Size = new System.Drawing.Size(152, 691);
             this.panel5.TabIndex = 106;
             this.panel5.UseWaitCursor = true;
             // 
@@ -359,7 +359,7 @@ namespace clinical_system_N
             this.button6.Text = "Finance";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.UseWaitCursor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.btn_finance);
             // 
             // button7
             // 
@@ -372,7 +372,7 @@ namespace clinical_system_N
             this.button7.Text = "Records";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.UseWaitCursor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.btn_records);
             // 
             // Calender
             // 
