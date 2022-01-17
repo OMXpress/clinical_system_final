@@ -24,11 +24,11 @@ namespace clinical_system_N
         }
         private void display()
         {
-            PatientInformation info = new PatientInformation("sfsfdr564", "Omar", "1999", "123144562", Gender.male, "dafjadj@desk.com", "01068037112", "7oby", MaritialStatus.Single, "Student");
-            Patient patientTest = new Patient(info);
-            for (int i = 0; i < 5 ; i++)
+            string id = Guid.NewGuid().ToString(); 
+            List<Patient> patients = PatientFactory.GetAllPatients();
+            foreach (Patient pat in patients)
             {
-                PatientUserControl control = new PatientUserControl(patientTest);
+                PatientUserControl control = new PatientUserControl(pat);
                 RecordDisplayer.Controls.Add(control);
             }
         }
@@ -41,34 +41,6 @@ namespace clinical_system_N
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void btn_calender(object sender, EventArgs e)
-        {
-            this.Hide();
-            OrthopedicUnit_Calender C173 = new OrthopedicUnit_Calender();
-            C173.Show();
-        }
-
-        private void btn_finance(object sender, EventArgs e)
-        {
-            this.Hide();
-            Finance C174 = new Finance();
-            C174.Show();
-        }
-
-        private void btn_adminsettings(object sender, EventArgs e)
-        {
-            this.Hide();
-            AdminSettings C175 = new AdminSettings();
-            C175.Show();
-        }
-
-        private void btn_AddPatient_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Add_Patient C176 = new Add_Patient();
-            C176.Show();
         }
     }
 }

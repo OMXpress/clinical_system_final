@@ -173,7 +173,9 @@
             this.Controls.Add(this.panel46);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Records";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Records_Load);
             this.panel46.ResumeLayout(false);
             this.panel46.PerformLayout();
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);

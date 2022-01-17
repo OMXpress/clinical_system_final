@@ -15,7 +15,9 @@ namespace clinical_system_N.models
 
         public Patient(PatientInformation information)
         {
+            
             info = information;
+            
 
         }
 
@@ -119,6 +121,7 @@ namespace clinical_system_N.models
                 JsonManager jsonManager = new JsonManager();
                 jsonManager.AddJson(JsonType.Prescriptions, info.PatientId, perscriptions);
                 jsonManager.AddJson(JsonType.Prescriptions, info.PatientId, visits);
+                
                 return true;
 
             }
