@@ -64,7 +64,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -73,15 +72,19 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Rehablition = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel43.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -446,7 +449,6 @@
             // 
             this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
             this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel43.Controls.Add(this.button5);
             this.panel43.Controls.Add(this.button3);
             this.panel43.Controls.Add(this.button4);
             this.panel43.Controls.Add(this.button2);
@@ -455,16 +457,6 @@
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(152, 691);
             this.panel43.TabIndex = 12;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button5.Location = new System.Drawing.Point(19, 358);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(103, 30);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Prefrences";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -475,6 +467,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Admin";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.btn_adminsettings);
             // 
             // button4
             // 
@@ -485,6 +478,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "Finance";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.btn_finance);
             // 
             // button2
             // 
@@ -495,6 +489,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Records";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btn_records);
             // 
             // button1
             // 
@@ -505,10 +500,10 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Calendar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btn_calender);
             // 
             // pictureBox2
             // 
-            //this.pictureBox2.Image = global::clinical_system_N.Properties.Resources.physical_therapy_rehabilitation_landing_page_vector_265427118885;
             this.pictureBox2.Location = new System.Drawing.Point(942, 198);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(444, 331);
@@ -518,7 +513,6 @@
             // 
             // pictureBox1
             // 
-            //this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.physical_therapy_rehabilitation_landing_page_vector_26542711;
             this.pictureBox1.Location = new System.Drawing.Point(186, 198);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(425, 328);
@@ -531,9 +525,9 @@
             this.Rehablition.Name = "Rehablition";
             this.Rehablition.Size = new System.Drawing.Size(214, 54);
             this.Rehablition.TabIndex = 27;
-            this.Rehablition.Text = "Rehablition";
+            this.Rehablition.Text = "With Devices";
             this.Rehablition.UseVisualStyleBackColor = true;
-            this.Rehablition.Click += new System.EventHandler(this.button6_Click);
+            this.Rehablition.Click += new System.EventHandler(this.btn_devices);
             // 
             // button14
             // 
@@ -541,8 +535,39 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(214, 54);
             this.button14.TabIndex = 28;
-            this.button14.Text = "Physical Therapy";
+            this.button14.Text = "With program";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.btn_program);
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.button12);
+            this.panel2.Controls.Add(this.button11);
+            this.panel2.Controls.Add(this.button10);
+            this.panel2.Controls.Add(this.button9);
+            this.panel2.Controls.Add(this.button8);
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.button13);
+            this.panel2.Location = new System.Drawing.Point(156, 122);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1302, 64);
+            this.panel2.TabIndex = 44;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(255)))));
+            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
+            this.button12.FlatAppearance.BorderSize = 3;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Location = new System.Drawing.Point(183, -1);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(198, 64);
+            this.button12.TabIndex = 6;
+            this.button12.Text = "Assesment";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.btn_assesment);
             // 
             // button11
             // 
@@ -551,11 +576,11 @@
             this.button11.FlatAppearance.BorderSize = 3;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(345, 122);
+            this.button11.Location = new System.Drawing.Point(367, -1);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(198, 64);
-            this.button11.TabIndex = 33;
-            this.button11.Text = " Programs";
+            this.button11.TabIndex = 5;
+            this.button11.Text = "Rehabilitaion Programs";
             this.button11.UseVisualStyleBackColor = false;
             // 
             // button10
@@ -565,12 +590,13 @@
             this.button10.FlatAppearance.BorderSize = 3;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(723, 122);
+            this.button10.Location = new System.Drawing.Point(745, -1);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(188, 64);
-            this.button10.TabIndex = 32;
+            this.button10.TabIndex = 4;
             this.button10.Text = "X-Ray";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.btn_x_ray);
             // 
             // button9
             // 
@@ -579,12 +605,28 @@
             this.button9.FlatAppearance.BorderSize = 3;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(907, 122);
+            this.button9.Location = new System.Drawing.Point(929, -1);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(188, 64);
-            this.button9.TabIndex = 31;
+            this.button9.TabIndex = 3;
             this.button9.Text = "Prescription";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.btn_doctor_prescription);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(255)))));
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
+            this.button8.FlatAppearance.BorderSize = 3;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(1103, -1);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(198, 64);
+            this.button8.TabIndex = 2;
+            this.button8.Text = "APP.";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.btn_app);
             // 
             // button7
             // 
@@ -593,12 +635,13 @@
             this.button7.FlatAppearance.BorderSize = 3;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(537, 122);
+            this.button7.Location = new System.Drawing.Point(559, -1);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(190, 64);
-            this.button7.TabIndex = 30;
+            this.button7.TabIndex = 1;
             this.button7.Text = "Services";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.btn_services);
             // 
             // button13
             // 
@@ -607,24 +650,21 @@
             this.button13.FlatAppearance.BorderSize = 3;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(156, 121);
+            this.button13.Location = new System.Drawing.Point(-1, -1);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(198, 64);
-            this.button13.TabIndex = 29;
+            this.button13.TabIndex = 0;
             this.button13.Text = "Investigation";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.btn_investigation);
             // 
-            // Form1
+            // Physio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button13);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.Rehablition);
             this.Controls.Add(this.pictureBox2);
@@ -632,7 +672,7 @@
             this.Controls.Add(this.panel43);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Physio";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -640,6 +680,7 @@
             this.panel43.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -682,7 +723,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
@@ -691,9 +731,12 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button Rehablition;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button13;
     }

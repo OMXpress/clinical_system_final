@@ -27,5 +27,13 @@ namespace clinical_system_N
             lblPhoneNumber.Text = _patient.info.Phone;
 
         }
+
+        private void BtnOpenRecord_Click(object sender, EventArgs e)
+        {
+            General open = new General(_patient);
+            this.Parent.Parent.Hide();
+            open.Show();
+
+        }
     }
 }

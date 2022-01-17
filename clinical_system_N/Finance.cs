@@ -35,7 +35,7 @@ namespace clinical_system_N
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_calender(object sender, EventArgs e)
         {
             this.Hide();
             OrthopedicUnit_Calender C44 = new OrthopedicUnit_Calender();
@@ -47,10 +47,10 @@ namespace clinical_system_N
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_records(object sender, EventArgs e)
         {
             this.Hide();
-            patient_record C45 = new patient_record();
+            Records C45 = new Records();
             C45.Show();
         }
 

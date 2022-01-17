@@ -29,7 +29,6 @@ namespace clinical_system_N
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Assesment));
             this.panel43 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -113,7 +112,7 @@ namespace clinical_system_N
             this.button3.TabIndex = 3;
             this.button3.Text = "Admin";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.btn_adminsettings);
             // 
             // button4
             // 
@@ -124,7 +123,7 @@ namespace clinical_system_N
             this.button4.TabIndex = 2;
             this.button4.Text = "Finance";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.btn_finance);
             // 
             // button2
             // 
@@ -135,7 +134,7 @@ namespace clinical_system_N
             this.button2.TabIndex = 1;
             this.button2.Text = "Records";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.btn_records);
             // 
             // button1
             // 
@@ -146,7 +145,7 @@ namespace clinical_system_N
             this.button1.TabIndex = 0;
             this.button1.Text = "Calendar";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.btn_calender);
             // 
             // panel1
             // 
@@ -519,6 +518,7 @@ namespace clinical_system_N
             this.button12.TabIndex = 18;
             this.button12.Text = "Assesment";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -533,7 +533,7 @@ namespace clinical_system_N
             this.button11.TabIndex = 17;
             this.button11.Text = "Diagnosis";
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button11.Click += new System.EventHandler(this.btn_diagnosis);
             // 
             // button10
             // 
@@ -548,7 +548,7 @@ namespace clinical_system_N
             this.button10.TabIndex = 16;
             this.button10.Text = "X-Ray";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.btn_x_ray);
             // 
             // button9
             // 
@@ -563,7 +563,7 @@ namespace clinical_system_N
             this.button9.TabIndex = 15;
             this.button9.Text = "Prescription";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Click += new System.EventHandler(this.btn_prescription);
             // 
             // button8
             // 
@@ -578,6 +578,7 @@ namespace clinical_system_N
             this.button8.TabIndex = 14;
             this.button8.Text = "APP.";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.btn_app);
             // 
             // button7
             // 
@@ -592,7 +593,7 @@ namespace clinical_system_N
             this.button7.TabIndex = 13;
             this.button7.Text = "Services";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.btn_services);
             // 
             // button6
             // 
@@ -607,7 +608,7 @@ namespace clinical_system_N
             this.button6.TabIndex = 12;
             this.button6.Text = "Investigation";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.btn_investigation);
             // 
             // textBox14
             // 
@@ -648,7 +649,6 @@ namespace clinical_system_N
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1358, 329);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(47, 50);
@@ -658,7 +658,6 @@ namespace clinical_system_N
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(1358, 621);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(47, 50);

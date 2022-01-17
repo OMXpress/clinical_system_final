@@ -129,7 +129,7 @@
             this.button12.TabIndex = 6;
             this.button12.Text = "Assesment";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.button12.Click += new System.EventHandler(this.btn_assesment);
             // 
             // button11
             // 
@@ -144,7 +144,7 @@
             this.button11.TabIndex = 5;
             this.button11.Text = "Rehabilitaion Programs";
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button11.Click += new System.EventHandler(this.btn_physio);
             // 
             // button10
             // 
@@ -159,7 +159,7 @@
             this.button10.TabIndex = 4;
             this.button10.Text = "X-Ray";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.btn_x_ray);
             // 
             // button9
             // 
@@ -174,7 +174,7 @@
             this.button9.TabIndex = 3;
             this.button9.Text = "Prescription";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Click += new System.EventHandler(this.btn_doctor_prescription);
             // 
             // button8
             // 
@@ -189,7 +189,7 @@
             this.button8.TabIndex = 2;
             this.button8.Text = "APP.";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.Click += new System.EventHandler(this.btn_app);
             // 
             // button7
             // 
@@ -204,7 +204,7 @@
             this.button7.TabIndex = 1;
             this.button7.Text = "Services";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.btn_services);
             // 
             // button13
             // 
@@ -219,7 +219,7 @@
             this.button13.TabIndex = 0;
             this.button13.Text = "Investigation";
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.button13.Click += new System.EventHandler(this.btn_investigation);
             // 
             // panel10
             // 
@@ -610,7 +610,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Admin";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.btn_adminsettings);
             // 
             // button4
             // 
@@ -621,7 +621,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "Finance";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.btn_finance);
             // 
             // button2
             // 
@@ -632,7 +632,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Records";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.btn_records);
             // 
             // button1
             // 
@@ -643,7 +643,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Calendar";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.btn_calender);
             // 
             // dataGridView1
             // 
@@ -738,6 +738,7 @@
             this.button6.TabIndex = 40;
             this.button6.Text = "Print";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.btn_print);
             // 
             // button14
             // 
@@ -748,6 +749,7 @@
             this.button14.TabIndex = 41;
             this.button14.Text = "Save";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.btn_save);
             // 
             // label2
             // 

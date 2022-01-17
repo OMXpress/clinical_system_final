@@ -144,7 +144,7 @@ namespace clinical_system_N
 
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void btn_add_doctor(object sender, EventArgs e)
         {
             this.Hide();
             Add_Doctor C37 = new Add_Doctor();
@@ -161,21 +161,21 @@ namespace clinical_system_N
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_calender(object sender, EventArgs e)
         {
             this.Hide();
             OrthopedicUnit_Calender C39 = new OrthopedicUnit_Calender();
             C39.Show();
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void btn_add_device(object sender, EventArgs e)
         {
             this.Hide();
             Add_Device C38 = new Add_Device();
             C38.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_records(object sender, EventArgs e)
         {
             this.Hide();
             Records C40 = new Records();
@@ -183,7 +183,7 @@ namespace clinical_system_N
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_finance(object sender, EventArgs e)
         {
             this.Hide();
             Finance C41 = new Finance();
@@ -191,21 +191,21 @@ namespace clinical_system_N
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_adminsettings(object sender, EventArgs e)
         {
             this.Hide();
             AdminSettings C42 = new AdminSettings();
             C42.Show();
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void btn_add_emploee(object sender, EventArgs e)
         {
             this.Hide();
             AdminSettings C43 = new AdminSettings();
             C43.Show();
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void btn_confirm(object sender, EventArgs e)
         {
             bool validation = Validation();
             //if all inputs are true proceed to database

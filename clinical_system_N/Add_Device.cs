@@ -116,7 +116,7 @@ namespace clinical_system_N
 
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void btn_add_doctor(object sender, EventArgs e)
         {
             this.Hide();
             Add_Doctor C26 = new Add_Doctor();
@@ -134,7 +134,7 @@ namespace clinical_system_N
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_calender(object sender, EventArgs e)
         {
             this.Hide();
             OrthopedicUnit_Calender C23 = new OrthopedicUnit_Calender();
@@ -142,14 +142,14 @@ namespace clinical_system_N
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_records(object sender, EventArgs e)
         {
             this.Hide();
             Records C24 = new Records();
             C24.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_finance(object sender, EventArgs e)
         {
             this.Hide();
             Finance C25 = new Finance();
@@ -157,16 +157,18 @@ namespace clinical_system_N
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_adminsettings(object sender, EventArgs e)
         {
             this.Hide();
             AdminSettings C36 = new AdminSettings();
             C36.Show();
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void btn_add_emploee(object sender, EventArgs e)
         {
-
+            this.Hide();
+            AdminSettings C37 = new AdminSettings();
+            C37.Show();
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -179,7 +181,7 @@ namespace clinical_system_N
 
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void btn_confirm(object sender, EventArgs e)
         {
             bool validation = Validation();
             //if all inputs are true proceed to database
@@ -204,6 +206,11 @@ namespace clinical_system_N
                 }
                 label_state.Text = "Device Added Successfully";
             }
+        }
+
+        private void btn_edit(object sender, EventArgs e)
+        {
+
         }
     }
 }

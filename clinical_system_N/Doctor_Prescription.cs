@@ -22,7 +22,7 @@ namespace clinical_system_N
 
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void btn_assesment(object sender, EventArgs e)
         {
             this.Hide();
             Assesment C105 = new Assesment();
@@ -34,9 +34,11 @@ namespace clinical_system_N
 
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btn_doctor_prescription(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Doctor_Prescription C112 = new Doctor_Prescription();
+            C112.Show();
         }
 
         private void Doctor_Prescription_Load(object sender, EventArgs e)
@@ -79,67 +81,77 @@ namespace clinical_system_N
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_calender(object sender, EventArgs e)
         {
             this.Hide();
             OrthopedicUnit_Calender C100 = new OrthopedicUnit_Calender();
             C100.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_records(object sender, EventArgs e)
         {
             this.Hide();
             Records C101 = new Records();
             C101.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_finance(object sender, EventArgs e)
         {
             this.Hide();
             Finance C102 = new Finance();
             C102.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_adminsettings(object sender, EventArgs e)
         {
             this.Hide();
             AdminSettings C103 = new AdminSettings();
             C103.Show();
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void btn_investigation(object sender, EventArgs e)
         {
             this.Hide();
             Investigation C104 = new Investigation();
             C104.Show();
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void btn_physio(object sender, EventArgs e)
         {
             this.Hide();
             Physio C106 = new Physio();
             C106.Show();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btn_services(object sender, EventArgs e)
         {
             this.Hide();
             Services C107 = new Services();
             C107.Show();
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void btn_x_ray(object sender, EventArgs e)
         {
             this.Hide();
             X_Ray C108 = new X_Ray();
             C108.Show();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void btn_app(object sender, EventArgs e)
         {
             this.Hide();
-            OrthopedicUnit_Calender C77 = new OrthopedicUnit_Calender();
-            C77.Show();
+            App C113 = new App();
+            C113.Show();
+        }
+
+        private void btn_save(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_print(object sender, EventArgs e)
+        {
+
         }
     }
 }

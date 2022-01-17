@@ -123,19 +123,7 @@ namespace clinical_system_N
             {
                 label_Patient_Employer.Text = "";
             }
-            //Blood Type Validation
-            check = new Regex(@"^?(A|B|AB|O)?([+,-])$");
-            valid = check.IsMatch(profession.Text);
-            if (profession.Text == "" || valid == false)
-            {
-                label_Blood_Type.ForeColor = Color.Red;
-                label_Blood_Type.Text = "invalid input";
-                return false;
-            }
-            else
-            {
-                label_Blood_Type.Text = "";
-            }
+           
             //Gender Validation
             if (!ckMale.Checked && !ckFemale.Checked)
             {
@@ -213,7 +201,7 @@ namespace clinical_system_N
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btn_save(object sender, EventArgs e)
         {
             bool validation = Validation();
             //if all inputs are true proceed to database
@@ -223,24 +211,13 @@ namespace clinical_system_N
                 {
                     List<string> list = new List<string>();
                     DBController db = new DBController();
-                    list.Add(firstName.Text);
-                    list.Add(lastName.Text);
-                    list.Add(dateTimePicker1.Text);
-                    list.Add(nationalID.Text);
-                    string gender = ckMale.Checked ? "M" : "F";
-                    list.Add(gender);
-                    list.Add(email.Text);
-                    list.Add(phoneNumber.Text);
-                    list.Add(address.Text);
+                    string gender = ckMale.Checked ? "Male" : "Female";
                     string status = "";
-                    if (ckDivorced.Checked) { status = "D"; }
-                    else if (ckMarried.Checked) { status = "M"; }
-                    else if (ckSingle.Checked) { status = "S"; }
-                    list.Add(status);
-                    list.Add(profession.Text);
-                    list.Add(city.Text);
-
-                    db.CUD(CrudType.insert, "EMPLOYEE", list);
+                    if (ckDivorced.Checked) { status = "Divorced"; }
+                    else if (ckMarried.Checked) { status = "Married"; }
+                    else if (ckSingle.Checked) { status = "Single"; }
+                    string date = dateTimePicker1.Text;
+                    Patient p = PatientFactory.CreatePatient( lastName.Text, firstName.Text, date, nationalID.Text, gender, email.Text, phoneNumber.Text, address.Text, status, profession.Text);
 
                 }
                 catch (Exception ex)
@@ -248,7 +225,7 @@ namespace clinical_system_N
                     MessageBox.Show(ex.Message);
                 }
                 this.Hide();
-                patient_record C31 = new patient_record();
+                Records C31 = new Records();
                 C31.Show();
             }
         }
@@ -260,14 +237,14 @@ namespace clinical_system_N
             C32.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_records(object sender, EventArgs e)
         {
             this.Hide();
             Records C33 = new Records();
             C33.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_finance(object sender, EventArgs e)
         {
             this.Hide();
             Finance C34 = new Finance();
@@ -293,6 +270,11 @@ namespace clinical_system_N
         }
 
         private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
         {
 
         }

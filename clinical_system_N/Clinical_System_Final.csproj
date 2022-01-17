@@ -224,12 +224,6 @@
     <Compile Include="PatientUserControl.Designer.cs">
       <DependentUpon>PatientUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patient_Record.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Patient_Record.Designer.cs">
-      <DependentUpon>Patient_Record.cs</DependentUpon>
-    </Compile>
     <Compile Include="Physio Devices.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -360,9 +354,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PatientUserControl.resx">
       <DependentUpon>PatientUserControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Patient_Record.resx">
-      <DependentUpon>Patient_Record.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Physio Devices.resx">
       <DependentUpon>Physio Devices.cs</DependentUpon>

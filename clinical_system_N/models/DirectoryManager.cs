@@ -41,10 +41,14 @@ namespace clinical_system_N.models
                 string MRIPath = Path.Combine(investigationPath, "MRI");
                 Directory.CreateDirectory(XrayPath);
                 Directory.CreateDirectory(MRIPath);
+                Directory.CreateDirectory(dataPath);
 
                 foreach (string p in DataPaths)
                 {
-                    File.Create(p);
+                    using (FileStream fs = File.Create(p))
+                    {
+
+                    }
                 }
 
                 

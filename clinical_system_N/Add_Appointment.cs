@@ -114,7 +114,7 @@ namespace clinical_system_N
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_calender(object sender, EventArgs e)
         {
             this.Hide();
             Physiotherape_Calender C22 = new Physiotherape_Calender();
@@ -123,7 +123,7 @@ namespace clinical_system_N
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btn_confirm(object sender, EventArgs e)
         {
             bool validation = Validation();
             //if all inputs are true proceed to database
@@ -142,7 +142,7 @@ namespace clinical_system_N
             C16.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_records(object sender, EventArgs e)
         {
             this.Hide();
             Records C18 = new Records();
@@ -167,14 +167,14 @@ namespace clinical_system_N
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_finance(object sender, EventArgs e)
         {
             this.Hide();
             Finance C19 = new Finance();
             C19.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_adminsettings(object sender, EventArgs e)
         {
             this.Hide();
             AdminSettings C20 = new AdminSettings();

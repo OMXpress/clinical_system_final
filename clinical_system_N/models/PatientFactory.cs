@@ -8,10 +8,10 @@ using System.Windows.Forms;
 
 namespace clinical_system_N.models
 {
-    internal class PatientFactory
+    internal static class PatientFactory
     {
 
-        public Patient FindIfExist(string phone, string email)
+        public static Patient FindIfExist(string phone, string email)
         {
             DBController dBController = new DBController();
             try
@@ -84,7 +84,7 @@ namespace clinical_system_N.models
             }
         }
 
-        public Patient CreatePatient(string patientname, string dob, string nationalID, string gender, string email, string phone, string address, string MaritialStatus, string proffession)
+        public static Patient CreatePatient(string lname ,string fname, string dob, string nationalID, string gender, string email, string phone, string address, string MaritialStatus, string proffession)
         {
             string patientID = Guid.NewGuid().ToString();
             DirectoryManager manager = new DirectoryManager(patientID);
@@ -111,16 +111,16 @@ namespace clinical_system_N.models
                 gender1 = Gender.male;
             }
             else { gender1 = Gender.female; }
-            PatientInformation information = new PatientInformation(patientID, patientname, dob, nationalID, gender1, email, phone, address, maritialStatus, proffession);
+            string name = fname + " " + lname;
+            PatientInformation information = new PatientInformation(patientID, name, dob, nationalID, gender1, email, phone, address, maritialStatus, proffession);
+
             Patient patient = new Patient(information);
 
             // insert into database
 
             DBController db = new DBController();
 
-            string fname = patientname.Split()[0];
-            string lname = patientname.Split()[1];
-            string q = string.Format("insert into PATIENT values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}')",
+            string q = string.Format("insert into PATIENT values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}')",
                 patientID, fname, lname, dob, nationalID, gender, email, phone, address, MaritialStatus, proffession);
             try
             {
@@ -130,6 +130,7 @@ namespace clinical_system_N.models
                     cmd.ExecuteNonQuery();
                     db.CloseConnection();
                     manager.ReadyPatient();
+                    SaveMeta(information);
 
                 }
             }
@@ -140,6 +141,24 @@ namespace clinical_system_N.models
 
 
             return patient;
+        }
+        public static void SaveMeta(PatientInformation information)
+        {
+            JsonManager jsonManager = new JsonManager();
+            jsonManager.AddMetaData(information.PatientId, information);
+        }
+        public static List<Patient> GetAllPatients()
+        {
+            List<Patient> list = new List<Patient>();
+
+            JsonManager jsonManager = new JsonManager();
+            var infos = jsonManager.GetAllInfo();
+            foreach (var info in infos)
+            {
+                Patient patient = new Patient(info);
+                list.Add(patient);
+            }
+            return list;
         }
     }
 }

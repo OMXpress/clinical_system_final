@@ -25,5 +25,19 @@ namespace clinical_system_N.models
             }
             return string.Empty;
         }
+        public static string GenderToText(Gender gender)
+        {
+            if (gender == Gender.male)
+            {
+                string text = "Male";
+                return text;
+            }
+            else if (gender == Gender.female)
+            {
+                string text = "Female";
+                return text;
+            }
+            return string.Empty;
+        }
     }
 }
