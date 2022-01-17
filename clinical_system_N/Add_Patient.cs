@@ -225,7 +225,7 @@ namespace clinical_system_N
                     MessageBox.Show(ex.Message);
                 }
                 this.Hide();
-                patient_record C31 = new patient_record();
+                Records C31 = new Records();
                 C31.Show();
             }
         }
