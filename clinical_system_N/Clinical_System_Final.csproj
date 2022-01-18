@@ -447,6 +447,8 @@
     <None Include="Resources\21.jpg" />
     <None Include="Resources\2.jpg" />
     <None Include="Assets\mic-icon-11553430296usfhy8bwwf.png" />
+    <Content Include="Assets\1.png" />
+    <Content Include="Assets\2.png" />
     <Content Include="Assets\Sentinel.image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

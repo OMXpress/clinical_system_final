@@ -54,3 +54,12 @@ enum AppointmentType
     Checkup,
     Consultation
 }
+enum DayOfWeek
+{
+    Sunday,
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Saturday
+}
