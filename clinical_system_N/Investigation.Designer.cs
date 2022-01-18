@@ -81,12 +81,12 @@ namespace clinical_system_N
             this.label25 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.No = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Test_Code = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Test_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Amount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Report_Number = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listView1 = new System.Windows.Forms.ListView();
             this.panel43.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -519,7 +519,7 @@ namespace clinical_system_N
             this.panel3.Controls.Add(this.button8);
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.button6);
-            this.panel3.Location = new System.Drawing.Point(156, 118);
+            this.panel3.Location = new System.Drawing.Point(156, 122);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1302, 64);
             this.panel3.TabIndex = 12;
@@ -669,22 +669,6 @@ namespace clinical_system_N
             this.button14.Text = "Exit";
             this.button14.UseVisualStyleBackColor = false;
             // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.No,
-            this.Test_Code,
-            this.Test_Name,
-            this.Amount,
-            this.Report_Number});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(378, 328);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(638, 404);
-            this.listView1.TabIndex = 37;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
             // No
             // 
             this.No.Text = "No.";
@@ -709,6 +693,22 @@ namespace clinical_system_N
             // 
             this.Report_Number.Text = "Report_Number";
             this.Report_Number.Width = 135;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.No,
+            this.Test_Code,
+            this.Test_Name,
+            this.Amount,
+            this.Report_Number});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(378, 328);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(638, 404);
+            this.listView1.TabIndex = 37;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // Investigation
             // 
@@ -793,11 +793,11 @@ namespace clinical_system_N
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader No;
         private System.Windows.Forms.ColumnHeader Test_Code;
         private System.Windows.Forms.ColumnHeader Test_Name;
         private System.Windows.Forms.ColumnHeader Amount;
         private System.Windows.Forms.ColumnHeader Report_Number;
+        private System.Windows.Forms.ListView listView1;
     }
 }

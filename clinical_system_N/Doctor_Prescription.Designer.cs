@@ -99,7 +99,7 @@
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button13);
-            this.panel1.Location = new System.Drawing.Point(156, 120);
+            this.panel1.Location = new System.Drawing.Point(156, 122);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1302, 64);
             this.panel1.TabIndex = 25;
@@ -722,6 +722,7 @@
             this.Controls.Add(this.panel10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Doctor_Prescription";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Doctor_Prescription_Load);
             this.panel1.ResumeLayout(false);

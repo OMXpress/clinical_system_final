@@ -64,17 +64,17 @@ namespace clinical_system_N
             this.panel2.Location = new System.Drawing.Point(156, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1302, 84);
+            this.panel2.Size = new System.Drawing.Size(1302, 122);
             this.panel2.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.label1.Location = new System.Drawing.Point(464, 9);
+            this.label1.Location = new System.Drawing.Point(542, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 69);
+            this.label1.Size = new System.Drawing.Size(247, 69);
             this.label1.TabIndex = 2;
             this.label1.Text = "Settings";
             // 
@@ -256,7 +256,7 @@ namespace clinical_system_N
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 118);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;

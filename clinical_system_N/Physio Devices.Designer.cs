@@ -568,7 +568,7 @@
             this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button13);
-            this.panel2.Location = new System.Drawing.Point(155, 123);
+            this.panel2.Location = new System.Drawing.Point(156, 122);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1302, 64);
             this.panel2.TabIndex = 43;
@@ -692,6 +692,7 @@
             this.Controls.Add(this.panel43);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Physio_Devices";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Physio_Devices_Load);
             this.panel43.ResumeLayout(false);

@@ -527,7 +527,7 @@ namespace clinical_system_N
             this.panel3.Controls.Add(this.button8);
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.button6);
-            this.panel3.Location = new System.Drawing.Point(156, 118);
+            this.panel3.Location = new System.Drawing.Point(156, 122);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1302, 64);
             this.panel3.TabIndex = 12;

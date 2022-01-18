@@ -87,22 +87,22 @@ namespace clinical_system_N
             this.panel1.Location = new System.Drawing.Point(157, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1302, 84);
+            this.panel1.Size = new System.Drawing.Size(1302, 122);
             this.panel1.TabIndex = 11;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.label1.Location = new System.Drawing.Point(440, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(414, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 54);
+            this.label1.Size = new System.Drawing.Size(474, 69);
             this.label1.TabIndex = 8;
             this.label1.Text = "Add New Patient";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(425, 354);
+            this.dateTimePicker1.Location = new System.Drawing.Point(425, 395);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(249, 22);
@@ -113,7 +113,7 @@ namespace clinical_system_N
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label3.Location = new System.Drawing.Point(267, 354);
+            this.label3.Location = new System.Drawing.Point(267, 395);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 28);
             this.label3.TabIndex = 59;
@@ -122,7 +122,7 @@ namespace clinical_system_N
             // ckFemale
             // 
             this.ckFemale.AutoSize = true;
-            this.ckFemale.Location = new System.Drawing.Point(1196, 313);
+            this.ckFemale.Location = new System.Drawing.Point(1196, 354);
             this.ckFemale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ckFemale.Name = "ckFemale";
             this.ckFemale.Size = new System.Drawing.Size(76, 21);
@@ -133,7 +133,7 @@ namespace clinical_system_N
             // ckMale
             // 
             this.ckMale.AutoSize = true;
-            this.ckMale.Location = new System.Drawing.Point(1082, 313);
+            this.ckMale.Location = new System.Drawing.Point(1082, 354);
             this.ckMale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ckMale.Name = "ckMale";
             this.ckMale.Size = new System.Drawing.Size(60, 21);
@@ -144,7 +144,7 @@ namespace clinical_system_N
             // ckSingle
             // 
             this.ckSingle.AutoSize = true;
-            this.ckSingle.Location = new System.Drawing.Point(543, 310);
+            this.ckSingle.Location = new System.Drawing.Point(543, 351);
             this.ckSingle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ckSingle.Name = "ckSingle";
             this.ckSingle.Size = new System.Drawing.Size(69, 21);
@@ -155,7 +155,7 @@ namespace clinical_system_N
             // ckDivorced
             // 
             this.ckDivorced.AutoSize = true;
-            this.ckDivorced.Location = new System.Drawing.Point(633, 310);
+            this.ckDivorced.Location = new System.Drawing.Point(633, 351);
             this.ckDivorced.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ckDivorced.Name = "ckDivorced";
             this.ckDivorced.Size = new System.Drawing.Size(86, 21);
@@ -166,7 +166,7 @@ namespace clinical_system_N
             // ckMarried
             // 
             this.ckMarried.AutoSize = true;
-            this.ckMarried.Location = new System.Drawing.Point(425, 310);
+            this.ckMarried.Location = new System.Drawing.Point(425, 351);
             this.ckMarried.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ckMarried.Name = "ckMarried";
             this.ckMarried.Size = new System.Drawing.Size(78, 21);
@@ -176,7 +176,7 @@ namespace clinical_system_N
             // 
             // phoneNumber
             // 
-            this.phoneNumber.Location = new System.Drawing.Point(472, 166);
+            this.phoneNumber.Location = new System.Drawing.Point(472, 207);
             this.phoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.phoneNumber.Name = "phoneNumber";
             this.phoneNumber.Size = new System.Drawing.Size(180, 22);
@@ -184,7 +184,7 @@ namespace clinical_system_N
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(472, 214);
+            this.email.Location = new System.Drawing.Point(472, 255);
             this.email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(180, 22);
@@ -192,7 +192,7 @@ namespace clinical_system_N
             // 
             // address
             // 
-            this.address.Location = new System.Drawing.Point(472, 262);
+            this.address.Location = new System.Drawing.Point(472, 303);
             this.address.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(180, 22);
@@ -200,7 +200,7 @@ namespace clinical_system_N
             // 
             // lastName
             // 
-            this.lastName.Location = new System.Drawing.Point(1076, 117);
+            this.lastName.Location = new System.Drawing.Point(1076, 158);
             this.lastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lastName.Name = "lastName";
             this.lastName.Size = new System.Drawing.Size(180, 22);
@@ -208,7 +208,7 @@ namespace clinical_system_N
             // 
             // nationalID
             // 
-            this.nationalID.Location = new System.Drawing.Point(1076, 169);
+            this.nationalID.Location = new System.Drawing.Point(1076, 210);
             this.nationalID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nationalID.Name = "nationalID";
             this.nationalID.Size = new System.Drawing.Size(180, 22);
@@ -216,7 +216,7 @@ namespace clinical_system_N
             // 
             // city
             // 
-            this.city.Location = new System.Drawing.Point(1076, 214);
+            this.city.Location = new System.Drawing.Point(1076, 255);
             this.city.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(180, 22);
@@ -224,7 +224,7 @@ namespace clinical_system_N
             // 
             // firstName
             // 
-            this.firstName.Location = new System.Drawing.Point(472, 114);
+            this.firstName.Location = new System.Drawing.Point(472, 157);
             this.firstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.firstName.Name = "firstName";
             this.firstName.Size = new System.Drawing.Size(180, 22);
@@ -235,7 +235,7 @@ namespace clinical_system_N
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label11.Location = new System.Drawing.Point(259, 166);
+            this.label11.Location = new System.Drawing.Point(259, 207);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(144, 28);
             this.label11.TabIndex = 46;
@@ -245,7 +245,7 @@ namespace clinical_system_N
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label10.Location = new System.Drawing.Point(259, 215);
+            this.label10.Location = new System.Drawing.Point(259, 256);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(59, 28);
             this.label10.TabIndex = 45;
@@ -255,7 +255,7 @@ namespace clinical_system_N
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label9.Location = new System.Drawing.Point(259, 262);
+            this.label9.Location = new System.Drawing.Point(259, 303);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 28);
             this.label9.TabIndex = 44;
@@ -265,7 +265,7 @@ namespace clinical_system_N
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label8.Location = new System.Drawing.Point(259, 305);
+            this.label8.Location = new System.Drawing.Point(259, 346);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(139, 28);
             this.label8.TabIndex = 43;
@@ -275,7 +275,7 @@ namespace clinical_system_N
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label7.Location = new System.Drawing.Point(859, 116);
+            this.label7.Location = new System.Drawing.Point(859, 157);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 28);
             this.label7.TabIndex = 42;
@@ -285,7 +285,7 @@ namespace clinical_system_N
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label6.Location = new System.Drawing.Point(859, 166);
+            this.label6.Location = new System.Drawing.Point(859, 207);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(111, 28);
             this.label6.TabIndex = 41;
@@ -295,7 +295,7 @@ namespace clinical_system_N
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label5.Location = new System.Drawing.Point(859, 214);
+            this.label5.Location = new System.Drawing.Point(859, 255);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 28);
             this.label5.TabIndex = 40;
@@ -305,7 +305,7 @@ namespace clinical_system_N
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label4.Location = new System.Drawing.Point(859, 306);
+            this.label4.Location = new System.Drawing.Point(859, 347);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 28);
             this.label4.TabIndex = 39;
@@ -315,7 +315,7 @@ namespace clinical_system_N
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label2.Location = new System.Drawing.Point(259, 118);
+            this.label2.Location = new System.Drawing.Point(259, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 28);
             this.label2.TabIndex = 38;
@@ -323,7 +323,7 @@ namespace clinical_system_N
             // 
             // profession
             // 
-            this.profession.Location = new System.Drawing.Point(1076, 262);
+            this.profession.Location = new System.Drawing.Point(1076, 303);
             this.profession.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.profession.Name = "profession";
             this.profession.Size = new System.Drawing.Size(180, 22);
@@ -333,7 +333,7 @@ namespace clinical_system_N
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label15.Location = new System.Drawing.Point(859, 262);
+            this.label15.Location = new System.Drawing.Point(859, 303);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(102, 28);
             this.label15.TabIndex = 61;
@@ -429,7 +429,7 @@ namespace clinical_system_N
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 118);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 108;
             this.pictureBox1.TabStop = false;
@@ -437,7 +437,7 @@ namespace clinical_system_N
             // label_First_Name
             // 
             this.label_First_Name.AutoSize = true;
-            this.label_First_Name.Location = new System.Drawing.Point(512, 145);
+            this.label_First_Name.Location = new System.Drawing.Point(512, 186);
             this.label_First_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_First_Name.Name = "label_First_Name";
             this.label_First_Name.Size = new System.Drawing.Size(0, 17);
@@ -446,7 +446,7 @@ namespace clinical_system_N
             // label_Phone_Number
             // 
             this.label_Phone_Number.AutoSize = true;
-            this.label_Phone_Number.Location = new System.Drawing.Point(512, 194);
+            this.label_Phone_Number.Location = new System.Drawing.Point(512, 235);
             this.label_Phone_Number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Phone_Number.Name = "label_Phone_Number";
             this.label_Phone_Number.Size = new System.Drawing.Size(0, 17);
@@ -455,7 +455,7 @@ namespace clinical_system_N
             // label_Email
             // 
             this.label_Email.AutoSize = true;
-            this.label_Email.Location = new System.Drawing.Point(512, 244);
+            this.label_Email.Location = new System.Drawing.Point(512, 285);
             this.label_Email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Email.Name = "label_Email";
             this.label_Email.Size = new System.Drawing.Size(0, 17);
@@ -464,7 +464,7 @@ namespace clinical_system_N
             // label_Address
             // 
             this.label_Address.AutoSize = true;
-            this.label_Address.Location = new System.Drawing.Point(512, 292);
+            this.label_Address.Location = new System.Drawing.Point(512, 333);
             this.label_Address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Address.Name = "label_Address";
             this.label_Address.Size = new System.Drawing.Size(0, 17);
@@ -473,7 +473,7 @@ namespace clinical_system_N
             // label_Martrial_Status
             // 
             this.label_Martrial_Status.AutoSize = true;
-            this.label_Martrial_Status.Location = new System.Drawing.Point(512, 337);
+            this.label_Martrial_Status.Location = new System.Drawing.Point(512, 378);
             this.label_Martrial_Status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Martrial_Status.Name = "label_Martrial_Status";
             this.label_Martrial_Status.Size = new System.Drawing.Size(0, 17);
@@ -491,7 +491,7 @@ namespace clinical_system_N
             // label_Last_Name
             // 
             this.label_Last_Name.AutoSize = true;
-            this.label_Last_Name.Location = new System.Drawing.Point(1117, 148);
+            this.label_Last_Name.Location = new System.Drawing.Point(1117, 189);
             this.label_Last_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Last_Name.Name = "label_Last_Name";
             this.label_Last_Name.Size = new System.Drawing.Size(0, 17);
@@ -500,7 +500,7 @@ namespace clinical_system_N
             // label_National_ID
             // 
             this.label_National_ID.AutoSize = true;
-            this.label_National_ID.Location = new System.Drawing.Point(1117, 199);
+            this.label_National_ID.Location = new System.Drawing.Point(1117, 240);
             this.label_National_ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_National_ID.Name = "label_National_ID";
             this.label_National_ID.Size = new System.Drawing.Size(0, 17);
@@ -509,7 +509,7 @@ namespace clinical_system_N
             // label_City
             // 
             this.label_City.AutoSize = true;
-            this.label_City.Location = new System.Drawing.Point(1117, 247);
+            this.label_City.Location = new System.Drawing.Point(1117, 288);
             this.label_City.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_City.Name = "label_City";
             this.label_City.Size = new System.Drawing.Size(0, 17);
@@ -518,7 +518,7 @@ namespace clinical_system_N
             // label_Gender
             // 
             this.label_Gender.AutoSize = true;
-            this.label_Gender.Location = new System.Drawing.Point(1117, 353);
+            this.label_Gender.Location = new System.Drawing.Point(1117, 394);
             this.label_Gender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Gender.Name = "label_Gender";
             this.label_Gender.Size = new System.Drawing.Size(0, 17);
@@ -527,7 +527,7 @@ namespace clinical_system_N
             // label_Patient_Employer
             // 
             this.label_Patient_Employer.AutoSize = true;
-            this.label_Patient_Employer.Location = new System.Drawing.Point(1172, 308);
+            this.label_Patient_Employer.Location = new System.Drawing.Point(1172, 349);
             this.label_Patient_Employer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Patient_Employer.Name = "label_Patient_Employer";
             this.label_Patient_Employer.Size = new System.Drawing.Size(0, 17);

@@ -227,10 +227,10 @@
             // 
             this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(509, 38);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(429, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 46);
+            this.label1.Size = new System.Drawing.Size(420, 69);
             this.label1.TabIndex = 2;
             this.label1.Text = "Historical Data";
             // 
@@ -249,6 +249,7 @@
             this.Controls.Add(this.panel43);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "History";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel43.ResumeLayout(false);
