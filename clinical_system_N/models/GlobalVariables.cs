@@ -53,7 +53,7 @@ namespace clinical_system_N.models
             }
             return string.Empty;
         }
-        public static string OrthoAppointmentToText(OrthoAppointment OrthoAppointment)
+        public static Dictionary<string, int> OrthoAppointmentToText(OrthoAppointment OrthoAppointment)
         {
             Dictionary<string, int> XX = new Dictionary<string, int>();
 
@@ -137,7 +137,7 @@ namespace clinical_system_N.models
                 XX.Add("Hour", 4);
                 XX.Add("Mins", 30);
             }
-            return string.Empty;
+            return XX;
         }
     }
 }
