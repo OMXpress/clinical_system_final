@@ -29,6 +29,7 @@ namespace clinical_system_N
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Patient));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -125,7 +126,7 @@ namespace clinical_system_N
             this.ckFemale.Location = new System.Drawing.Point(1196, 313);
             this.ckFemale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ckFemale.Name = "ckFemale";
-            this.ckFemale.Size = new System.Drawing.Size(75, 20);
+            this.ckFemale.Size = new System.Drawing.Size(76, 21);
             this.ckFemale.TabIndex = 58;
             this.ckFemale.Text = "Female";
             this.ckFemale.UseVisualStyleBackColor = true;
@@ -136,7 +137,7 @@ namespace clinical_system_N
             this.ckMale.Location = new System.Drawing.Point(1082, 313);
             this.ckMale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ckMale.Name = "ckMale";
-            this.ckMale.Size = new System.Drawing.Size(59, 20);
+            this.ckMale.Size = new System.Drawing.Size(60, 21);
             this.ckMale.TabIndex = 57;
             this.ckMale.Text = "Male";
             this.ckMale.UseVisualStyleBackColor = true;
@@ -147,7 +148,7 @@ namespace clinical_system_N
             this.ckSingle.Location = new System.Drawing.Point(543, 310);
             this.ckSingle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ckSingle.Name = "ckSingle";
-            this.ckSingle.Size = new System.Drawing.Size(67, 20);
+            this.ckSingle.Size = new System.Drawing.Size(69, 21);
             this.ckSingle.TabIndex = 56;
             this.ckSingle.Text = "Single";
             this.ckSingle.UseVisualStyleBackColor = true;
@@ -158,7 +159,7 @@ namespace clinical_system_N
             this.ckDivorced.Location = new System.Drawing.Point(633, 310);
             this.ckDivorced.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ckDivorced.Name = "ckDivorced";
-            this.ckDivorced.Size = new System.Drawing.Size(84, 20);
+            this.ckDivorced.Size = new System.Drawing.Size(86, 21);
             this.ckDivorced.TabIndex = 55;
             this.ckDivorced.Text = "Divorced";
             this.ckDivorced.UseVisualStyleBackColor = true;
@@ -169,7 +170,7 @@ namespace clinical_system_N
             this.ckMarried.Location = new System.Drawing.Point(425, 310);
             this.ckMarried.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ckMarried.Name = "ckMarried";
-            this.ckMarried.Size = new System.Drawing.Size(75, 20);
+            this.ckMarried.Size = new System.Drawing.Size(78, 21);
             this.ckMarried.TabIndex = 54;
             this.ckMarried.Text = "Married";
             this.ckMarried.UseVisualStyleBackColor = true;
@@ -378,10 +379,10 @@ namespace clinical_system_N
             // Admin
             // 
             this.Admin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.Admin.Location = new System.Drawing.Point(19, 181);
+            this.Admin.Location = new System.Drawing.Point(19, 223);
             this.Admin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Admin.Name = "Admin";
-            this.Admin.Size = new System.Drawing.Size(103, 25);
+            this.Admin.Size = new System.Drawing.Size(103, 30);
             this.Admin.TabIndex = 108;
             this.Admin.Text = "Admin";
             this.Admin.UseVisualStyleBackColor = false;
@@ -390,10 +391,10 @@ namespace clinical_system_N
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(19, 133);
+            this.button1.Location = new System.Drawing.Point(19, 161);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 25);
+            this.button1.Size = new System.Drawing.Size(103, 30);
             this.button1.TabIndex = 109;
             this.button1.Text = "Finance";
             this.button1.UseVisualStyleBackColor = false;
@@ -402,10 +403,10 @@ namespace clinical_system_N
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(19, 79);
+            this.button2.Location = new System.Drawing.Point(19, 99);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 25);
+            this.button2.Size = new System.Drawing.Size(103, 30);
             this.button2.TabIndex = 110;
             this.button2.Text = "Records";
             this.button2.UseVisualStyleBackColor = false;
@@ -414,10 +415,10 @@ namespace clinical_system_N
             // Calender
             // 
             this.Calender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.Calender.Location = new System.Drawing.Point(19, 30);
+            this.Calender.Location = new System.Drawing.Point(19, 37);
             this.Calender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Calender.Name = "Calender";
-            this.Calender.Size = new System.Drawing.Size(103, 25);
+            this.Calender.Size = new System.Drawing.Size(103, 30);
             this.Calender.TabIndex = 0;
             this.Calender.Text = "Calender";
             this.Calender.UseVisualStyleBackColor = false;
@@ -425,10 +426,11 @@ namespace clinical_system_N
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 126);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 108;
             this.pictureBox1.TabStop = false;
@@ -439,7 +441,7 @@ namespace clinical_system_N
             this.label_First_Name.Location = new System.Drawing.Point(512, 145);
             this.label_First_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_First_Name.Name = "label_First_Name";
-            this.label_First_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_First_Name.Size = new System.Drawing.Size(0, 17);
             this.label_First_Name.TabIndex = 131;
             // 
             // label_Phone_Number
@@ -448,7 +450,7 @@ namespace clinical_system_N
             this.label_Phone_Number.Location = new System.Drawing.Point(512, 194);
             this.label_Phone_Number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Phone_Number.Name = "label_Phone_Number";
-            this.label_Phone_Number.Size = new System.Drawing.Size(0, 16);
+            this.label_Phone_Number.Size = new System.Drawing.Size(0, 17);
             this.label_Phone_Number.TabIndex = 132;
             // 
             // label_Email
@@ -457,7 +459,7 @@ namespace clinical_system_N
             this.label_Email.Location = new System.Drawing.Point(512, 244);
             this.label_Email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Email.Name = "label_Email";
-            this.label_Email.Size = new System.Drawing.Size(0, 16);
+            this.label_Email.Size = new System.Drawing.Size(0, 17);
             this.label_Email.TabIndex = 133;
             // 
             // label_Address
@@ -466,7 +468,7 @@ namespace clinical_system_N
             this.label_Address.Location = new System.Drawing.Point(512, 292);
             this.label_Address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Address.Name = "label_Address";
-            this.label_Address.Size = new System.Drawing.Size(0, 16);
+            this.label_Address.Size = new System.Drawing.Size(0, 17);
             this.label_Address.TabIndex = 134;
             // 
             // label_Martrial_Status
@@ -475,7 +477,7 @@ namespace clinical_system_N
             this.label_Martrial_Status.Location = new System.Drawing.Point(512, 337);
             this.label_Martrial_Status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Martrial_Status.Name = "label_Martrial_Status";
-            this.label_Martrial_Status.Size = new System.Drawing.Size(0, 16);
+            this.label_Martrial_Status.Size = new System.Drawing.Size(0, 17);
             this.label_Martrial_Status.TabIndex = 135;
             // 
             // label_Date_Of_Birth
@@ -484,7 +486,7 @@ namespace clinical_system_N
             this.label_Date_Of_Birth.Location = new System.Drawing.Point(512, 388);
             this.label_Date_Of_Birth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Date_Of_Birth.Name = "label_Date_Of_Birth";
-            this.label_Date_Of_Birth.Size = new System.Drawing.Size(0, 16);
+            this.label_Date_Of_Birth.Size = new System.Drawing.Size(0, 17);
             this.label_Date_Of_Birth.TabIndex = 136;
             // 
             // label_Last_Name
@@ -493,7 +495,7 @@ namespace clinical_system_N
             this.label_Last_Name.Location = new System.Drawing.Point(1117, 148);
             this.label_Last_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Last_Name.Name = "label_Last_Name";
-            this.label_Last_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_Last_Name.Size = new System.Drawing.Size(0, 17);
             this.label_Last_Name.TabIndex = 137;
             // 
             // label_National_ID
@@ -502,7 +504,7 @@ namespace clinical_system_N
             this.label_National_ID.Location = new System.Drawing.Point(1117, 199);
             this.label_National_ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_National_ID.Name = "label_National_ID";
-            this.label_National_ID.Size = new System.Drawing.Size(0, 16);
+            this.label_National_ID.Size = new System.Drawing.Size(0, 17);
             this.label_National_ID.TabIndex = 138;
             // 
             // label_City
@@ -511,7 +513,7 @@ namespace clinical_system_N
             this.label_City.Location = new System.Drawing.Point(1117, 247);
             this.label_City.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_City.Name = "label_City";
-            this.label_City.Size = new System.Drawing.Size(0, 16);
+            this.label_City.Size = new System.Drawing.Size(0, 17);
             this.label_City.TabIndex = 139;
             // 
             // label_Gender
@@ -520,7 +522,7 @@ namespace clinical_system_N
             this.label_Gender.Location = new System.Drawing.Point(1117, 353);
             this.label_Gender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Gender.Name = "label_Gender";
-            this.label_Gender.Size = new System.Drawing.Size(0, 16);
+            this.label_Gender.Size = new System.Drawing.Size(0, 17);
             this.label_Gender.TabIndex = 140;
             // 
             // label_Patient_Employer
@@ -529,7 +531,7 @@ namespace clinical_system_N
             this.label_Patient_Employer.Location = new System.Drawing.Point(1172, 308);
             this.label_Patient_Employer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Patient_Employer.Name = "label_Patient_Employer";
-            this.label_Patient_Employer.Size = new System.Drawing.Size(0, 16);
+            this.label_Patient_Employer.Size = new System.Drawing.Size(0, 17);
             this.label_Patient_Employer.TabIndex = 142;
             // 
             // Add_Patient
