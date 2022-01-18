@@ -9,7 +9,10 @@ namespace clinical_system_N.models
     internal static class AppointmentManager
     {
 
-
-
+       // public static Appointment CreateAppointment()
+       // {
+        //    App
+       // }
+        
     }
 }
