@@ -13,6 +13,7 @@ namespace clinical_system_N.models
     internal class JsonManager
     {
         public string json;
+        public string appPath;
 
 
         private string LoadJson(JsonType enumType, string patientID)
@@ -109,7 +110,26 @@ namespace clinical_system_N.models
         }
         public List<Appointment> LoadOpenAppointments()
         {
-            return new List<Appointment>();
+            string path = GlobalManager.PathToAppData;
+            string apps = Path.Combine(path, "Appointments");
+            string appjson;
+            appPath = apps;
+            List<Appointment> result = new List<Appointment>();
+
+            using (StreamReader r = new StreamReader(Path.Combine(apps, "Appointments.json")))
+            {
+                appjson = r.ReadToEnd();
+            }
+            var objectList = JsonConvert.DeserializeObject<List<Appointment>>(appjson);
+            foreach (var j in objectList)
+            {
+                if (j.open == true)
+                {
+                    result.Add(j);
+                }
+            }
+
+            return result;
         }
 
     }
