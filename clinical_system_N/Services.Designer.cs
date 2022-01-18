@@ -110,7 +110,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(19, 36);
+            this.button4.Location = new System.Drawing.Point(19, 37);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 30);
             this.button4.TabIndex = 21;
@@ -121,7 +121,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button6.Location = new System.Drawing.Point(19, 166);
+            this.button6.Location = new System.Drawing.Point(19, 161);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(103, 30);
             this.button6.TabIndex = 23;
@@ -155,7 +155,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button7.Location = new System.Drawing.Point(19, 226);
+            this.button7.Location = new System.Drawing.Point(19, 223);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(103, 30);
             this.button7.TabIndex = 24;
@@ -755,6 +755,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.panel3);

@@ -400,6 +400,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Records.resx">
       <DependentUpon>Records.cs</DependentUpon>
@@ -431,6 +432,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\21.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Assets\mic-icon-11553430296usfhy8bwwf.png" />
     <Content Include="Assets\Sentinel.image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

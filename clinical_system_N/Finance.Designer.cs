@@ -33,8 +33,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -50,12 +48,11 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -115,27 +112,6 @@
             this.button6.Text = "Admin ";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button8.Location = new System.Drawing.Point(15, 15);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(277, 38);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Expenses";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button9.Location = new System.Drawing.Point(308, 15);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(277, 38);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Profits";
-            this.button9.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -343,34 +319,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button9);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(158, -1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1302, 84);
             this.panel2.TabIndex = 32;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button7.Location = new System.Drawing.Point(874, 15);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(277, 38);
-            this.button7.TabIndex = 13;
-            this.button7.Text = "Budget";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(591, 15);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(277, 38);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Net profits";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // pictureBox3
             // 
@@ -408,6 +361,16 @@
             this.textBox11.Size = new System.Drawing.Size(1246, 26);
             this.textBox11.TabIndex = 36;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(587, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 46);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Finance";
+            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -443,6 +406,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -455,8 +419,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox textBox1;
@@ -476,8 +438,7 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label1;
     }
 }
 
