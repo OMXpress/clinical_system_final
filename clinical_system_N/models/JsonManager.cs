@@ -13,7 +13,6 @@ namespace clinical_system_N.models
     internal class JsonManager
     {
         public string json;
-        public List<object> itemList;
 
 
         private string LoadJson(JsonType enumType, string patientID)

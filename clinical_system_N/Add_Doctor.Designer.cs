@@ -30,6 +30,7 @@ namespace clinical_system_N
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Doctor));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -100,10 +101,11 @@ namespace clinical_system_N
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 94);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 73;
             this.pictureBox1.TabStop = false;
@@ -338,10 +340,10 @@ namespace clinical_system_N
             // Admin
             // 
             this.Admin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.Admin.Location = new System.Drawing.Point(19, 181);
+            this.Admin.Location = new System.Drawing.Point(19, 223);
             this.Admin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Admin.Name = "Admin";
-            this.Admin.Size = new System.Drawing.Size(103, 25);
+            this.Admin.Size = new System.Drawing.Size(103, 30);
             this.Admin.TabIndex = 108;
             this.Admin.Text = "Admin";
             this.Admin.UseVisualStyleBackColor = false;
@@ -351,10 +353,10 @@ namespace clinical_system_N
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button6.Location = new System.Drawing.Point(19, 133);
+            this.button6.Location = new System.Drawing.Point(19, 161);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(103, 25);
+            this.button6.Size = new System.Drawing.Size(103, 30);
             this.button6.TabIndex = 109;
             this.button6.Text = "Finance";
             this.button6.UseVisualStyleBackColor = false;
@@ -364,10 +366,10 @@ namespace clinical_system_N
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button7.Location = new System.Drawing.Point(19, 79);
+            this.button7.Location = new System.Drawing.Point(19, 99);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(103, 25);
+            this.button7.Size = new System.Drawing.Size(103, 30);
             this.button7.TabIndex = 110;
             this.button7.Text = "Records";
             this.button7.UseVisualStyleBackColor = false;
@@ -377,10 +379,10 @@ namespace clinical_system_N
             // Calender
             // 
             this.Calender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.Calender.Location = new System.Drawing.Point(19, 30);
+            this.Calender.Location = new System.Drawing.Point(19, 37);
             this.Calender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Calender.Name = "Calender";
-            this.Calender.Size = new System.Drawing.Size(103, 25);
+            this.Calender.Size = new System.Drawing.Size(103, 30);
             this.Calender.TabIndex = 0;
             this.Calender.Text = "Calender";
             this.Calender.UseVisualStyleBackColor = false;
@@ -561,7 +563,7 @@ namespace clinical_system_N
             this.Location = new System.Drawing.Point(16, 358);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Add_Doctor";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New Doctor";
             this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.Add_doctor_Load);
