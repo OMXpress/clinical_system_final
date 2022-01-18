@@ -10,22 +10,20 @@ namespace clinical_system_N.models
     {
         public Patient _patient;
         public Doctor _doctor;
-        public DateTime _date;
-        public int _time;
-        public int min;
+        public DateTime DateCreated;
+        public OrthoAppointment _orthoAppointment;
         public string Id;
         public ClinicType ClinicType;
         public bool open = true;
 
-        public Appointment(Patient patient, Doctor doctor, ClinicType clinic)
+        public Appointment(Patient patient, Doctor doctor, ClinicType clinic, OrthoAppointment appointment)
         {
             _patient = patient;
             _doctor = doctor;
-            _date = DateTime.Now;
-            _time = _date.Hour;
-            min = _date.Minute;
+            DateCreated = DateTime.Now;
             Id = Guid.NewGuid().ToString();
             ClinicType = clinic;
+            _orthoAppointment = appointment;
         }
         public void CloseAppointment()
         {
