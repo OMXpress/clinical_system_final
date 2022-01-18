@@ -61,5 +61,52 @@ namespace clinical_system_N
         {
 
         }
+
+        private void btn_investigation(object sender, EventArgs e)
+        {
+            this.Hide();
+            Investigation C216 = new Investigation();
+            C216.Show();
+        }
+
+        private void btn_assesment(object sender, EventArgs e)
+        {
+            this.Hide();
+            Assesment C217 = new Assesment();
+            C217.Show();
+        }
+
+        private void btn_diagnosis(object sender, EventArgs e)
+        {
+            this.Hide();
+            diagnosisdoc C218 = new diagnosisdoc();
+            C218.Show();
+        }
+
+        private void btn_services(object sender, EventArgs e)
+        {
+            this.Hide();
+            Services C219 = new Services();
+            C219.Show();
+        }
+
+        private void btn_x_ray(object sender, EventArgs e)
+        {
+            this.Hide();
+            X_Ray C220 = new X_Ray();
+            C220.Show();
+        }
+
+        private void btn_prescription(object sender, EventArgs e)
+        {
+            this.Hide();
+            prescription C221 = new prescription();
+            C221.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

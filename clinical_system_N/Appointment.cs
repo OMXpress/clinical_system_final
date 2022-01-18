@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace clinical_system_N
 {
-    public partial class CalendarBlock : UserControl
+    public partial class Appointment : UserControl
     {
-        public CalendarBlock()
+        public Appointment()
         {
             InitializeComponent();
         }
 
-        private void CalendarBlock_Load(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void open_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void start_t_label_Click(object sender, EventArgs e)
         {
 
         }

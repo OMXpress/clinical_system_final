@@ -162,7 +162,18 @@ namespace clinical_system_N.models
                 PhysioClinic = clinic;
             }
         }
+        public static void AddAppointment(Appointment appointment)
+        {
+            appointments.Add(appointment);
+            JsonManager jsonManager = new JsonManager();
+            jsonManager.SaveAppointments(appointments);
+        }
+        public static void InitializeAll()
+        {
+            DirectoryManager.InitializeApp();
+            JsonManager jsonManager = new JsonManager();
+            appointments = jsonManager.LoadOpenAppointments();
 
-
+        }
     }
 }

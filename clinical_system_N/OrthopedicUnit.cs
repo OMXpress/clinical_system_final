@@ -163,5 +163,10 @@ namespace clinical_system_N
             AdminSettings C15 = new AdminSettings();
             C15.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
