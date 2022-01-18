@@ -13,7 +13,7 @@ namespace clinical_system_N.models
     internal class JsonManager
     {
         public string json;
-        public string appPath;
+        public string appPath = Path.Combine(GlobalManager.PathToAppData, "Appointments");
 
 
         private string LoadJson(JsonType enumType, string patientID)
@@ -86,12 +86,12 @@ namespace clinical_system_N.models
         public void AddMetaData(string patientID, PatientInformation toJson)
         {
             string DataPath = Path.Combine(Path.Combine(GlobalManager.PathToPatients, patientID), "Data");
-            string output = Newtonsoft.Json.JsonConvert.SerializeObject(toJson);
+            string output = Newtonsoft.Json.JsonConvert.SerializeObject(toJson, Formatting.Indented);
             string PathFile = Path.Combine(DataPath, "MetaData.json");
 
             using (StreamWriter sw = new StreamWriter(PathFile))
             {
-                sw.WriteLine(output);
+                sw.Write(output);
             }
         }
         public List<PatientInformation> GetAllInfo()
@@ -111,7 +111,7 @@ namespace clinical_system_N.models
         public List<Appointment> LoadOpenAppointments()
         {
             string path = GlobalManager.PathToAppData;
-            string apps = Path.Combine(path, "Appointments");
+            string apps = Path.Combine(GlobalManager.PathToAppData, "Appointments");
             string appjson;
             appPath = apps;
             List<Appointment> result = new List<Appointment>();
@@ -130,6 +130,16 @@ namespace clinical_system_N.models
             }
 
             return result;
+        }
+        public void SaveAppointments(List<Appointment> appointments)
+        {
+            string jsn = JsonConvert.SerializeObject(appointments, Formatting.Indented);
+
+            using (StreamWriter sw = new StreamWriter(Path.Combine(appPath, "Appointments.json")))
+            {
+                sw.Write(jsn);
+            }
+
         }
 
     }
