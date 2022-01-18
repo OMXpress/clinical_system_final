@@ -49,3 +49,8 @@ enum OrthoAppointment
     a4,
     a430
 }
+enum AppointmentType
+{
+    Checkup,
+    Consultation
+}

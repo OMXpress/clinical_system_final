@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace clinical_system_N.models
 {
-    internal class AppointmentManager
+    internal static class AppointmentManager
     {
+
+        public static Appointment CreateAppointment()
+        {
+
+        }
+
     }
 }
