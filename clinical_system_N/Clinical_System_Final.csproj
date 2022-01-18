@@ -203,7 +203,7 @@
     <Compile Include="models\DirectoryManager.cs" />
     <Compile Include="models\Doctor.cs" />
     <Compile Include="models\enums.cs" />
-    <Compile Include="models\GlobalVariables.cs" />
+    <Compile Include="models\GlobalManager.cs" />
     <Compile Include="models\Medication.cs" />
     <Compile Include="models\Patient.cs" />
     <Compile Include="models\PatientFactory.cs" />
