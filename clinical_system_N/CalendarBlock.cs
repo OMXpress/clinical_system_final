@@ -15,6 +15,7 @@ namespace clinical_system_N
         public CalendarBlock()
         {
             InitializeComponent();
+            Ready();
         }
 
         private void CalendarBlock_Load(object sender, EventArgs e)
@@ -26,5 +27,11 @@ namespace clinical_system_N
         {
 
         }
+        private void Ready()
+        {
+            lblPatient1.Text = String.Empty;
+            lblPatient2.Text = String.Empty;   
+        }
+
     }
 }

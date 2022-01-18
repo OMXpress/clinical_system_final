@@ -79,6 +79,7 @@ namespace clinical_system_N
             for (int i = 0; i < 42; i++)
             {
                 CalendarBlock calendarBlock = new CalendarBlock();
+                //calendarBlock;
                 fl_AppContainer.Controls.Add(calendarBlock);
                 
             }
