@@ -76,10 +76,21 @@ namespace clinical_system_N
 
         private void OrthopedicUnit_Calender_Load(object sender, EventArgs e)
         {
+            for (int i = 0; i < 42; i++)
+            {
+                CalendarBlock calendarBlock = new CalendarBlock();
+                fl_AppContainer.Controls.Add(calendarBlock);
+                
+            }
 
         }
 
         private void fl_AppContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fl_AppContainer_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

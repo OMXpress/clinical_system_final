@@ -54,21 +54,6 @@ namespace clinical_system_N.models
         {
             string jo = LoadJson(jsonType, patientID);
             var values = JsonConvert.DeserializeObject<Dictionary<string, JToken>>(jo);
- //           var values2 = new Dictionary<string, object>();
-//            foreach (KeyValuePair<string, object> d in values)
-//            {
-//                 //if (d.Value.GetType().FullName.Contains("Newtonsoft.Json.Linq.JObject"))
-//                if (d.Value is JObject)
-//                {
-//#pragma warning disable CS8604 // Possible null reference argument.
-//                    values2.Add(d.Key, deserializeToDictionary(d.Value.ToString()));
-//#pragma warning restore CS8604 // Possible null reference argument.
-//                }
-//                else
-//                {
-//                    values2.Add(d.Key, d.Value);
-//                }
-//            }
             return values;
         }
 
