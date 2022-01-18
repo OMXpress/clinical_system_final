@@ -468,6 +468,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="models\Bot.py" />
+    <Content Include="models\JsonBin.py" />
     <None Include="Resources\1.png" />
     <None Include="Resources\2.png" />
     <None Include="Resources\1.jpg" />
