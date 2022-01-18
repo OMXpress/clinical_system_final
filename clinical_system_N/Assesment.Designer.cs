@@ -708,6 +708,7 @@ namespace clinical_system_N
             this.Controls.Add(this.panel43);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Assesment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assesment";
             this.panel43.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
