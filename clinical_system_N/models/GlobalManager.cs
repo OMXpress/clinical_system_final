@@ -14,6 +14,7 @@ namespace clinical_system_N.models
         public static Clinic PhysioClinic;
         private static bool OrthoInitialized = false;
         private static bool PhysioInitialized = false;
+        public static string PathToAppData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ClinicalSystem");
         private static List<Appointment> appointments = new List<Appointment>();
 
         public static string ClinicToText(ClinicType clinicType)

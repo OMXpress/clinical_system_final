@@ -7,24 +7,15 @@ using System.Threading.Tasks;
 
 namespace clinical_system_N.models
 {
-    internal class DirectoryManager
+    internal static class DirectoryManager
     {
 
-        private readonly string patientID;
-        private readonly string dir;
 
-        
-        public DirectoryManager(string id)
-        {
-            dir = GlobalManager.PathToPatients;
-            if (!Directory.Exists(dir))
-                Directory.CreateDirectory(dir);
-            patientID = id;
-        }
+        private readonly static string dir = GlobalManager.PathToPatients;
 
-        public bool ReadyPatient()
+        public static bool ReadyPatient(string id)
         {
-            
+            string patientID = id;
             string path = Path.Combine(dir, patientID);
 
             if (!Directory.Exists(path))
@@ -57,6 +48,36 @@ namespace clinical_system_N.models
             else
             {
                 return false;
+            }
+        }
+        public static void InitializeApp()
+        {
+            string path = GlobalManager.PathToAppData;
+            List<string> folders = new List<string>();
+            folders.Add("Doctors");
+            folders.Add("Clinics");
+            folders.Add("Appointments");
+            List<string> files = new List<string>();
+            files.Add("Doctors.json");
+            files.Add("Clinics.json");
+            files.Add("Appointments.json");
+            if (!Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+
+                for (int i = 0; i < folders.Count; i++)
+                {
+                    string f = Path.Combine(path, folders[i]);
+                    Directory.CreateDirectory(f);
+                    string file = Path.Combine(f, files[i]);
+                    using (FileStream fs = File.Create(file))
+                    {
+                    }
+                }
+
+                
             }
         }
     }

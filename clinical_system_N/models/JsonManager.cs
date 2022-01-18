@@ -107,7 +107,10 @@ namespace clinical_system_N.models
             }
             return result;
         }
-        
+        public List<Appointment> LoadOpenAppointments()
+        {
+            return new List<Appointment>();
+        }
 
     }
 }
