@@ -176,6 +176,12 @@
     <Compile Include="History.Designer.cs">
       <DependentUpon>History.cs</DependentUpon>
     </Compile>
+    <Compile Include="histroypop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="histroypop.Designer.cs">
+      <DependentUpon>histroypop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Investigation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -346,6 +352,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="History.resx">
       <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="histroypop.resx">
+      <DependentUpon>histroypop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Investigation.resx">
       <DependentUpon>Investigation.cs</DependentUpon>
