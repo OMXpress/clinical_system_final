@@ -94,10 +94,10 @@
             this.panel43.Controls.Add(this.button4);
             this.panel43.Controls.Add(this.button2);
             this.panel43.Controls.Add(this.button1);
-            this.panel43.Location = new System.Drawing.Point(0, 120);
+            this.panel43.Location = new System.Drawing.Point(0, 122);
             this.panel43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(151, 691);
+            this.panel43.Size = new System.Drawing.Size(152, 691);
             this.panel43.TabIndex = 13;
             // 
             // button3
@@ -158,7 +158,7 @@
             this.panel3.Controls.Add(this.button8);
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.button6);
-            this.panel3.Location = new System.Drawing.Point(156, 118);
+            this.panel3.Location = new System.Drawing.Point(156, 122);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1302, 64);
             this.panel3.TabIndex = 19;
