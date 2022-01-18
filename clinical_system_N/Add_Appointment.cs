@@ -194,12 +194,17 @@ namespace clinical_system_N
         private bool Date_time = false;
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            Date_time = true;
+            
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void dateTimePicker1_ValueChanged_1(object sender, EventArgs e)
+        {
+            Date_time = true;
         }
     }
 }
