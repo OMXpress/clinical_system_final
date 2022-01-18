@@ -192,6 +192,7 @@
     <Compile Include="models\Appointment.cs" />
     <Compile Include="models\AppointmentManager.cs" />
     <Compile Include="models\Device.cs" />
+    <Compile Include="models\JsonBin.cs" />
     <Compile Include="models\JsonManager.cs" />
     <Compile Include="models\PatientMetaData.cs" />
     <Compile Include="models\PatientProgram.cs" />
@@ -402,8 +403,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
