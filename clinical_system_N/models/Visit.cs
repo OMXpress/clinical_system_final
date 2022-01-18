@@ -24,7 +24,7 @@ namespace clinical_system_N.models
             PatientID = patient.info.PatientId;
             DoctorName = doctor.Name;
             DoctorID = doctor.Id;
-            VisitedClinic = GlobalVariables.ClinicToText(clinic);
+            VisitedClinic = GlobalManager.ClinicToText(clinic);
 
         }
     }

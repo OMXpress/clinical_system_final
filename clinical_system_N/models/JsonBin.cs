@@ -14,7 +14,7 @@ namespace clinical_system_N.models
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C python JsonBin.py " + GlobalVariables.PathToPatients;
+            startInfo.Arguments = "/C python JsonBin.py " + GlobalManager.PathToPatients;
             process.StartInfo = startInfo;
             process.Start();
         }

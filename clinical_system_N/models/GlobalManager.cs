@@ -7,9 +7,13 @@ using System.Threading.Tasks;
 
 namespace clinical_system_N.models
 {
-    internal static class GlobalVariables
+    internal static class GlobalManager
     {
         public static string PathToPatients = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "PatientData");
+        public static Clinic OrthoClinic;
+        public static Clinic PhysioClinic;
+        private static bool OrthoInitialized = false;
+        private static bool PhysioInitialized = false;
 
         public static string ClinicToText(ClinicType clinicType)
         {
@@ -138,6 +142,23 @@ namespace clinical_system_N.models
                 XX.Add("Mins", 30);
             }
             return XX;
+        }
+        public static void InitializeOrtho(Clinic clinic)
+        {
+            if (!OrthoInitialized)
+            {
+                OrthoClinic = clinic;
+                OrthoInitialized = true;
+            }
+            
+        }
+        public static void InitializePhysio(Clinic clinic)
+        {
+            if (!PhysioInitialized)
+            {
+                PhysioInitialized = true;
+                PhysioClinic = clinic;
+            }
         }
     }
 }

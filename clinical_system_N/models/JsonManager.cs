@@ -17,7 +17,7 @@ namespace clinical_system_N.models
 
         private string LoadJson(JsonType enumType, string patientID)
         {
-            string DataPath = Path.Combine(Path.Combine(GlobalVariables.PathToPatients, patientID), "Data");
+            string DataPath = Path.Combine(Path.Combine(GlobalManager.PathToPatients, patientID), "Data");
             if (enumType == JsonType.History)
             {
                 using (StreamReader r = new StreamReader(Path.Combine(DataPath, "History.json"))) 
@@ -59,7 +59,7 @@ namespace clinical_system_N.models
 
         public void AddJson<T>(JsonType enumType, string patientID, List<T> toJson)
         {
-            string DataPath = Path.Combine(Path.Combine(GlobalVariables.PathToPatients, patientID), "Data");
+            string DataPath = Path.Combine(Path.Combine(GlobalManager.PathToPatients, patientID), "Data");
             if (enumType == JsonType.History)
             {     
                 string output = Newtonsoft.Json.JsonConvert.SerializeObject(toJson);
@@ -84,7 +84,7 @@ namespace clinical_system_N.models
         }
         public void AddMetaData(string patientID, PatientInformation toJson)
         {
-            string DataPath = Path.Combine(Path.Combine(GlobalVariables.PathToPatients, patientID), "Data");
+            string DataPath = Path.Combine(Path.Combine(GlobalManager.PathToPatients, patientID), "Data");
             string output = Newtonsoft.Json.JsonConvert.SerializeObject(toJson);
             string PathFile = Path.Combine(DataPath, "MetaData.json");
 
@@ -96,7 +96,7 @@ namespace clinical_system_N.models
         public List<PatientInformation> GetAllInfo()
         {
 
-            var paths = Directory.GetDirectories(GlobalVariables.PathToPatients);
+            var paths = Directory.GetDirectories(GlobalManager.PathToPatients);
             var result = new List<PatientInformation>();
             foreach (var path in paths)
             {;

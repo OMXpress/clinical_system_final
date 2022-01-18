@@ -16,7 +16,7 @@ namespace clinical_system_N.models
         
         public DirectoryManager(string id)
         {
-            dir = GlobalVariables.PathToPatients;
+            dir = GlobalManager.PathToPatients;
             if (!Directory.Exists(dir))
                 Directory.CreateDirectory(dir);
             patientID = id;

@@ -28,7 +28,7 @@ namespace clinical_system_N
             lblDOB.ReadOnly = true;
             lblEmail.Text = Patient.info.Email;
             lblEmail.ReadOnly = true;
-            lblGender.Text = GlobalVariables.GenderToText(Patient.info.Gender);
+            lblGender.Text = GlobalManager.GenderToText(Patient.info.Gender);
             lblGender.ReadOnly = true;
             lblNationalID.Text = Patient.info.NationalID;
             lblNationalID.ReadOnly = true;
