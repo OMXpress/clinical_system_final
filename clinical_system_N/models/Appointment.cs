@@ -15,6 +15,7 @@ namespace clinical_system_N.models
         public int min;
         public string Id;
         public ClinicType ClinicType;
+        private bool open = true;
 
         public Appointment(Patient patient, Doctor doctor, ClinicType clinic)
         {
@@ -26,5 +27,10 @@ namespace clinical_system_N.models
             Id = Guid.NewGuid().ToString();
             ClinicType = clinic;
         }
+        public void CloseAppointment()
+        {
+            open = false;
+        }
+
     }
 }
