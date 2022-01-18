@@ -77,28 +77,16 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Insurance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Details = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.button5 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel43.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -645,79 +633,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.btn_calender);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column2,
-            this.Gender,
-            this.Phone,
-            this.Address,
-            this.DOB,
-            this.Email,
-            this.Insurance});
-            this.dataGridView1.Location = new System.Drawing.Point(182, 248);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1109, 181);
-            this.dataGridView1.TabIndex = 33;
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 50F;
-            this.Column2.HeaderText = "Patient_ID";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Gender
-            // 
-            this.Gender.FillWeight = 6F;
-            this.Gender.HeaderText = "Patient_Name";
-            this.Gender.MinimumWidth = 6;
-            this.Gender.Name = "Gender";
-            this.Gender.Width = 150;
-            // 
-            // Phone
-            // 
-            this.Phone.FillWeight = 12F;
-            this.Phone.HeaderText = "Drug_ID";
-            this.Phone.MinimumWidth = 6;
-            this.Phone.Name = "Phone";
-            this.Phone.Width = 150;
-            // 
-            // Address
-            // 
-            this.Address.HeaderText = "Drug_Name";
-            this.Address.MinimumWidth = 6;
-            this.Address.Name = "Address";
-            this.Address.Width = 150;
-            // 
-            // DOB
-            // 
-            this.DOB.FillWeight = 10F;
-            this.DOB.HeaderText = "Dose";
-            this.DOB.MinimumWidth = 6;
-            this.DOB.Name = "DOB";
-            this.DOB.Width = 150;
-            // 
-            // Email
-            // 
-            this.Email.FillWeight = 20F;
-            this.Email.HeaderText = "Period";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            this.Email.Width = 150;
-            // 
-            // Insurance
-            // 
-            this.Insurance.FillWeight = 10F;
-            this.Insurance.HeaderText = "Comment";
-            this.Insurance.MinimumWidth = 6;
-            this.Insurance.Name = "Insurance";
-            this.Insurance.Width = 150;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -762,54 +677,32 @@
             this.label2.TabIndex = 43;
             this.label2.Text = "Prescription History";
             // 
-            // dataGridView2
+            // button5
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.Details});
-            this.dataGridView2.Location = new System.Drawing.Point(182, 552);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(631, 181);
-            this.dataGridView2.TabIndex = 44;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(1327, 319);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(103, 30);
+            this.button5.TabIndex = 45;
+            this.button5.Text = "Add";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.btn_add);
             // 
-            // dataGridViewTextBoxColumn1
+            // flowLayoutPanel1
             // 
-            this.dataGridViewTextBoxColumn1.FillWeight = 50F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "No.";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 150;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(182, 255);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1127, 206);
+            this.flowLayoutPanel1.TabIndex = 46;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.new_prescription_panel);
             // 
-            // dataGridViewTextBoxColumn2
+            // flowLayoutPanel2
             // 
-            this.dataGridViewTextBoxColumn2.FillWeight = 6F;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Doctor";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.FillWeight = 12F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Period";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 150;
-            // 
-            // Details
-            // 
-            this.Details.HeaderText = "Details";
-            this.Details.MinimumWidth = 6;
-            this.Details.Name = "Details";
-            this.Details.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.Details.Text = "Details";
-            this.Details.Width = 125;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(182, 550);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(700, 232);
+            this.flowLayoutPanel2.TabIndex = 47;
+            this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.prescription_history_panel);
             // 
             // Doctor_Prescription
             // 
@@ -817,12 +710,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel43);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel10);
@@ -834,8 +728,6 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel43.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -892,23 +784,13 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DOB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Insurance;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewButtonColumn Details;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }
 

@@ -153,5 +153,20 @@ namespace clinical_system_N
         {
 
         }
+
+        private void new_prescription_panel(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_add(object sender, EventArgs e)
+        {
+
+        }
+
+        private void prescription_history_panel(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
