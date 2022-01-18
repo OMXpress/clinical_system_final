@@ -71,11 +71,10 @@
             this.email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.email.Location = new System.Drawing.Point(317, 326);
             this.email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.email.Multiline = true;
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(251, 34);
             this.email.TabIndex = 2;
-            this.email.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.email.TextChanged += new System.EventHandler(this.email_box);
             // 
             // password
             // 
@@ -83,12 +82,11 @@
             this.password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.password.Location = new System.Drawing.Point(317, 395);
             this.password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.password.Multiline = true;
             this.password.Name = "password";
             this.password.PasswordChar = '*';
             this.password.Size = new System.Drawing.Size(251, 34);
             this.password.TabIndex = 3;
-            this.password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.password.TextChanged += new System.EventHandler(this.pass_box);
             // 
             // button1
             // 

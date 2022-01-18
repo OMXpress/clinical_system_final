@@ -52,7 +52,7 @@ namespace clinical_system_N
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void email_box(object sender, EventArgs e)
         {
 
         }
@@ -79,7 +79,7 @@ namespace clinical_system_N
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void pass_box(object sender, EventArgs e)
         {
 
         }
