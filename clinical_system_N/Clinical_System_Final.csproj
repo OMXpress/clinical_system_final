@@ -140,6 +140,12 @@
     <Compile Include="Assesment.Designer.cs">
       <DependentUpon>Assesment.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalendarBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalendarBlock.Designer.cs">
+      <DependentUpon>CalendarBlock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Diagnosisdoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,7 @@
     </Compile>
     <Compile Include="models\AppendJoin.cs" />
     <Compile Include="models\Appointment.cs" />
+    <Compile Include="models\AppointmentManager.cs" />
     <Compile Include="models\Device.cs" />
     <Compile Include="models\JsonManager.cs" />
     <Compile Include="models\PatientMetaData.cs" />
@@ -308,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Assesment.resx">
       <DependentUpon>Assesment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarBlock.resx">
+      <DependentUpon>CalendarBlock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Diagnosisdoc.resx">
       <DependentUpon>Diagnosisdoc.cs</DependentUpon>
