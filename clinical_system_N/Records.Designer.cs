@@ -54,7 +54,7 @@
             this.panel46.Location = new System.Drawing.Point(156, 0);
             this.panel46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(1301, 84);
+            this.panel46.Size = new System.Drawing.Size(1302, 122);
             this.panel46.TabIndex = 11;
             this.panel46.Paint += new System.Windows.Forms.PaintEventHandler(this.panel46_Paint);
             // 
@@ -62,10 +62,10 @@
             // 
             this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(549, 26);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(438, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 32);
+            this.label1.Size = new System.Drawing.Size(425, 69);
             this.label1.TabIndex = 2;
             this.label1.Text = "Patient Record";
             // 
@@ -176,6 +176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
             this.Controls.Add(this.RecordDisplayer);
             this.Controls.Add(this.pictureBox1);

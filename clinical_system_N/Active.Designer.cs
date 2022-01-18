@@ -122,7 +122,7 @@
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.panel2);
-            this.panel3.Location = new System.Drawing.Point(156, 84);
+            this.panel3.Location = new System.Drawing.Point(156, 122);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1302, 64);
             this.panel3.TabIndex = 44;
@@ -225,17 +225,17 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(156, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1302, 84);
+            this.panel1.Size = new System.Drawing.Size(1302, 122);
             this.panel1.TabIndex = 48;
             // 
             // label1
             // 
             this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(586, 24);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(542, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 46);
+            this.label1.Size = new System.Drawing.Size(194, 69);
             this.label1.TabIndex = 2;
             this.label1.Text = "Active";
             // 

@@ -300,7 +300,7 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(157, -1);
+            this.panel1.Location = new System.Drawing.Point(156, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1302, 122);
             this.panel1.TabIndex = 36;
@@ -631,7 +631,7 @@
             this.panel3.Controls.Add(this.button8);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button3);
-            this.panel3.Location = new System.Drawing.Point(156, 121);
+            this.panel3.Location = new System.Drawing.Point(156, 122);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1302, 64);
             this.panel3.TabIndex = 37;
@@ -755,6 +755,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.panel3);
