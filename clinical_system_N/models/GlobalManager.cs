@@ -15,7 +15,7 @@ namespace clinical_system_N.models
         private static bool OrthoInitialized = false;
         private static bool PhysioInitialized = false;
         public static string PathToAppData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ClinicalSystem");
-        private static List<Appointment> appointments = new List<Appointment>();
+        public static List<Appointment> OrthoAppointments = new List<Appointment>();
 
         public static string ClinicToText(ClinicType clinicType)
         {
@@ -146,6 +146,7 @@ namespace clinical_system_N.models
             return XX;
         }
 
+
         public static void InitializeOrtho(Clinic clinic)
         {
             if (!OrthoInitialized)
@@ -165,16 +166,17 @@ namespace clinical_system_N.models
         }
         public static void AddAppointment(Appointment appointment)
         {
-            appointments.Add(appointment);
+            OrthoAppointments.Add(appointment);
             JsonManager jsonManager = new JsonManager();
-            jsonManager.SaveAppointments(appointments);
+            jsonManager.SaveAppointments(OrthoAppointments);
         }
         public static void InitializeAll()
         {
             DirectoryManager.InitializeApp();
             JsonManager jsonManager = new JsonManager();
-            appointments = jsonManager.LoadOpenAppointments();
+            OrthoAppointments = jsonManager.LoadOpenAppointments();
 
         }
+
     }
 }

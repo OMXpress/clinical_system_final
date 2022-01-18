@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clinical_system_N.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,13 +77,18 @@ namespace clinical_system_N
 
         private void OrthopedicUnit_Calender_Load(object sender, EventArgs e)
         {
+            var apps = GlobalManager.OrthoAppointments;
+            int timeCounter = 0;
+            int dayCounter = 0;
             for (int i = 0; i < 42; i++)
             {
                 CalendarBlock calendarBlock = new CalendarBlock();
-                //calendarBlock;
+                //calendarBlock
                 fl_AppContainer.Controls.Add(calendarBlock);
                 
             }
+
+
 
 
         }
