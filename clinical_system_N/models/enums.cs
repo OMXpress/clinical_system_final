@@ -61,5 +61,6 @@ enum DaysOfWeeks
     Tuesday,
     Wednesday,
     Thursday,
+    Friday,
     Saturday
 }

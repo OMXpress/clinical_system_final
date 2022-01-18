@@ -21,11 +21,11 @@ namespace clinical_system_N.models
             appointmentList = new List<Appointment>();
         }
 
-        public void CreateAppointment(Patient patient)
-        {
-            Appointment appointment = new Appointment(patient, attending, type, OrthoAppointment.a1);
-            appointmentList.Add(appointment);
-        }
+        //public void CreateAppointment(Patient patient)
+        //{
+        //    Appointment appointment = new Appointment(patient, attending, type, OrthoAppointment.a1);
+        //    appointmentList.Add(appointment);
+        //}
 
         public string Serialize()
         {

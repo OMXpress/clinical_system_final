@@ -177,6 +177,21 @@ namespace clinical_system_N.models
             OrthoAppointments = jsonManager.LoadOpenAppointments();
 
         }
+        public static List<Appointment> GetOrthoAppAt(DayOfWeek day, OrthoAppointment time) 
+        {
+            List<Appointment> all = new List<Appointment>();
+            foreach (Appointment appointment in OrthoAppointments)
+            {
+                int dayofweek = (int)appointment.dateofAppointment.DayOfWeek;
+                if (appointment._orthoAppointment == time && dayofweek == ((int)day))
+                {
+                    all.Add(appointment);
+                }
 
+            }
+            return all;
+        
+        
+        }
     }
 }
