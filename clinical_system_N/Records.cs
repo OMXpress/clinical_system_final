@@ -92,5 +92,10 @@ namespace clinical_system_N
             Add_Patient C218 = new Add_Patient();
             C218.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

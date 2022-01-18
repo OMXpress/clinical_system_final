@@ -34,7 +34,6 @@
             this.btn_AddPatient = new System.Windows.Forms.Button();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -65,6 +64,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(438, 26);
             this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(203, 32);
             this.label1.Size = new System.Drawing.Size(425, 69);
             this.label1.TabIndex = 2;
             this.label1.Text = "Patient Record";
@@ -89,7 +89,6 @@
             this.toolStripContainer1.ContentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
             this.toolStripContainer1.ContentPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.toolStripContainer1.ContentPanel.Controls.Add(this.button9);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.button8);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.button4);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.button7);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.button6);
@@ -114,31 +113,21 @@
             this.button9.Text = "Records";
             this.button9.UseVisualStyleBackColor = false;
             // 
-            // button8
-            // 
-            this.button8.AllowDrop = true;
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button8.Location = new System.Drawing.Point(19, 358);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(103, 30);
-            this.button8.TabIndex = 25;
-            this.button8.Text = "Prefrences";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(19, 36);
+            this.button4.Location = new System.Drawing.Point(19, 37);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 30);
             this.button4.TabIndex = 21;
             this.button4.Text = "Calendar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button7.Location = new System.Drawing.Point(19, 226);
+            this.button7.Location = new System.Drawing.Point(19, 223);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(103, 30);
             this.button7.TabIndex = 24;
@@ -148,7 +137,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button6.Location = new System.Drawing.Point(19, 166);
+            this.button6.Location = new System.Drawing.Point(19, 161);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(103, 30);
             this.button6.TabIndex = 23;
@@ -202,7 +191,6 @@
         private System.Windows.Forms.Button btn_AddPatient;
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;

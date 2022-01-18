@@ -145,6 +145,7 @@ namespace clinical_system_N.models
             }
             return XX;
         }
+
         public static void InitializeOrtho(Clinic clinic)
         {
             if (!OrthoInitialized)
