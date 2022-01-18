@@ -213,6 +213,12 @@
     <Compile Include="models\Person.cs" />
     <Compile Include="models\Service.cs" />
     <Compile Include="models\Visit.cs" />
+    <Compile Include="new_prescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="new_prescription.Designer.cs">
+      <DependentUpon>new_prescription.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrthopedicUnit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +266,12 @@
     </Compile>
     <Compile Include="prescription.Designer.cs">
       <DependentUpon>prescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prescription_history.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="prescription_history.Designer.cs">
+      <DependentUpon>prescription_history.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -341,6 +353,9 @@
     <EmbeddedResource Include="Login_page.resx">
       <DependentUpon>Login_page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="new_prescription.resx">
+      <DependentUpon>new_prescription.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrthopedicUnit.resx">
       <DependentUpon>OrthopedicUnit.cs</DependentUpon>
     </EmbeddedResource>
@@ -364,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="prescription.resx">
       <DependentUpon>prescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prescription_history.resx">
+      <DependentUpon>prescription_history.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
