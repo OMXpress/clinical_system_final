@@ -162,7 +162,16 @@ namespace clinical_system_N.models
                 PhysioClinic = clinic;
             }
         }
+        public static void AddAppointment(Appointment appointment)
+        {
+            appointments.Add(appointment);
+        }
+
+        public static void InitializeAll()
+        {
+            DirectoryManager.InitializeApp();
 
 
+        }
     }
 }

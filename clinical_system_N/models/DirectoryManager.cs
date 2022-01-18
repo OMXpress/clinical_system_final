@@ -75,9 +75,7 @@ namespace clinical_system_N.models
                     using (FileStream fs = File.Create(file))
                     {
                     }
-                }
-
-                
+                }   
             }
         }
     }
