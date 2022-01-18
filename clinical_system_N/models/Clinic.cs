@@ -23,7 +23,7 @@ namespace clinical_system_N.models
 
         public void CreateAppointment(Patient patient)
         {
-            Appointment appointment = new Appointment(patient, attending, type);
+            Appointment appointment = new Appointment(patient, attending, type, OrthoAppointment.a1);
             appointmentList.Add(appointment);
         }
 

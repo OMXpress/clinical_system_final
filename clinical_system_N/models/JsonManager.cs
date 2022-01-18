@@ -121,13 +121,25 @@ namespace clinical_system_N.models
                 appjson = r.ReadToEnd();
             }
             var objectList = JsonConvert.DeserializeObject<List<Appointment>>(appjson);
-            foreach (var j in objectList)
+            try
             {
-                if (j.open == true)
+                if (objectList != null && objectList.Count != 0)
                 {
-                    result.Add(j);
+                    foreach (var j in objectList)
+                    {
+                        if (j.open == true)
+                        {
+                            result.Add(j);
+                        }
+                    }
                 }
+
             }
+            catch (NullReferenceException )
+            {
+
+            }
+
 
             return result;
         }
