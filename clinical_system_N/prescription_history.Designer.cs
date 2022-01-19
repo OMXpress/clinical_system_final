@@ -89,6 +89,7 @@ namespace clinical_system_N
             this.Controls.Add(this.label1);
             this.Name = "prescription_history";
             this.Size = new System.Drawing.Size(659, 89);
+            this.Load += new System.EventHandler(this.prescription_history_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

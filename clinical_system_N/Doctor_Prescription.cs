@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clinical_system_N.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,7 +44,24 @@ namespace clinical_system_N
 
         private void Doctor_Prescription_Load(object sender, EventArgs e)
         {
-
+            display();
+        }
+        private void display()
+        {
+            string id = Guid.NewGuid().ToString();
+            try
+            {
+                List<Patient> patients = PatientFactory.GetAllPatients();
+                //foreach (Patient pat in patients)
+                //{
+                    //new_prescription control = new new_prescription(pat);
+                    //RecordDisplayer.Controls.Add(control);
+                //}
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No patients are in the system.");
+            }
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)

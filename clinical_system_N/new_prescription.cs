@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clinical_system_N.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,13 @@ using System.Windows.Forms;
 
 namespace clinical_system_N
 {
-    public partial class new_prescription : UserControl
+    internal partial class new_prescription : UserControl
     {
-        public new_prescription()
+        private PerscribedMedicine _prescription;
+        public new_prescription(PerscribedMedicine prescription)
         {
             InitializeComponent();
+            _prescription = prescription;
         }
 
         private void use_label(object sender, EventArgs e)
@@ -24,7 +27,7 @@ namespace clinical_system_N
 
         private void duration_label(object sender, EventArgs e)
         {
-
+            
         }
 
         private void med_name_label(object sender, EventArgs e)
@@ -39,6 +42,16 @@ namespace clinical_system_N
 
         private void Delete_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void new_prescription_Load(object sender, EventArgs e)
+        {
+            Name_Med.Text = _prescription.MedicineName;
+            Active_Substance.Text = _prescription.ActiveIngredient;
+            Med_Uses.Text = _prescription.How;
+            Med_Duration.Text = _prescription.Duration;
+            Delete.Text = _prescription.ActiveIngredient;
 
         }
     }

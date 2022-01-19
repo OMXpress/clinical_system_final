@@ -14,5 +14,14 @@ namespace clinical_system_N.models
         public string How { get; set; }
         public string ActiveIngredient { get; set; }
 
+        PerscribedMedicine(string medicineName, string duration, string dose, string how, string activeIngredient)
+        {
+            MedicineName = medicineName;
+            Duration = duration;
+            Dose = dose;
+            How = how;
+            ActiveIngredient = activeIngredient;
+        }
+
     }
 }
