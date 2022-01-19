@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clinical_system_N.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +11,16 @@ using System.Windows.Forms;
 
 namespace clinical_system_N
 {
-    public partial class OrthopedicUnit : Form
+    internal partial class OrthopedicUnit : Form
     {
+        Patient patient;
         public OrthopedicUnit()
         {
+            InitializeComponent();
+        }
+        public OrthopedicUnit(Patient patient)
+        {
+            this.patient = patient;
             InitializeComponent();
         }
 
@@ -33,7 +40,12 @@ namespace clinical_system_N
 
         private void OrthopedicUnit_Load(object sender, EventArgs e)
         {
-
+            if (patient != null)
+            {
+                JsonManager jsonManager = new JsonManager();    
+                var ls = jsonManager.GetHistory(patient.info.PatientId);
+                history.Text = ls[0] + '\n' + ls[1];    
+            }
         }
 
         private void textBox12_TextChanged(object sender, EventArgs e)
@@ -165,6 +177,11 @@ namespace clinical_system_N
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void history_TextChanged(object sender, EventArgs e)
         {
 
         }

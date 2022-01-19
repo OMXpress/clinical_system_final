@@ -212,6 +212,7 @@
     <Compile Include="models\Device.cs" />
     <Compile Include="models\JsonBin.cs" />
     <Compile Include="models\JsonManager.cs" />
+    <Compile Include="models\JsonManagerPartial.cs" />
     <Compile Include="models\PatientMetaData.cs" />
     <Compile Include="models\PatientProgram.cs" />
     <Compile Include="models\PerscribedService.cs" />

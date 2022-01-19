@@ -91,7 +91,7 @@ namespace clinical_system_N
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.history = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.panel43.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -787,13 +787,14 @@ namespace clinical_system_N
             this.textBox14.Size = new System.Drawing.Size(1001, 149);
             this.textBox14.TabIndex = 18;
             // 
-            // textBox15
+            // history
             // 
-            this.textBox15.Location = new System.Drawing.Point(444, 406);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(1001, 149);
-            this.textBox15.TabIndex = 19;
+            this.history.Location = new System.Drawing.Point(444, 406);
+            this.history.Multiline = true;
+            this.history.Name = "history";
+            this.history.Size = new System.Drawing.Size(1001, 149);
+            this.history.TabIndex = 19;
+            this.history.TextChanged += new System.EventHandler(this.history_TextChanged);
             // 
             // textBox16
             // 
@@ -810,7 +811,7 @@ namespace clinical_system_N
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
             this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.history);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
@@ -903,7 +904,7 @@ namespace clinical_system_N
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox history;
         private System.Windows.Forms.TextBox textBox16;
     }
 }

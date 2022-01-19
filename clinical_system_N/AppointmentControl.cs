@@ -30,7 +30,9 @@ namespace clinical_system_N
 
         private void open_btn_Click(object sender, EventArgs e)
         {
-
+            OrthopedicUnit orthopedicUnit = new OrthopedicUnit(appointment._patient);
+            orthopedicUnit.Show();
+            this.Hide();
         }
 
         private void start_t_label_Click(object sender, EventArgs e)
