@@ -10,7 +10,7 @@ using Newtonsoft.Json.Linq;
 
 namespace clinical_system_N.models
 {
-    internal class JsonManager
+    internal partial class JsonManager
     {
         public string json;
         public string appPath = Path.Combine(GlobalManager.PathToAppData, "Appointments");
