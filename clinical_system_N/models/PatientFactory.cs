@@ -166,7 +166,6 @@ namespace clinical_system_N.models
 
             JsonManager jsonManager = new JsonManager();
             var infos = jsonManager.GetMedInfo();
-            Console.WriteLine(infos.ToString());
             foreach (var info in infos)
             {
                 PerscribedMedicine perscribedMedicine = new PerscribedMedicine(info.MedicineName.ToString(), info.Duration.ToString(), info.Dose.ToString(), info.How.ToString(), info.ActiveIngredient.ToString());

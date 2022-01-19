@@ -111,12 +111,13 @@ namespace clinical_system_N.models
         public List<PerscribedMedicine> GetMedInfo()
         {
             var paths = Directory.GetDirectories(GlobalManager.PathToPatients);
-            var result = new List<PerscribedMedicine>();
+            List<PerscribedMedicine> result = new List<PerscribedMedicine>();
             foreach (var path in paths)
             {
                 Console.WriteLine(path);
                 var json = LoadJson(JsonType.Prescriptions, path);
-                var x = JsonConvert.DeserializeObject<PerscribedMedicine>(json);
+                PerscribedMedicine x = JsonConvert.DeserializeObject<PerscribedMedicine>(json);
+                Console.WriteLine(x.MedicineName);
                 result.Add(x);
             }
             Console.WriteLine(result[0].ToString());
@@ -156,6 +157,11 @@ namespace clinical_system_N.models
 
 
             return result;
+        }
+        //add prescription to json
+        public void savePrescription(string MedName, string ActiveSub, string Use, string Duration, Patient patient)
+        {
+            
         }
         // if physio or ortho
         public void SaveAppointments(List<Appointment> appointments)

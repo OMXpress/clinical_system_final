@@ -11,13 +11,20 @@ using System.Windows.Forms;
 
 namespace clinical_system_N
 {
-    public partial class Doctor_Prescription : Form
+    internal partial class Doctor_Prescription : Form
     {
+        public Patient patient;
+
+        public Doctor_Prescription(Patient p)
+        {
+            InitializeComponent();
+            patient = p;
+        }
         public Doctor_Prescription()
         {
             InitializeComponent();
-        }
 
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -38,7 +45,7 @@ namespace clinical_system_N
         private void btn_doctor_prescription(object sender, EventArgs e)
         {
             this.Hide();
-            Doctor_Prescription C112 = new Doctor_Prescription();
+            Doctor_Prescription C112 = new Doctor_Prescription(patient);
             C112.Show();
         }
 
@@ -179,6 +186,9 @@ namespace clinical_system_N
 
         private void btn_add(object sender, EventArgs e)
         {
+            this.Hide();
+            Add_prescription C231 = new Add_prescription();
+            C231.Show();
 
         }
 

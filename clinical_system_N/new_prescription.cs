@@ -42,7 +42,7 @@ namespace clinical_system_N
 
         private void Delete_Click(object sender, EventArgs e)
         {
-
+            this.Dispose();
         }
 
         private void new_prescription_Load(object sender, EventArgs e)
@@ -51,8 +51,7 @@ namespace clinical_system_N
             Active_Substance.Text = _prescription.ActiveIngredient;
             Med_Uses.Text = _prescription.How;
             Med_Duration.Text = _prescription.Duration;
-            Delete.Text = _prescription.ActiveIngredient;
-
+            Delete.Text = "Delete";
         }
     }
 }

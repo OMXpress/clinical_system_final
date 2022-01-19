@@ -70,9 +70,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.device = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CompanyName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VersionNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -82,6 +79,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.device = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CompanyName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VersionNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel43.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -508,9 +509,9 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(339, 444);
+            this.label20.Location = new System.Drawing.Point(265, 414);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(185, 32);
+            this.label20.Size = new System.Drawing.Size(184, 32);
             this.label20.TabIndex = 41;
             this.label20.Text = "View Devices";
             // 
@@ -521,34 +522,13 @@
             this.device,
             this.CompanyName,
             this.VersionNumber});
-            this.dataGridView1.Location = new System.Drawing.Point(590, 222);
+            this.dataGridView1.Location = new System.Drawing.Point(484, 222);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(431, 430);
+            this.dataGridView1.Size = new System.Drawing.Size(655, 430);
             this.dataGridView1.TabIndex = 42;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // device
-            // 
-            this.device.HeaderText = "Device";
-            this.device.MinimumWidth = 6;
-            this.device.Name = "device";
-            this.device.Width = 125;
-            // 
-            // CompanyName
-            // 
-            this.CompanyName.HeaderText = "Company Name";
-            this.CompanyName.MinimumWidth = 6;
-            this.CompanyName.Name = "CompanyName";
-            this.CompanyName.Width = 125;
-            // 
-            // VersionNumber
-            // 
-            this.VersionNumber.HeaderText = "Version Number";
-            this.VersionNumber.MinimumWidth = 6;
-            this.VersionNumber.Name = "VersionNumber";
-            this.VersionNumber.Width = 125;
             // 
             // panel3
             // 
@@ -680,12 +660,43 @@
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
+            // device
+            // 
+            this.device.HeaderText = "Device";
+            this.device.MinimumWidth = 6;
+            this.device.Name = "device";
+            this.device.Width = 200;
+            // 
+            // CompanyName
+            // 
+            this.CompanyName.HeaderText = "Company Name";
+            this.CompanyName.MinimumWidth = 6;
+            this.CompanyName.Name = "CompanyName";
+            this.CompanyName.Width = 200;
+            // 
+            // VersionNumber
+            // 
+            this.VersionNumber.HeaderText = "Version Number";
+            this.VersionNumber.MinimumWidth = 6;
+            this.VersionNumber.Name = "VersionNumber";
+            this.VersionNumber.Width = 200;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(298, 475);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(103, 30);
+            this.button5.TabIndex = 45;
+            this.button5.Text = "Save";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // View_Devices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dataGridView1);
@@ -752,9 +763,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn device;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CompanyName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VersionNumber;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
@@ -764,6 +772,10 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn device;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CompanyName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VersionNumber;
+        private System.Windows.Forms.Button button5;
     }
 }
 
