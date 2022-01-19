@@ -12,11 +12,13 @@ namespace clinical_system_N.models
     {
         public string Id { get; set; }
         public string Name { get; set; }
-        private string Password { get; set; }
-        private string Email { get; set; }
-        private ClinicType clinic { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+        public ClinicType clinic { get; set; }
 
-        Doctor(string email, string password)
+        public Doctor() { }
+
+        public Doctor(string email, string password)
         {
             Email = email;
             Password = password;
