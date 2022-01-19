@@ -173,5 +173,35 @@ namespace clinical_system_N
         {
 
         }
+
+        private void lbl_day5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_day6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void llbl_day4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_day3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_day2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_Today_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

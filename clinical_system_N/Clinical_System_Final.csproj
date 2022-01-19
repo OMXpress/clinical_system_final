@@ -477,6 +477,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\logo.png" />
     <Content Include="models\Bot.py" />
     <Content Include="models\JsonBin.py" />
     <None Include="Resources\1.png" />

@@ -37,8 +37,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RecordDisplayer = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel46.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -71,7 +71,7 @@
             // btn_AddPatient
             // 
             this.btn_AddPatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.btn_AddPatient.Location = new System.Drawing.Point(1176, 22);
+            this.btn_AddPatient.Location = new System.Drawing.Point(1181, 49);
             this.btn_AddPatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_AddPatient.Name = "btn_AddPatient";
             this.btn_AddPatient.Size = new System.Drawing.Size(109, 30);
@@ -112,6 +112,7 @@
             this.button9.TabIndex = 27;
             this.button9.Text = "Records";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click_1);
             // 
             // button4
             // 
@@ -133,6 +134,7 @@
             this.button7.TabIndex = 24;
             this.button7.Text = "Admin";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -143,15 +145,7 @@
             this.button6.TabIndex = 23;
             this.button6.Text = "Finance";
             this.button6.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 123);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 31;
-            this.pictureBox1.TabStop = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // RecordDisplayer
             // 
@@ -160,6 +154,16 @@
             this.RecordDisplayer.Size = new System.Drawing.Size(1261, 653);
             this.RecordDisplayer.TabIndex = 32;
             this.RecordDisplayer.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.Sentinel_image;
+            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 117);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
             // 
             // Records
             // 

@@ -62,9 +62,9 @@ namespace clinical_system_N
 
         private void btn_calender(object sender, EventArgs e)
         {
-            this.Hide();
-            OrthopedicUnit_Calender C215 = new OrthopedicUnit_Calender();
-            C215.Show();
+            //this.Hide();
+            //OrthopedicUnit_Calender C215 = new OrthopedicUnit_Calender();
+            //C215.Show();
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -74,19 +74,52 @@ namespace clinical_system_N
 
         private void btn_finance(object sender, EventArgs e)
         {
+            //this.Hide();
+            //Finance C216 = new Finance();
+            //C216.Show();
+        }
+
+        private void btn_adminsettings(object sender, EventArgs e)
+        {
+            //this.Hide();
+            //AdminSettings C217 = new AdminSettings();
+            //C217.Show();
+        }
+
+        private void btn_AddPatient_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+            //Add_Patient C218 = new Add_Patient();
+            //C218.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrthopedicUnit_Calender C215 = new OrthopedicUnit_Calender();
+            C215.Show();
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
             this.Hide();
             Finance C216 = new Finance();
             C216.Show();
         }
 
-        private void btn_adminsettings(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
             this.Hide();
             AdminSettings C217 = new AdminSettings();
             C217.Show();
         }
 
-        private void btn_AddPatient_Click(object sender, EventArgs e)
+        private void btn_AddPatient_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             Add_Patient C218 = new Add_Patient();

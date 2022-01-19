@@ -36,9 +36,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_Email = new System.Windows.Forms.Label();
             this.label_Password = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +72,7 @@
             this.email.Location = new System.Drawing.Point(317, 326);
             this.email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(251, 34);
+            this.email.Size = new System.Drawing.Size(251, 22);
             this.email.TabIndex = 2;
             this.email.TextChanged += new System.EventHandler(this.email_box);
             // 
@@ -84,7 +84,7 @@
             this.password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.password.Name = "password";
             this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(251, 34);
+            this.password.Size = new System.Drawing.Size(251, 22);
             this.password.TabIndex = 3;
             this.password.TextChanged += new System.EventHandler(this.pass_box);
             // 
@@ -121,16 +121,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Clinical Mangement system";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(923, 231);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(500, 500);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // label_Email
             // 
             this.label_Email.AutoSize = true;
@@ -148,6 +138,17 @@
             this.label_Password.Name = "label_Password";
             this.label_Password.Size = new System.Drawing.Size(0, 17);
             this.label_Password.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(915, 228);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(500, 500);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // login_page
             // 

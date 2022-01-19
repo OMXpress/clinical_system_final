@@ -113,9 +113,9 @@ namespace clinical_system_N.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mic_icon_11553430296usfhy8bwwf {
+        internal static System.Drawing.Bitmap logo {
             get {
-                object obj = ResourceManager.GetObject("mic-icon-11553430296usfhy8bwwf", resourceCulture);
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +126,16 @@ namespace clinical_system_N.Properties {
         internal static System.Drawing.Bitmap mic {
             get {
                 object obj = ResourceManager.GetObject("mic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mic_icon_11553430296usfhy8bwwf {
+            get {
+                object obj = ResourceManager.GetObject("mic-icon-11553430296usfhy8bwwf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

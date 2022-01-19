@@ -155,12 +155,12 @@ namespace clinical_system_N
 
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            OrthopedicUnit C17 = new OrthopedicUnit();
-            C17.Show();
-        }
+       // private void button7_Click(object sender, EventArgs e)
+        //{
+          //  this.Hide();
+           // OrthopedicUnit C17 = new OrthopedicUnit();
+            //C17.Show();
+        //}
 
         private void button9_Click(object sender, EventArgs e)
         {
