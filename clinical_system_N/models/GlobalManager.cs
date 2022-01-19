@@ -63,86 +63,48 @@ namespace clinical_system_N.models
         {
             Dictionary<string, int> XX = new Dictionary<string, int>();
 
-            if (OrthoAppointment == OrthoAppointment.a8)
-            {
-                XX.Add("Hour", 8);
-                XX.Add("Mins", 0);
-            }
-            else if (OrthoAppointment == OrthoAppointment.a830)
-            {
-                XX.Add("Hour", 8);
-                XX.Add("Mins", 30);
-            }
-            else if (OrthoAppointment == OrthoAppointment.a9)
+            if (OrthoAppointment == OrthoAppointment.a9)
             {
                 XX.Add("Hour", 9);
                 XX.Add("Mins", 0);
             }
-            else if (OrthoAppointment == OrthoAppointment.a930)
-            {
-                XX.Add("Hour", 9);
-                XX.Add("Mins", 30); 
-            }
+
             else if (OrthoAppointment == OrthoAppointment.a10)
             {
                 XX.Add("Hour", 10);
                 XX.Add("Mins", 0);
             }
-            else if (OrthoAppointment == OrthoAppointment.a1030)
-            {
-                XX.Add("Hour", 10);
-                XX.Add("Mins", 30);
-            }
+
             else if (OrthoAppointment == OrthoAppointment.a11)
             {
                 XX.Add("Hour", 11);
                 XX.Add("Mins", 0);
             }
-            else if (OrthoAppointment == OrthoAppointment.a1130)
-            {
-                XX.Add("Hour", 11);
-                XX.Add("Mins", 30);
-            }
+
             else if (OrthoAppointment == OrthoAppointment.a12)
             {
                 XX.Add("Hour", 12);
                 XX.Add("Mins", 0);
             }
-            else if (OrthoAppointment == OrthoAppointment.a1230)
-            {
-                XX.Add("Hour", 12);
-                XX.Add("Mins", 30);
-            }
+
             else if (OrthoAppointment == OrthoAppointment.a1)
             {
                 XX.Add("Hour", 1);
                 XX.Add("Mins", 0);
             }
-            else if (OrthoAppointment == OrthoAppointment.a130)
-            {
-                XX.Add("Hour", 1);
-                XX.Add("Mins", 30);
-            }
+
             else if (OrthoAppointment == OrthoAppointment.a3)
             {
                 XX.Add("Hour", 3);
                 XX.Add("Mins", 0);
             }
-            else if (OrthoAppointment == OrthoAppointment.a330)
-            {
-                XX.Add("Hour", 3);
-                XX.Add("Mins", 30);
-            }
+
             else if (OrthoAppointment == OrthoAppointment.a4)
             {
                 XX.Add("Hour", 4);
                 XX.Add("Mins", 0);
             }
-            else if (OrthoAppointment == OrthoAppointment.a430)
-            {
-                XX.Add("Hour", 4);
-                XX.Add("Mins", 30);
-            }
+
             return XX;
         }
 
@@ -175,9 +137,26 @@ namespace clinical_system_N.models
             DirectoryManager.InitializeApp();
             JsonManager jsonManager = new JsonManager();
             OrthoAppointments = jsonManager.LoadOpenAppointments();
-
+            Patient p = PatientFactory.CreatePatient("Omar", "Khale", "tezoo", "201068037112", "Male", "yarab@muslim.com", "01068037112", "Segada", "Single", "Student");
+            Doctor d = new Doctor();
+            d.Name = "Omar";
+            d.Id = "wjhbfewkj";
+            d.clinic = ClinicType.ortho;
+            d.Email = "jskddsj@hdsch.com";
+            d.Password = "sdfnadkc";
+            Appointment appointment = new Appointment(p, d, ClinicType.ortho, OrthoAppointment.a9, DateTime.Now);
+            OrthoAppointments.Add(appointment);
+            Patient p2 = PatientFactory.CreatePatient("Oma", "Khale", "tezoo", "201068037112", "Male", "yarab@muslim.com", "01068037112", "Segada", "Single", "Student");
+            Doctor d2 = new Doctor();
+            d2.Name = "Oma";
+            d2.Id = "wjhbfewkj";
+            d2.clinic = ClinicType.ortho;
+            d2.Email = "jskddsj@hdsch.com";
+            d2.Password = "sdfnadkc";
+            Appointment appointment2 = new Appointment(p2, d2, ClinicType.ortho, OrthoAppointment.a1, DateTime.Now);
+            OrthoAppointments.Add(appointment2);
         }
-        public static List<Appointment> GetOrthoAppAt(DayOfWeek day, OrthoAppointment time) 
+        public static List<Appointment> GetOrthoAppAt(DaysOfWeeks day, OrthoAppointment time) 
         {
             List<Appointment> all = new List<Appointment>();
             foreach (Appointment appointment in OrthoAppointments)
@@ -187,7 +166,6 @@ namespace clinical_system_N.models
                 {
                     all.Add(appointment);
                 }
-
             }
             return all;
         
