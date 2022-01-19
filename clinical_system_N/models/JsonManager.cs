@@ -110,15 +110,16 @@ namespace clinical_system_N.models
         }
         public List<PerscribedMedicine> GetMedInfo()
         {
-
             var paths = Directory.GetDirectories(GlobalManager.PathToPatients);
             var result = new List<PerscribedMedicine>();
             foreach (var path in paths)
             {
+                Console.WriteLine(path);
                 var json = LoadJson(JsonType.Prescriptions, path);
                 var x = JsonConvert.DeserializeObject<PerscribedMedicine>(json);
                 result.Add(x);
             }
+            Console.WriteLine(result[0].ToString());
             return result;
         }
         public List<Appointment> LoadOpenAppointments()
