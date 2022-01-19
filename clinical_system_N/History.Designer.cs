@@ -44,9 +44,11 @@
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel43.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel43
@@ -65,7 +67,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(19, 226);
+            this.button3.Location = new System.Drawing.Point(19, 223);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 30);
             this.button3.TabIndex = 3;
@@ -76,7 +78,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(19, 166);
+            this.button4.Location = new System.Drawing.Point(19, 161);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 30);
             this.button4.TabIndex = 2;
@@ -98,7 +100,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button6.Location = new System.Drawing.Point(19, 36);
+            this.button6.Location = new System.Drawing.Point(19, 37);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(103, 30);
             this.button6.TabIndex = 0;
@@ -234,12 +236,23 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Historical Data";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.Sentinel_image;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.richTextBox1);
@@ -256,6 +269,7 @@
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,6 +293,7 @@
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

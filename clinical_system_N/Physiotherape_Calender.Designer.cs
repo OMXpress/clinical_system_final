@@ -33,7 +33,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel46 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.panel44 = new System.Windows.Forms.Panel();
@@ -61,11 +60,12 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel43.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel46.SuspendLayout();
             this.panel44.SuspendLayout();
             this.fl_AppContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel43
@@ -125,15 +125,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 126);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel46
             // 
             this.panel46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
@@ -142,14 +133,14 @@
             this.panel46.Controls.Add(this.btn_AddApp);
             this.panel46.Location = new System.Drawing.Point(158, -1);
             this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(1302, 84);
+            this.panel46.Size = new System.Drawing.Size(1302, 122);
             this.panel46.TabIndex = 12;
             this.panel46.Paint += new System.Windows.Forms.PaintEventHandler(this.panel46_Paint);
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(160)))), ((int)(((byte)(120)))));
-            this.button7.Location = new System.Drawing.Point(922, 29);
+            this.button7.Location = new System.Drawing.Point(922, 49);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(225, 27);
             this.button7.TabIndex = 5;
@@ -162,7 +153,7 @@
             this.panel44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.panel44.Controls.Add(this.label1);
             this.panel44.Controls.Add(this.button6);
-            this.panel44.Location = new System.Drawing.Point(18, 14);
+            this.panel44.Location = new System.Drawing.Point(18, 33);
             this.panel44.Name = "panel44";
             this.panel44.Padding = new System.Windows.Forms.Padding(5, 13, 0, 0);
             this.panel44.Size = new System.Drawing.Size(449, 50);
@@ -195,7 +186,7 @@
             // btn_AddApp
             // 
             this.btn_AddApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.btn_AddApp.Location = new System.Drawing.Point(1153, 29);
+            this.btn_AddApp.Location = new System.Drawing.Point(1153, 48);
             this.btn_AddApp.Name = "btn_AddApp";
             this.btn_AddApp.Size = new System.Drawing.Size(130, 25);
             this.btn_AddApp.TabIndex = 2;
@@ -207,7 +198,7 @@
             // 
             this.lbl_day5.AutoSize = true;
             this.lbl_day5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbl_day5.Location = new System.Drawing.Point(1306, 86);
+            this.lbl_day5.Location = new System.Drawing.Point(1306, 127);
             this.lbl_day5.Name = "lbl_day5";
             this.lbl_day5.Size = new System.Drawing.Size(74, 25);
             this.lbl_day5.TabIndex = 18;
@@ -217,7 +208,7 @@
             // 
             this.llbl_day4.AutoSize = true;
             this.llbl_day4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.llbl_day4.Location = new System.Drawing.Point(1040, 86);
+            this.llbl_day4.Location = new System.Drawing.Point(1040, 127);
             this.llbl_day4.Name = "llbl_day4";
             this.llbl_day4.Size = new System.Drawing.Size(74, 25);
             this.llbl_day4.TabIndex = 17;
@@ -227,7 +218,7 @@
             // 
             this.lbl_day3.AutoSize = true;
             this.lbl_day3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbl_day3.Location = new System.Drawing.Point(768, 86);
+            this.lbl_day3.Location = new System.Drawing.Point(768, 127);
             this.lbl_day3.Name = "lbl_day3";
             this.lbl_day3.Size = new System.Drawing.Size(74, 25);
             this.lbl_day3.TabIndex = 16;
@@ -237,7 +228,7 @@
             // 
             this.lbl_day2.AutoSize = true;
             this.lbl_day2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbl_day2.Location = new System.Drawing.Point(507, 86);
+            this.lbl_day2.Location = new System.Drawing.Point(507, 127);
             this.lbl_day2.Name = "lbl_day2";
             this.lbl_day2.Size = new System.Drawing.Size(100, 25);
             this.lbl_day2.TabIndex = 15;
@@ -247,7 +238,7 @@
             // 
             this.lbl_Today.AutoSize = true;
             this.lbl_Today.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Today.Location = new System.Drawing.Point(237, 84);
+            this.lbl_Today.Location = new System.Drawing.Point(237, 125);
             this.lbl_Today.Name = "lbl_Today";
             this.lbl_Today.Size = new System.Drawing.Size(68, 25);
             this.lbl_Today.TabIndex = 14;
@@ -271,9 +262,9 @@
             this.fl_AppContainer.Controls.Add(this.panel12);
             this.fl_AppContainer.Controls.Add(this.panel13);
             this.fl_AppContainer.Controls.Add(this.panel14);
-            this.fl_AppContainer.Location = new System.Drawing.Point(159, 122);
+            this.fl_AppContainer.Location = new System.Drawing.Point(159, 160);
             this.fl_AppContainer.Name = "fl_AppContainer";
-            this.fl_AppContainer.Size = new System.Drawing.Size(1458, 811);
+            this.fl_AppContainer.Size = new System.Drawing.Size(1458, 773);
             this.fl_AppContainer.TabIndex = 13;
             this.fl_AppContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.fl_AppContainer_Paint);
             // 
@@ -412,6 +403,16 @@
             this.panel14.Size = new System.Drawing.Size(254, 212);
             this.panel14.TabIndex = 43;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.Sentinel_image;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // Physiotherape_Calender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -434,11 +435,11 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Calendar_Load);
             this.panel43.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel46.ResumeLayout(false);
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
             this.fl_AppContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

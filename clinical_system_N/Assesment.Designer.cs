@@ -85,13 +85,11 @@ namespace clinical_system_N
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel43.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel43
@@ -671,6 +669,8 @@ namespace clinical_system_N
             // 
             // pictureBox2
             // 
+            this.pictureBox2.ErrorImage = global::clinical_system_N.Properties.Resources.mic;
+            this.pictureBox2.Image = global::clinical_system_N.Properties.Resources.mic;
             this.pictureBox2.Location = new System.Drawing.Point(1358, 621);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(47, 50);
@@ -680,6 +680,8 @@ namespace clinical_system_N
             // 
             // pictureBox1
             // 
+            this.pictureBox1.ErrorImage = global::clinical_system_N.Properties.Resources.mic;
+            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.mic;
             this.pictureBox1.Location = new System.Drawing.Point(1358, 329);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(47, 50);
@@ -696,26 +698,6 @@ namespace clinical_system_N
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 39;
             this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::clinical_system_N.Properties.Resources.mic;
-            this.pictureBox2.Location = new System.Drawing.Point(1358, 621);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 36;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.mic;
-            this.pictureBox1.Location = new System.Drawing.Point(1358, 329);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
             // 
             // Assesment
             // 
@@ -749,9 +731,8 @@ namespace clinical_system_N
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

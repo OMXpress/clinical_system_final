@@ -135,13 +135,13 @@ namespace clinical_system_N
             this.panel46.Location = new System.Drawing.Point(156, 0);
             this.panel46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(1302, 84);
+            this.panel46.Size = new System.Drawing.Size(1302, 122);
             this.panel46.TabIndex = 10;
             // 
             // btn_AddPatient
             // 
             this.btn_AddPatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.btn_AddPatient.Location = new System.Drawing.Point(1176, 22);
+            this.btn_AddPatient.Location = new System.Drawing.Point(1187, 47);
             this.btn_AddPatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_AddPatient.Name = "btn_AddPatient";
             this.btn_AddPatient.Size = new System.Drawing.Size(103, 30);

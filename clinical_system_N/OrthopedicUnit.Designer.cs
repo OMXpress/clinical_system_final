@@ -89,10 +89,10 @@ namespace clinical_system_N
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
             this.panel43.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -119,7 +119,7 @@ namespace clinical_system_N
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(19, 226);
+            this.button3.Location = new System.Drawing.Point(19, 223);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 30);
             this.button3.TabIndex = 3;
@@ -130,7 +130,7 @@ namespace clinical_system_N
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(19, 166);
+            this.button4.Location = new System.Drawing.Point(19, 161);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 30);
             this.button4.TabIndex = 2;
@@ -152,7 +152,7 @@ namespace clinical_system_N
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(19, 36);
+            this.button1.Location = new System.Drawing.Point(19, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 30);
             this.button1.TabIndex = 0;
@@ -769,43 +769,39 @@ namespace clinical_system_N
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.btn_investigation);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(430, 223);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1028, 148);
-            this.listBox1.TabIndex = 14;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(430, 395);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(1028, 148);
-            this.listBox2.TabIndex = 15;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
-            // 
-            // listBox3
-            // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(430, 588);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(1028, 148);
-            this.listBox3.TabIndex = 16;
-            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
-            // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.Sentinel_image;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 122);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(444, 222);
+            this.textBox14.Multiline = true;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(1001, 149);
+            this.textBox14.TabIndex = 18;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(444, 406);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(1001, 149);
+            this.textBox15.TabIndex = 19;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(445, 588);
+            this.textBox16.Multiline = true;
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(1001, 149);
+            this.textBox16.TabIndex = 20;
             // 
             // OrthopedicUnit
             // 
@@ -813,10 +809,10 @@ namespace clinical_system_N
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
+            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.textBox14);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -839,6 +835,7 @@ namespace clinical_system_N
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -899,14 +896,14 @@ namespace clinical_system_N
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox16;
     }
 }

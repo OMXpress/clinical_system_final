@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
@@ -93,6 +90,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -102,34 +102,6 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // listBox3
-            // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(430, 588);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(1028, 148);
-            this.listBox3.TabIndex = 21;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(430, 395);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(1028, 148);
-            this.listBox2.TabIndex = 20;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(430, 223);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1028, 148);
-            this.listBox1.TabIndex = 19;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -797,12 +769,37 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.Sentinel_image;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 122);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(438, 223);
+            this.textBox14.Multiline = true;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(1007, 156);
+            this.textBox14.TabIndex = 25;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(438, 407);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(1007, 156);
+            this.textBox15.TabIndex = 26;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(439, 588);
+            this.textBox16.Multiline = true;
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(1007, 156);
+            this.textBox16.TabIndex = 27;
             // 
             // Physiotherapy
             // 
@@ -810,12 +807,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
+            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.textBox14);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel43);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -836,14 +833,11 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label28;
@@ -906,6 +900,9 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox16;
     }
 }
 

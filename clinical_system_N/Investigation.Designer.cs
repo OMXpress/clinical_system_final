@@ -109,7 +109,7 @@ namespace clinical_system_N
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(19, 226);
+            this.button3.Location = new System.Drawing.Point(19, 223);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 30);
             this.button3.TabIndex = 3;
@@ -120,7 +120,7 @@ namespace clinical_system_N
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(19, 166);
+            this.button4.Location = new System.Drawing.Point(19, 161);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 30);
             this.button4.TabIndex = 2;
@@ -142,7 +142,7 @@ namespace clinical_system_N
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(19, 36);
+            this.button1.Location = new System.Drawing.Point(19, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 30);
             this.button1.TabIndex = 0;
@@ -632,9 +632,10 @@ namespace clinical_system_N
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.Sentinel_image;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 122);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
@@ -643,7 +644,7 @@ namespace clinical_system_N
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(546, 203);
+            this.label25.Location = new System.Drawing.Point(662, 203);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(262, 46);
             this.label25.TabIndex = 31;
@@ -703,7 +704,7 @@ namespace clinical_system_N
             this.Amount,
             this.Report_Number});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(378, 328);
+            this.listView1.Location = new System.Drawing.Point(466, 284);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(638, 404);
             this.listView1.TabIndex = 37;

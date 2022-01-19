@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel43 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -47,20 +46,12 @@
             this.lbl_Today = new System.Windows.Forms.Label();
             this.lbl_day6 = new System.Windows.Forms.Label();
             this.fl_AppContainer = new System.Windows.Forms.FlowLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel43.SuspendLayout();
             this.panel46.SuspendLayout();
             this.panel44.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 126);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // panel43
             // 
@@ -127,13 +118,13 @@
             this.panel46.Controls.Add(this.btn_AddApp);
             this.panel46.Location = new System.Drawing.Point(158, -1);
             this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(1302, 84);
+            this.panel46.Size = new System.Drawing.Size(1302, 122);
             this.panel46.TabIndex = 14;
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(120)))), ((int)(((byte)(71)))));
-            this.button7.Location = new System.Drawing.Point(922, 29);
+            this.button7.Location = new System.Drawing.Point(927, 46);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(225, 27);
             this.button7.TabIndex = 5;
@@ -146,7 +137,7 @@
             this.panel44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.panel44.Controls.Add(this.label1);
             this.panel44.Controls.Add(this.button6);
-            this.panel44.Location = new System.Drawing.Point(18, 14);
+            this.panel44.Location = new System.Drawing.Point(18, 31);
             this.panel44.Name = "panel44";
             this.panel44.Padding = new System.Windows.Forms.Padding(5, 13, 0, 0);
             this.panel44.Size = new System.Drawing.Size(449, 50);
@@ -178,7 +169,7 @@
             // btn_AddApp
             // 
             this.btn_AddApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.btn_AddApp.Location = new System.Drawing.Point(1153, 29);
+            this.btn_AddApp.Location = new System.Drawing.Point(1158, 48);
             this.btn_AddApp.Name = "btn_AddApp";
             this.btn_AddApp.Size = new System.Drawing.Size(130, 25);
             this.btn_AddApp.TabIndex = 2;
@@ -190,69 +181,85 @@
             // 
             this.lbl_day5.AutoSize = true;
             this.lbl_day5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbl_day5.Location = new System.Drawing.Point(1074, 99);
+            this.lbl_day5.Location = new System.Drawing.Point(1074, 138);
             this.lbl_day5.Name = "lbl_day5";
             this.lbl_day5.Size = new System.Drawing.Size(95, 25);
             this.lbl_day5.TabIndex = 24;
             this.lbl_day5.Text = "Thursday";
+            this.lbl_day5.Click += new System.EventHandler(this.lbl_day5_Click);
             // 
             // llbl_day4
             // 
             this.llbl_day4.AutoSize = true;
             this.llbl_day4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.llbl_day4.Location = new System.Drawing.Point(848, 99);
+            this.llbl_day4.Location = new System.Drawing.Point(848, 138);
             this.llbl_day4.Name = "llbl_day4";
             this.llbl_day4.Size = new System.Drawing.Size(118, 25);
             this.llbl_day4.TabIndex = 23;
             this.llbl_day4.Text = "Wednesday";
+            this.llbl_day4.Click += new System.EventHandler(this.llbl_day4_Click);
             // 
             // lbl_day3
             // 
             this.lbl_day3.AutoSize = true;
             this.lbl_day3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbl_day3.Location = new System.Drawing.Point(643, 98);
+            this.lbl_day3.Location = new System.Drawing.Point(643, 137);
             this.lbl_day3.Name = "lbl_day3";
             this.lbl_day3.Size = new System.Drawing.Size(89, 25);
             this.lbl_day3.TabIndex = 22;
             this.lbl_day3.Text = "Tuesday";
+            this.lbl_day3.Click += new System.EventHandler(this.lbl_day3_Click);
             // 
             // lbl_day2
             // 
             this.lbl_day2.AutoSize = true;
             this.lbl_day2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbl_day2.Location = new System.Drawing.Point(434, 98);
+            this.lbl_day2.Location = new System.Drawing.Point(434, 137);
             this.lbl_day2.Name = "lbl_day2";
             this.lbl_day2.Size = new System.Drawing.Size(83, 25);
             this.lbl_day2.TabIndex = 21;
             this.lbl_day2.Text = "Monday";
+            this.lbl_day2.Click += new System.EventHandler(this.lbl_day2_Click);
             // 
             // lbl_Today
             // 
             this.lbl_Today.AutoSize = true;
             this.lbl_Today.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Today.Location = new System.Drawing.Point(221, 96);
+            this.lbl_Today.Location = new System.Drawing.Point(221, 135);
             this.lbl_Today.Name = "lbl_Today";
             this.lbl_Today.Size = new System.Drawing.Size(80, 25);
             this.lbl_Today.TabIndex = 20;
             this.lbl_Today.Text = "Sunday";
+            this.lbl_Today.Click += new System.EventHandler(this.lbl_Today_Click);
             // 
             // lbl_day6
             // 
             this.lbl_day6.AutoSize = true;
             this.lbl_day6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbl_day6.Location = new System.Drawing.Point(1288, 99);
+            this.lbl_day6.Location = new System.Drawing.Point(1288, 138);
             this.lbl_day6.Name = "lbl_day6";
             this.lbl_day6.Size = new System.Drawing.Size(91, 25);
             this.lbl_day6.TabIndex = 42;
             this.lbl_day6.Text = "Saturday";
+            this.lbl_day6.Click += new System.EventHandler(this.lbl_day6_Click);
             // 
             // fl_AppContainer
             // 
-            this.fl_AppContainer.Location = new System.Drawing.Point(176, 127);
+            this.fl_AppContainer.Location = new System.Drawing.Point(176, 181);
             this.fl_AppContainer.Name = "fl_AppContainer";
-            this.fl_AppContainer.Size = new System.Drawing.Size(1284, 672);
+            this.fl_AppContainer.Size = new System.Drawing.Size(1284, 618);
             this.fl_AppContainer.TabIndex = 43;
             this.fl_AppContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.fl_AppContainer_Paint_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.Sentinel_image;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // OrthopedicUnit_Calender
             // 
@@ -275,11 +282,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.OrthopedicUnit_Calender_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel43.ResumeLayout(false);
             this.panel46.ResumeLayout(false);
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -108,7 +108,7 @@ namespace clinical_system_N
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(19, 226);
+            this.button3.Location = new System.Drawing.Point(19, 223);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 30);
             this.button3.TabIndex = 3;
@@ -119,7 +119,7 @@ namespace clinical_system_N
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(19, 166);
+            this.button4.Location = new System.Drawing.Point(19, 161);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 30);
             this.button4.TabIndex = 2;
@@ -141,7 +141,7 @@ namespace clinical_system_N
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(19, 36);
+            this.button1.Location = new System.Drawing.Point(19, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 30);
             this.button1.TabIndex = 0;
@@ -631,9 +631,10 @@ namespace clinical_system_N
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.Sentinel_image;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 122);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;

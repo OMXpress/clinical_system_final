@@ -84,9 +84,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel43.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -592,7 +594,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(19, 226);
+            this.button3.Location = new System.Drawing.Point(19, 223);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 30);
             this.button3.TabIndex = 3;
@@ -603,7 +605,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(19, 166);
+            this.button4.Location = new System.Drawing.Point(19, 161);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 30);
             this.button4.TabIndex = 2;
@@ -625,7 +627,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(19, 36);
+            this.button1.Location = new System.Drawing.Point(19, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 30);
             this.button1.TabIndex = 0;
@@ -704,12 +706,23 @@
             this.flowLayoutPanel2.TabIndex = 47;
             this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.prescription_history_panel);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::clinical_system_N.Properties.Resources.Sentinel_image;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 48;
+            this.pictureBox1.TabStop = false;
+            // 
             // Doctor_Prescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.button5);
@@ -729,6 +742,7 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel43.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -792,6 +806,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
