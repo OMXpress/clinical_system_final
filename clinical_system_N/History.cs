@@ -32,6 +32,15 @@ namespace clinical_system_N
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            JsonManager jsonManager = new JsonManager();    
+            var ls = jsonManager.GetHistory(patient.info.PatientId);
+            if (ls != null)
+            {
+                richTextBox2.Text = ls[0];
+                richTextBox1.Text = ls[1];
+            }
+
+
         }
 
         private void btn_calender(object sender, EventArgs e)

@@ -61,9 +61,9 @@ namespace clinical_system_N
         private void App_Load(object sender, EventArgs e)
         {
             var x = GlobalManager.OrthoAppointments;
-            for (int i = 0; i < 10; i++)
+            foreach (var i in x)
             {
-                AppointmentControl appointment = new AppointmentControl(x[1]);
+                AppointmentControl appointment = new AppointmentControl(i);
                 flowLayoutPanel1.Controls.Add(appointment);
             }
         }

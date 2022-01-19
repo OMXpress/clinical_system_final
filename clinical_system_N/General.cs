@@ -99,7 +99,7 @@ namespace clinical_system_N
         private void btn_history(object sender, EventArgs e)
         {
             this.Hide();
-            History C118 = new History();
+            History C118 = new History(this.Patient);
             C118.Show();
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clinical_system_N.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +11,16 @@ using System.Windows.Forms;
 
 namespace clinical_system_N
 {
-    public partial class OrthopedicUnit : Form
+    internal partial class OrthopedicUnit : Form
     {
+        Patient patient;
         public OrthopedicUnit()
         {
+            InitializeComponent();
+        }
+        public OrthopedicUnit(Patient patient)
+        {
+            this.patient = patient;
             InitializeComponent();
         }
 
@@ -33,7 +40,20 @@ namespace clinical_system_N
 
         private void OrthopedicUnit_Load(object sender, EventArgs e)
         {
+            if (patient != null)
+            {
+                JsonManager jsonManager = new JsonManager();    
+                var ls = jsonManager.GetHistory(patient.info.PatientId);
+                string personal = ls[0];
+                string fam = ls[1];
+                foreach (var item in ls)
+                {
+                    history.Text += item;
+                    history.Text += Environment.NewLine;
+                }
 
+
+            }
         }
 
         private void textBox12_TextChanged(object sender, EventArgs e)
@@ -167,6 +187,29 @@ namespace clinical_system_N
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void history_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Save_Click(object sender, EventArgs e)
+        {
+
+            JsonManager jsonManager = new JsonManager();
+            var ls = jsonManager.GetHistory(patient.info.PatientId);
+            List<string> list = new List<string>();
+            list = Complaints.Text.Split(',').ToList<string>();
+            foreach (var i in list)
+            { 
+                string comps = Environment.NewLine + DateTime.Now.ToString() + Environment.NewLine + "Patient Complained of: " + i + Environment.NewLine;
+                ls.Add(comps);
+            }
+
+            ls.Add(Notes.Text + Environment.NewLine);
+            JsonManager JsonManager = new JsonManager();
+            JsonManager.AddJson(JsonType.History, patient.info.PatientId, ls);
         }
     }
 }
