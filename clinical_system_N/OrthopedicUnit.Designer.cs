@@ -90,9 +90,10 @@ namespace clinical_system_N
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.Complaints = new System.Windows.Forms.TextBox();
             this.history = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.Notes = new System.Windows.Forms.TextBox();
+            this.Save = new System.Windows.Forms.Button();
             this.panel43.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -779,13 +780,13 @@ namespace clinical_system_N
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox14
+            // Complaints
             // 
-            this.textBox14.Location = new System.Drawing.Point(444, 222);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(1001, 149);
-            this.textBox14.TabIndex = 18;
+            this.Complaints.Location = new System.Drawing.Point(444, 222);
+            this.Complaints.Multiline = true;
+            this.Complaints.Name = "Complaints";
+            this.Complaints.Size = new System.Drawing.Size(1001, 149);
+            this.Complaints.TabIndex = 18;
             // 
             // history
             // 
@@ -796,13 +797,23 @@ namespace clinical_system_N
             this.history.TabIndex = 19;
             this.history.TextChanged += new System.EventHandler(this.history_TextChanged);
             // 
-            // textBox16
+            // Notes
             // 
-            this.textBox16.Location = new System.Drawing.Point(445, 588);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(1001, 149);
-            this.textBox16.TabIndex = 20;
+            this.Notes.Location = new System.Drawing.Point(445, 588);
+            this.Notes.Multiline = true;
+            this.Notes.Name = "Notes";
+            this.Notes.Size = new System.Drawing.Size(1001, 149);
+            this.Notes.TabIndex = 20;
+            // 
+            // Save
+            // 
+            this.Save.Location = new System.Drawing.Point(846, 776);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(136, 23);
+            this.Save.TabIndex = 21;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // OrthopedicUnit
             // 
@@ -810,9 +821,10 @@ namespace clinical_system_N
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.Save);
+            this.Controls.Add(this.Notes);
             this.Controls.Add(this.history);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.Complaints);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -903,8 +915,9 @@ namespace clinical_system_N
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox Complaints;
         private System.Windows.Forms.TextBox history;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox Notes;
+        private System.Windows.Forms.Button Save;
     }
 }

@@ -44,7 +44,15 @@ namespace clinical_system_N
             {
                 JsonManager jsonManager = new JsonManager();    
                 var ls = jsonManager.GetHistory(patient.info.PatientId);
-                history.Text = ls[0] + '\n' + ls[1];    
+                string personal = ls[0];
+                string fam = ls[1];
+                foreach (var item in ls)
+                {
+                    history.Text += item;
+                    history.Text += Environment.NewLine;
+                }
+
+
             }
         }
 
@@ -184,6 +192,24 @@ namespace clinical_system_N
         private void history_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Save_Click(object sender, EventArgs e)
+        {
+
+            JsonManager jsonManager = new JsonManager();
+            var ls = jsonManager.GetHistory(patient.info.PatientId);
+            List<string> list = new List<string>();
+            list = Complaints.Text.Split(',').ToList<string>();
+            foreach (var i in list)
+            { 
+                string comps = Environment.NewLine + DateTime.Now.ToString() + Environment.NewLine + "Patient Complained of: " + i + Environment.NewLine;
+                ls.Add(comps);
+            }
+
+            ls.Add(Notes.Text + Environment.NewLine);
+            JsonManager JsonManager = new JsonManager();
+            JsonManager.AddJson(JsonType.History, patient.info.PatientId, ls);
         }
     }
 }
