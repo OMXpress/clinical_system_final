@@ -82,6 +82,38 @@ namespace clinical_system_N
             int dayCounter = 0;
             for (int i = 0; i < 42; i++)
             {
+                timeCounter = (timeCounter + 1) % 7;
+                dayCounter = (dayCounter + 1) % 5;
+                DaysOfWeeks day = DaysOfWeeks.Monday;
+                if (dayCounter == 1)
+                {
+                    day = DaysOfWeeks.Sunday;
+                }                
+                if (dayCounter == 2)
+                {
+                    day = DaysOfWeeks.Monday;
+                }                
+                if (dayCounter == 3)
+                {
+                    day = DaysOfWeeks.Tuesday;
+                }                
+                if (dayCounter == 4)
+                {
+                    day = DaysOfWeeks.Wednesday;
+                }                
+                if (dayCounter == 5)
+                {
+                    day = DaysOfWeeks.Thursday;
+                }                
+                if (dayCounter == 6)
+                {
+                    day = DaysOfWeeks.Saturday;
+                }
+
+                OrthoAppointment orthoAppointment = (OrthoAppointment)timeCounter;
+
+
+               var ls =  GlobalManager.GetOrthoAppAt(day, orthoAppointment);
                 CalendarBlock calendarBlock = new CalendarBlock();
                 //calendarBlock
                 fl_AppContainer.Controls.Add(calendarBlock);
