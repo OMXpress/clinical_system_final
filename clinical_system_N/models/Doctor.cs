@@ -27,7 +27,7 @@ namespace clinical_system_N.models
 
             try
             {
-                string q = string.Format("select SPECIALIZATION, EMPLOYEE.EMPLOYEE_NUMBER, F_NAME, L_NAME from DOCTOR, EMPLOYEE where (DOCTOR.EMPLOYEE_NUMBER = EMPLOYEE.EMPLOYEE_NUMBER) and (EMPLOYEE.EMAIL = {0}) ", email);
+                string q = string.Format("select SPECIALIZATION, EMPLOYEE.EMPLOYEE_NUMBER as EMPLOYEE_NUMBER, F_NAME, L_NAME from DOCTOR, EMPLOYEE where (DOCTOR.EMPLOYEE_NUMBER = EMPLOYEE.EMPLOYEE_NUMBER) and (EMPLOYEE.EMAIL = '{0}') ", email);
                 string emp = " ";
                 string spc = " ";
                 string fname = " ";

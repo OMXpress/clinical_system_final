@@ -187,24 +187,7 @@ namespace clinical_system_N.models
             DirectoryManager.InitializeApp();
             JsonManager jsonManager = new JsonManager();
             OrthoAppointments = jsonManager.LoadOpenAppointments();
-            Patient p = PatientFactory.CreatePatient("Omar", "Khale", "tezoo", "201068037112", "Male", "yarab@muslim.com", "01068037112", "Segada", "Single", "Student");
-            Doctor d = new Doctor();
-            d.Name = "Omar";
-            d.Id = "wjhbfewkj";
-            d.clinic = ClinicType.ortho;
-            d.Email = "jskddsj@hdsch.com";
-            d.Password = "sdfnadkc";
-            Appointment appointment = new Appointment(p, d, ClinicType.ortho, OrthoAppointment.a9, DateTime.Now);
-            OrthoAppointments.Add(appointment);
-            Patient p2 = PatientFactory.CreatePatient("Oma", "Khale", "tezoo", "201068037112", "Male", "yarab@muslim.com", "01068037112", "Segada", "Single", "Student");
-            Doctor d2 = new Doctor();
-            d2.Name = "Oma";
-            d2.Id = "wjhbfewkj";
-            d2.clinic = ClinicType.ortho;
-            d2.Email = "jskddsj@hdsch.com";
-            d2.Password = "sdfnadkc";
-            Appointment appointment2 = new Appointment(p2, d2, ClinicType.ortho, OrthoAppointment.a1, DateTime.Now);
-            OrthoAppointments.Add(appointment2);
+
         }
         public static List<Appointment> GetOrthoAppAt(DaysOfWeeks day, OrthoAppointment time) 
         {
