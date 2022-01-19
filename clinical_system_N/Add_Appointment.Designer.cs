@@ -37,6 +37,7 @@ namespace clinical_system_N
             this.panel46 = new System.Windows.Forms.Panel();
             this.btn_AddPatient = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label_Date = new System.Windows.Forms.Label();
             this.label_Clinic = new System.Windows.Forms.Label();
             this.label_Last_Name = new System.Windows.Forms.Label();
@@ -58,9 +59,8 @@ namespace clinical_system_N
             this.patientID = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.NationalID = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.lblfname = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel43.SuspendLayout();
             this.panel46.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -175,13 +175,34 @@ namespace clinical_system_N
             this.panel1.Controls.Add(this.patientID);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.NationalID);
-            this.panel1.Controls.Add(this.maskedTextBox1);
+            this.panel1.Controls.Add(this.lblfname);
             this.panel1.Location = new System.Drawing.Point(335, 158);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(915, 546);
             this.panel1.TabIndex = 11;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "9:00 AM",
+            "9:30 AM",
+            "10:00 AM",
+            "10:30 AM",
+            "11:00 AM",
+            "12:00 AM",
+            "1:00 AM",
+            "1:30 AM",
+            "3:00 AM",
+            "3:30 AM",
+            "4:00 AM",
+            "4:30 AM"});
+            this.comboBox2.Location = new System.Drawing.Point(538, 390);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(177, 24);
+            this.comboBox2.TabIndex = 22;
             // 
             // label_Date
             // 
@@ -265,7 +286,7 @@ namespace clinical_system_N
             this.last.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.last.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.last.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.last.Location = new System.Drawing.Point(501, 217);
+            this.last.Location = new System.Drawing.Point(501, 218);
             this.last.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.last.Name = "last";
             this.last.Size = new System.Drawing.Size(153, 22);
@@ -406,17 +427,17 @@ namespace clinical_system_N
             this.NationalID.TabIndex = 1;
             this.NationalID.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
-            // maskedTextBox1
+            // lblfname
             // 
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.maskedTextBox1.Location = new System.Drawing.Point(332, 217);
-            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(153, 22);
-            this.maskedTextBox1.TabIndex = 0;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            this.lblfname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblfname.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfname.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lblfname.Location = new System.Drawing.Point(332, 217);
+            this.lblfname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblfname.Name = "lblfname";
+            this.lblfname.Size = new System.Drawing.Size(153, 22);
+            this.lblfname.TabIndex = 0;
+            this.lblfname.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // pictureBox1
             // 
@@ -428,27 +449,6 @@ namespace clinical_system_N
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "9:00 AM",
-            "9:30 AM",
-            "10:00 AM",
-            "10:30 AM",
-            "11:00 AM",
-            "12:00 AM",
-            "1:00 AM",
-            "1:30 AM",
-            "3:00 AM",
-            "3:30 AM",
-            "4:00 AM",
-            "4:30 AM"});
-            this.comboBox2.Location = new System.Drawing.Point(538, 390);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(177, 24);
-            this.comboBox2.TabIndex = 22;
             // 
             // AddAppointment
             // 
@@ -485,7 +485,7 @@ namespace clinical_system_N
         private System.Windows.Forms.Panel panel46;
         private System.Windows.Forms.Button btn_AddPatient;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox lblfname;
         private System.Windows.Forms.TextBox NationalID;
         private System.Windows.Forms.TextBox patientID;
         private System.Windows.Forms.ComboBox comboBox1;

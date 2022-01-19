@@ -32,7 +32,7 @@ namespace clinical_system_N
         private bool Validation()
         {
             //firstname validation
-            if (NationalID.Text == "" || maskedTextBox1.Text.Length > 50 || maskedTextBox1.Text.Contains(" ") || !isValid_name(maskedTextBox1.Text))
+            if (NationalID.Text == "" || lblfname.Text.Length > 50 || lblfname.Text.Contains(" ") || !isValid_name(lblfname.Text))
             {
                 label_First_Name.ForeColor = Color.Red;
                 label_First_Name.Text = "invalid input";
@@ -130,6 +130,7 @@ namespace clinical_system_N
             if (validation)
             {
 
+
                 this.Hide();
                 OrthopedicUnit_Calender C21 = new OrthopedicUnit_Calender();
                 C21.Show();
@@ -209,7 +210,12 @@ namespace clinical_system_N
                     if (pat.info.NationalID == nid)
                     {
                         patient = pat;
-                        patientID.Text = pat.info.PatientId;
+                        patientID.Text = pat.info.PatientId;                        
+                        string name = pat.info.PatientName;
+                        string fname = name.Split(' ')[0];
+                        string lname = name.Split(' ')[1];
+                        lblfname.Text = fname;
+                        last.Text = lname;
                         break;
                     }
                 }
