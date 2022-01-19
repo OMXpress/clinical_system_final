@@ -45,6 +45,7 @@ namespace clinical_system_N
             if (patients.Count == 1)
             {
                 lblPatient1.Text = patient.info.PatientName;
+                
             }
             else
             {
@@ -53,5 +54,9 @@ namespace clinical_system_N
             return true;
         }
 
+        private void lblPatient2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
