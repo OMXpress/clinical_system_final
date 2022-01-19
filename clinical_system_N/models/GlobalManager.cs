@@ -18,7 +18,11 @@ namespace clinical_system_N.models
         public static List<Appointment> OrthoAppointments = new List<Appointment>();
         public static List<Appointment> PhysioAppointments = new List<Appointment>();
         public static List<string> allowed = new List<string>();
-
+        public static List<PerscribedMedicine> perscribedMedicines = new List<PerscribedMedicine>();
+        public static void AddToPres(PerscribedMedicine m)
+        {
+            perscribedMedicines.Add(m);
+        }
         public static string ClinicToText(ClinicType clinicType)
         {
             if (clinicType == ClinicType.physio)

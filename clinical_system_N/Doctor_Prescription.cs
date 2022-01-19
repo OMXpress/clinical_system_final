@@ -58,7 +58,7 @@ namespace clinical_system_N
             string id = Guid.NewGuid().ToString();
             try
             {
-                List<PerscribedMedicine> pMed = PatientFactory.GetAllPrescribedMeds();
+                var pMed = GlobalManager.perscribedMedicines;
                 foreach (PerscribedMedicine pat in pMed)
                 {
                     new_prescription control = new new_prescription(pat);
@@ -171,7 +171,9 @@ namespace clinical_system_N
 
         private void btn_save(object sender, EventArgs e)
         {
-
+            JsonManager jsonManager = new JsonManager();
+            jsonManager.AddJson(JsonType.Prescriptions, patient.info.PatientId, GlobalManager.perscribedMedicines);
+            GlobalManager.perscribedMedicines.Clear();
         }
 
         private void btn_print(object sender, EventArgs e)

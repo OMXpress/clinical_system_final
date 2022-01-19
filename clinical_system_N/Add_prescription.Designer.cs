@@ -39,6 +39,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Dosein = new System.Windows.Forms.TextBox();
+            this.Dose = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Close
@@ -106,7 +108,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 306);
+            this.label4.Location = new System.Drawing.Point(37, 348);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 32);
             this.label4.TabIndex = 6;
@@ -138,17 +140,36 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(292, 306);
+            this.textBox4.Location = new System.Drawing.Point(292, 348);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(358, 22);
             this.textBox4.TabIndex = 10;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // Dosein
+            // 
+            this.Dosein.Location = new System.Drawing.Point(292, 294);
+            this.Dosein.Name = "Dosein";
+            this.Dosein.Size = new System.Drawing.Size(358, 22);
+            this.Dosein.TabIndex = 12;
+            // 
+            // Dose
+            // 
+            this.Dose.AutoSize = true;
+            this.Dose.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dose.Location = new System.Drawing.Point(37, 294);
+            this.Dose.Name = "Dose";
+            this.Dose.Size = new System.Drawing.Size(95, 32);
+            this.Dose.TabIndex = 11;
+            this.Dose.Text = "Dose :";
             // 
             // Add_prescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Dosein);
+            this.Controls.Add(this.Dose);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -182,5 +203,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Dosein;
+        private System.Windows.Forms.Label Dose;
     }
 }

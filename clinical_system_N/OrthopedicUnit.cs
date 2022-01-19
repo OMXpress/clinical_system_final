@@ -149,7 +149,7 @@ namespace clinical_system_N
         private void btn_doctor_prescription(object sender, EventArgs e)
         {
             this.Hide();
-            Doctor_Prescription C139 = new Doctor_Prescription();
+            Doctor_Prescription C139 = new Doctor_Prescription(patient);
             C139.Show();
         }
 

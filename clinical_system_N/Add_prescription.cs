@@ -48,7 +48,10 @@ namespace clinical_system_N
             string activeSubstance = textBox2.Text.ToString();
             string use = textBox3.Text.ToString();
             string Duration = textBox4.Text.ToString();
-            // addPresJson
+            string Dose = Dosein.Text.ToString();
+            PerscribedMedicine med = new PerscribedMedicine(medName, Duration, Dose, use, activeSubstance);
+            GlobalManager.AddToPres(med);
+ 
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
