@@ -80,6 +80,7 @@ namespace clinical_system_N
             var apps = GlobalManager.OrthoAppointments;
             int timeCounter = 0;
             int dayCounter = 0;
+            fl_AppContainer.Controls.Clear();
             for (int i = 0; i < 42; i++)
             {
                 

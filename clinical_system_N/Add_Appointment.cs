@@ -31,74 +31,7 @@ namespace clinical_system_N
 
         private bool Validation()
         {
-            //firstname validation
-            if (NationalID.Text == "" || lblfname.Text.Length > 50 || lblfname.Text.Contains(" ") || !isValid_name(lblfname.Text))
-            {
-                label_First_Name.ForeColor = Color.Red;
-                label_First_Name.Text = "invalid input";
-                return false;
-            }
-            else
-            {
-                label_First_Name.Text = "";
-            }
-            //patient ID Validation
-            if (patientID.Text == "")
-            {
-                label_Patient_ID.ForeColor = Color.Red;
-                label_Patient_ID.Text = "invalid input";
-                return false;
-            }
-            else
-            {
-                label_Patient_ID.Text = "";
-            }
-            //Phone Number Validation
-            Regex check = new Regex(@"^?([0,1]{2})?([0,1,2,5]{1})?([0-9]{8})$");
-            bool valid = check.IsMatch(NationalID.Text);
-            if (NationalID.Text == "" || valid == false)
-            {
-                label_Phone_Number.ForeColor = Color.Red;
-                label_Phone_Number.Text = "invalid input";
-                return false;
-            }
-            else
-            {
-                label_Phone_Number.Text = "";
-            }
-            //Last Name Validation
-            if (last.Text == "" || last.Text.Length > 50 || last.Text.Contains(" ") || !isValid_name(last.Text))
-            {
-                label_Last_Name.ForeColor = Color.Red;
-                label_Last_Name.Text = "invalid input";
-                return false;
-            }
-            else
-            {
-                label_Last_Name.Text = "";
-            }
-            //Date Validation
-            if (Date_time == false)
-            {
-                label_Date.ForeColor = Color.Red;
-                label_Date.Text = "invalid input";
-                return false;
-            }
-            else
-            {
-                label_Date.Text = "";
-            }
-            //clinic validation
-            if (comboBox1.Text == "")
-            {
-                label_Clinic.ForeColor = Color.Red;
-                label_Clinic.Text = "invalid input";
-                return false;
-            }
-            else
-            {
-                label_Clinic.Text = "";
-            }
+
             return true;
         }
 
@@ -129,7 +62,42 @@ namespace clinical_system_N
             //if all inputs are true proceed to database
             if (validation)
             {
+                Doctor doctor = GlobalManager.OrthoClinic.attending;
+                DaysOfWeeks day = ((DaysOfWeeks)(int)dateTimePicker1.Value.DayOfWeek);
+                string time = comboBox2.SelectedItem.ToString();
+                OrthoAppointment app = OrthoAppointment.a9;
+                if (time == "9:00 AM" || time == "9:30 AM")
+                {
+                    app = OrthoAppointment.a9;
+                }
+                if (time == "10:00 AM" || time == "10:30 AM")
+                {
+                    app = OrthoAppointment.a10;
+                }
+                if (time == "11:00 AM" || time == "11:30 AM")
+                {
+                    app = OrthoAppointment.a11;
+                }
+                if (time == "12:00 AM" || time == "12:30 AM")
+                {
+                    app = OrthoAppointment.a12;
+                }
+                if (time == "1:00 AM" || time == "1:30 AM")
+                {
+                    app = OrthoAppointment.a1;
+                }
+                if (time == "3:00 AM" || time == "3:30 AM")
+                {
+                    app = OrthoAppointment.a3;
+                }
+                if (time == "4:00 AM" || time == "4:30 AM")
+                {
+                    app = OrthoAppointment.a4;
+                }
 
+
+                Appointment appointment = new Appointment(patient, doctor, ClinicType.ortho, app, dateTimePicker1.Value);
+                GlobalManager.AddOrthoAppointment(appointment);
 
                 this.Hide();
                 OrthopedicUnit_Calender C21 = new OrthopedicUnit_Calender();

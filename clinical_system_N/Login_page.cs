@@ -73,6 +73,9 @@ namespace clinical_system_N
             bool validation = Validation();
             if (validation)
             {
+                Doctor doctor = new Doctor(@"maro\@yahoo.com", "wer1234");
+                Clinic clinic = new Clinic(doctor, ClinicType.ortho);
+                GlobalManager.InitializeOrtho(clinic);
                 this.Hide();
                 OrthopedicUnit_Calender C1 = new OrthopedicUnit_Calender();
                 C1.Show();
