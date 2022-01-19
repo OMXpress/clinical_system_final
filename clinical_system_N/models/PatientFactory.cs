@@ -160,19 +160,19 @@ namespace clinical_system_N.models
             return list;
         }
 
-        //public static List<PerscribedMedicine> GetAllPrescribedMeds()
-        //{
-            //List<PerscribedMedicine> list = new List<PerscribedMedicine>();
+        public static List<PerscribedMedicine> GetAllPrescribedMeds()
+        {
+            List<PerscribedMedicine> list = new List<PerscribedMedicine>();
 
-            //JsonManager jsonManager = new JsonManager();
-            //var infos = jsonManager.GetAllInfo();
-            //foreach (var info in infos)
-            //{
-                //PerscribedMedicine perscribedMedicine = new PerscribedMedicine(info);
-                //list.Add(perscribedMedicine);
-            //}
-            //return list;
-        //}
-
+            JsonManager jsonManager = new JsonManager();
+            var infos = jsonManager.GetMedInfo();
+            Console.WriteLine(infos.ToString());
+            foreach (var info in infos)
+            {
+                PerscribedMedicine perscribedMedicine = new PerscribedMedicine(info.MedicineName.ToString(), info.Duration.ToString(), info.Dose.ToString(), info.How.ToString(), info.ActiveIngredient.ToString());
+                list.Add(perscribedMedicine);
+            }
+            return list;
+        }
     }
 }

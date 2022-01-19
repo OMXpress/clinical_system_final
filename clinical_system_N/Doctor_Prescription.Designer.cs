@@ -82,7 +82,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel_Med = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -690,13 +690,13 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.btn_add);
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanel_Med
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(182, 255);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1127, 206);
-            this.flowLayoutPanel1.TabIndex = 46;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.new_prescription_panel);
+            this.flowLayoutPanel_Med.Location = new System.Drawing.Point(182, 255);
+            this.flowLayoutPanel_Med.Name = "flowLayoutPanel_Med";
+            this.flowLayoutPanel_Med.Size = new System.Drawing.Size(1127, 206);
+            this.flowLayoutPanel_Med.TabIndex = 46;
+            this.flowLayoutPanel_Med.Paint += new System.Windows.Forms.PaintEventHandler(this.new_prescription_panel);
             // 
             // flowLayoutPanel2
             // 
@@ -724,7 +724,7 @@
             this.ClientSize = new System.Drawing.Size(1458, 811);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flowLayoutPanel_Med);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button14);
@@ -804,7 +804,7 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_Med;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

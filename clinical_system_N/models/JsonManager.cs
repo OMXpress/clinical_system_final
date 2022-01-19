@@ -100,7 +100,7 @@ namespace clinical_system_N.models
             var paths = Directory.GetDirectories(GlobalManager.PathToPatients);
             var result = new List<PatientInformation>();
             foreach (var path in paths)
-            {;
+            {
                 var json = LoadJson(JsonType.MetaData, path);
                 var x = JsonConvert.DeserializeObject<PatientInformation>(json);
                 result.Add(x);
@@ -108,17 +108,16 @@ namespace clinical_system_N.models
             }
             return result;
         }
-        public List<PatientInformation> GetMedInfo()
+        public List<PerscribedMedicine> GetMedInfo()
         {
 
             var paths = Directory.GetDirectories(GlobalManager.PathToPatients);
-            var result = new List<PatientInformation>();
+            var result = new List<PerscribedMedicine>();
             foreach (var path in paths)
             {
                 var json = LoadJson(JsonType.Prescriptions, path);
-                var x = JsonConvert.DeserializeObject<PatientInformation>(json);
+                var x = JsonConvert.DeserializeObject<PerscribedMedicine>(json);
                 result.Add(x);
-
             }
             return result;
         }

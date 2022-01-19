@@ -51,12 +51,12 @@ namespace clinical_system_N
             string id = Guid.NewGuid().ToString();
             try
             {
-                List<Patient> patients = PatientFactory.GetAllPatients();
-                //foreach (Patient pat in patients)
-                //{
-                    //new_prescription control = new new_prescription(pat);
-                    //RecordDisplayer.Controls.Add(control);
-                //}
+                List<PerscribedMedicine> pMed = PatientFactory.GetAllPrescribedMeds();
+                foreach (PerscribedMedicine pat in pMed)
+                {
+                    new_prescription control = new new_prescription(pat);
+                    flowLayoutPanel_Med.Controls.Add(control);
+                }
             }
             catch (Exception)
             {
