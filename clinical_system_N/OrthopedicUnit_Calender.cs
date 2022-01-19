@@ -82,9 +82,43 @@ namespace clinical_system_N
             int dayCounter = 0;
             for (int i = 0; i < 42; i++)
             {
-                timeCounter = (timeCounter + 1) % 7;
-                dayCounter = (dayCounter + 1) % 5;
+                
+                dayCounter = (dayCounter + 1) % 6;
+                if (dayCounter == 1)
+                {
+                    timeCounter++;
+                }
                 DaysOfWeeks day = DaysOfWeeks.Monday;
+                OrthoAppointment ment = OrthoAppointment.a3;
+                if (timeCounter == 1)
+                {
+                    ment = OrthoAppointment.a9;
+                }
+                if (timeCounter == 2)
+                {
+                    ment = OrthoAppointment.a10;
+                }
+                if (timeCounter == 3)
+                {
+                    ment = OrthoAppointment.a11;
+                }
+                if (timeCounter == 4)
+                {
+                    ment = OrthoAppointment.a12;
+                }
+                if (timeCounter == 5)
+                {
+                    ment = OrthoAppointment.a1;
+                }
+                if (timeCounter == 6)
+                {
+                    ment = OrthoAppointment.a3;
+                }
+                if (timeCounter == 7)
+                {
+                    ment = OrthoAppointment.a4;
+                }
+
                 if (dayCounter == 1)
                 {
                     day = DaysOfWeeks.Sunday;
@@ -110,12 +144,17 @@ namespace clinical_system_N
                     day = DaysOfWeeks.Saturday;
                 }
 
-                OrthoAppointment orthoAppointment = (OrthoAppointment)timeCounter;
 
 
-               var ls =  GlobalManager.GetOrthoAppAt(day, orthoAppointment);
+                var ls =  GlobalManager.GetOrthoAppAt(day, ment);
                 CalendarBlock calendarBlock = new CalendarBlock();
-                //calendarBlock
+                if (ls.Count > 0)
+                {
+                    foreach (var item in ls)
+                    {
+                        calendarBlock.AddPatient(item._patient);
+                    }
+                }
                 fl_AppContainer.Controls.Add(calendarBlock);
                 
             }
