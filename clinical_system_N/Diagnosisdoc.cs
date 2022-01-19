@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clinical_system_N.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,17 @@ using System.Windows.Forms;
 
 namespace clinical_system_N
 {
-    public partial class diagnosisdoc : Form
+    internal partial class diagnosisdoc : Form
     {
+        Patient patient;
         public diagnosisdoc()
         {
             InitializeComponent();
+        }
+        public diagnosisdoc(Patient patient)
+        {
+            InitializeComponent();
+            this.patient = patient;
         }
 
         private void btn_investigation(object sender, EventArgs e)
@@ -170,6 +177,73 @@ namespace clinical_system_N
         private void label19_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void diagnosis_TextChanged(object sender, EventArgs e)
+        {
+ 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int Index = 0;
+            diagnosis.SelectAll();
+            diagnosis.SelectionBackColor = Color.White;
+            List<string> list = diagnosis.Text.Split(' ').ToList<string>();
+            var x = GlobalManager.allowed;
+            var y = new List<string>();
+            foreach (var item in list)
+            {
+                if (!x.Contains(item))
+                {
+                    y.Add(item);
+                }
+            }
+            foreach (var item in y)
+            {
+                diagnosis.Find(item, Index, diagnosis.TextLength, RichTextBoxFinds.MatchCase);
+                diagnosis.SelectionBackColor = Color.Red;
+                Index = diagnosis.Text.IndexOf(item, Index) + 1;
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            int Index = 0;
+            diagnosis.SelectAll();
+            diagnosis.SelectionBackColor = Color.White;
+            List<string> list = diagnosis.Text.Split(' ').ToList<string>();
+            var x = GlobalManager.allowed;
+            var y = new List<string>();
+            foreach (var item in list)
+            {
+                if (!x.Contains(item))
+                {
+                    y.Add(item);
+                }
+            }
+            foreach (var item in y)
+            {
+                diagnosis.Find(item, Index, diagnosis.TextLength, RichTextBoxFinds.MatchCase);
+                diagnosis.SelectedText = "";
+                Index = diagnosis.Text.IndexOf(item, Index) + 1;
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            JsonManager jsonManager = new JsonManager();
+            var ls = jsonManager.GetHistory(patient.info.PatientId);
+            List<string> list = new List<string>();
+            list = diagnosis.Text.Split(',').ToList<string>();
+            foreach (var i in list)
+            {
+                string comps = Environment.NewLine + DateTime.Now.ToString() + Environment.NewLine + "Diagnosis: " + i + Environment.NewLine;
+                ls.Add(comps);
+            }
+
+            JsonManager JsonManager = new JsonManager();
+            JsonManager.AddJson(JsonType.History, patient.info.PatientId, ls);
         }
     }
 }

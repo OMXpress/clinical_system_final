@@ -34,8 +34,17 @@ namespace clinical_system_N
         private void btn_diagnosis(object sender, EventArgs e)
         {
             this.Hide();
-            diagnosisdoc C136 = new diagnosisdoc();
-            C136.Show();
+            if (this.patient != null)
+            {
+                diagnosisdoc C136 = new diagnosisdoc(patient);
+                C136.Show();
+            }
+            else
+            {
+                diagnosisdoc C136 = new diagnosisdoc();
+                C136.Show();
+            }
+
         }
 
         private void OrthopedicUnit_Load(object sender, EventArgs e)

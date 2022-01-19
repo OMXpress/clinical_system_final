@@ -17,6 +17,7 @@ namespace clinical_system_N.models
         public static string PathToAppData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ClinicalSystem");
         public static List<Appointment> OrthoAppointments = new List<Appointment>();
         public static List<Appointment> PhysioAppointments = new List<Appointment>();
+        public static List<string> allowed = new List<string>();
 
         public static string ClinicToText(ClinicType clinicType)
         {
@@ -161,6 +162,20 @@ namespace clinical_system_N.models
 
         public static void InitializeOrtho(Clinic clinic)
         {
+            allowed.Add("broken");
+            allowed.Add("right");
+            allowed.Add("arm");
+            allowed.Add("left");
+            allowed.Add("leg");
+            allowed.Add("elbow");
+            allowed.Add("fractured");
+            allowed.Add("broken,");
+            allowed.Add("right,");
+            allowed.Add("arm,");
+            allowed.Add("left,");
+            allowed.Add("leg,");
+            allowed.Add("elbow,");
+            allowed.Add("fractured,");
             if (!OrthoInitialized)
             {
                 OrthoClinic = clinic;
