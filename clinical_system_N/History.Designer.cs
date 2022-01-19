@@ -45,6 +45,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Savebutton = new System.Windows.Forms.Button();
             this.panel43.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -185,7 +186,7 @@
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(189, 216);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(194, 32);
+            this.label19.Size = new System.Drawing.Size(193, 32);
             this.label19.TabIndex = 18;
             this.label19.Text = "Family History";
             // 
@@ -204,7 +205,7 @@
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(174, 452);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(223, 32);
+            this.label20.Size = new System.Drawing.Size(222, 32);
             this.label20.TabIndex = 20;
             this.label20.Text = "Personal History";
             // 
@@ -246,12 +247,23 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
+            // Savebutton
+            // 
+            this.Savebutton.Location = new System.Drawing.Point(1271, 715);
+            this.Savebutton.Name = "Savebutton";
+            this.Savebutton.Size = new System.Drawing.Size(75, 23);
+            this.Savebutton.TabIndex = 23;
+            this.Savebutton.Text = "Save";
+            this.Savebutton.UseVisualStyleBackColor = true;
+            this.Savebutton.Click += new System.EventHandler(this.Savebutton_Click);
+            // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
+            this.Controls.Add(this.Savebutton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.label20);
@@ -294,6 +306,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Savebutton;
     }
 }
 
