@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
-
+using clinical_system_N.models;
 
 namespace clinical_system_N
 {
-    public partial class AddAppointment : Form
+    internal partial class AddAppointment : Form
     {
-
+        Patient patient;
         public AddAppointment()
         {
             InitializeComponent();
@@ -32,7 +32,7 @@ namespace clinical_system_N
         private bool Validation()
         {
             //firstname validation
-            if (Phone.Text == "" || maskedTextBox1.Text.Length > 50 || maskedTextBox1.Text.Contains(" ") || !isValid_name(maskedTextBox1.Text))
+            if (NationalID.Text == "" || maskedTextBox1.Text.Length > 50 || maskedTextBox1.Text.Contains(" ") || !isValid_name(maskedTextBox1.Text))
             {
                 label_First_Name.ForeColor = Color.Red;
                 label_First_Name.Text = "invalid input";
@@ -55,8 +55,8 @@ namespace clinical_system_N
             }
             //Phone Number Validation
             Regex check = new Regex(@"^?([0,1]{2})?([0,1,2,5]{1})?([0-9]{8})$");
-            bool valid = check.IsMatch(Phone.Text);
-            if (Phone.Text == "" || valid == false)
+            bool valid = check.IsMatch(NationalID.Text);
+            if (NationalID.Text == "" || valid == false)
             {
                 label_Phone_Number.ForeColor = Color.Red;
                 label_Phone_Number.Text = "invalid input";
@@ -129,6 +129,7 @@ namespace clinical_system_N
             //if all inputs are true proceed to database
             if (validation)
             {
+
                 this.Hide();
                 OrthopedicUnit_Calender C21 = new OrthopedicUnit_Calender();
                 C21.Show();
@@ -199,7 +200,24 @@ namespace clinical_system_N
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
-
+            try
+            {
+                string nid = NationalID.Text.Trim();
+                List < Patient >  ls = PatientFactory.GetAllPatients();
+                foreach (Patient pat in ls)
+                {
+                    if (pat.info.NationalID == nid)
+                    {
+                        patient = pat;
+                        patientID.Text = pat.info.PatientId;
+                        break;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                
+            }
         }
 
         private void dateTimePicker1_ValueChanged_1(object sender, EventArgs e)

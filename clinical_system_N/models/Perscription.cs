@@ -47,7 +47,7 @@ namespace clinical_system_N.models
             z.Add("medications", Medication);
             dic.Add(Id, z);
 
-            string json = JsonConvert.SerializeObject(dic);
+            string json = JsonConvert.SerializeObject(this);
 
             return json;
         }

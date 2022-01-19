@@ -57,9 +57,10 @@ namespace clinical_system_N
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.patientID = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Phone = new System.Windows.Forms.TextBox();
+            this.NationalID = new System.Windows.Forms.TextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel43.SuspendLayout();
             this.panel46.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -152,6 +153,7 @@ namespace clinical_system_N
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.comboBox2);
             this.panel1.Controls.Add(this.label_Date);
             this.panel1.Controls.Add(this.label_Clinic);
             this.panel1.Controls.Add(this.label_Last_Name);
@@ -172,7 +174,7 @@ namespace clinical_system_N
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.patientID);
             this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.Phone);
+            this.panel1.Controls.Add(this.NationalID);
             this.panel1.Controls.Add(this.maskedTextBox1);
             this.panel1.Location = new System.Drawing.Point(335, 158);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -187,7 +189,7 @@ namespace clinical_system_N
             this.label_Date.Location = new System.Drawing.Point(375, 423);
             this.label_Date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Date.Name = "label_Date";
-            this.label_Date.Size = new System.Drawing.Size(0, 17);
+            this.label_Date.Size = new System.Drawing.Size(0, 16);
             this.label_Date.TabIndex = 21;
             // 
             // label_Clinic
@@ -196,7 +198,7 @@ namespace clinical_system_N
             this.label_Clinic.Location = new System.Drawing.Point(511, 277);
             this.label_Clinic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Clinic.Name = "label_Clinic";
-            this.label_Clinic.Size = new System.Drawing.Size(0, 17);
+            this.label_Clinic.Size = new System.Drawing.Size(0, 16);
             this.label_Clinic.TabIndex = 20;
             // 
             // label_Last_Name
@@ -205,7 +207,7 @@ namespace clinical_system_N
             this.label_Last_Name.Location = new System.Drawing.Point(535, 247);
             this.label_Last_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Last_Name.Name = "label_Last_Name";
-            this.label_Last_Name.Size = new System.Drawing.Size(0, 17);
+            this.label_Last_Name.Size = new System.Drawing.Size(0, 16);
             this.label_Last_Name.TabIndex = 19;
             // 
             // label_First_Name
@@ -214,7 +216,7 @@ namespace clinical_system_N
             this.label_First_Name.Location = new System.Drawing.Point(365, 247);
             this.label_First_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_First_Name.Name = "label_First_Name";
-            this.label_First_Name.Size = new System.Drawing.Size(0, 17);
+            this.label_First_Name.Size = new System.Drawing.Size(0, 16);
             this.label_First_Name.TabIndex = 18;
             // 
             // label_Patient_ID
@@ -223,7 +225,7 @@ namespace clinical_system_N
             this.label_Patient_ID.Location = new System.Drawing.Point(548, 191);
             this.label_Patient_ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Patient_ID.Name = "label_Patient_ID";
-            this.label_Patient_ID.Size = new System.Drawing.Size(0, 17);
+            this.label_Patient_ID.Size = new System.Drawing.Size(0, 16);
             this.label_Patient_ID.TabIndex = 17;
             // 
             // label_Phone_Number
@@ -232,7 +234,7 @@ namespace clinical_system_N
             this.label_Phone_Number.Location = new System.Drawing.Point(376, 191);
             this.label_Phone_Number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Phone_Number.Name = "label_Phone_Number";
-            this.label_Phone_Number.Size = new System.Drawing.Size(0, 17);
+            this.label_Phone_Number.Size = new System.Drawing.Size(0, 16);
             this.label_Phone_Number.TabIndex = 16;
             // 
             // label10
@@ -268,7 +270,6 @@ namespace clinical_system_N
             this.last.Name = "last";
             this.last.Size = new System.Drawing.Size(153, 22);
             this.last.TabIndex = 13;
-            this.last.Text = "Last name";
             // 
             // label9
             // 
@@ -331,11 +332,11 @@ namespace clinical_system_N
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(36)))), ((int)(((byte)(33)))));
-            this.label4.Location = new System.Drawing.Point(191, 158);
+            this.label4.Location = new System.Drawing.Point(219, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 20);
+            this.label4.Size = new System.Drawing.Size(92, 20);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Phone Number";
+            this.label4.Text = "National ID";
             // 
             // dateTimePicker1
             // 
@@ -379,7 +380,6 @@ namespace clinical_system_N
             this.patientID.Name = "patientID";
             this.patientID.Size = new System.Drawing.Size(153, 22);
             this.patientID.TabIndex = 3;
-            this.patientID.Text = "Patient ID";
             // 
             // comboBox1
             // 
@@ -393,19 +393,18 @@ namespace clinical_system_N
             this.comboBox1.Size = new System.Drawing.Size(153, 24);
             this.comboBox1.TabIndex = 2;
             // 
-            // Phone
+            // NationalID
             // 
-            this.Phone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Phone.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Phone.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Phone.Location = new System.Drawing.Point(332, 158);
-            this.Phone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Phone.Name = "Phone";
-            this.Phone.Size = new System.Drawing.Size(153, 22);
-            this.Phone.TabIndex = 1;
-            this.Phone.Text = "Phone number";
-            this.Phone.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.NationalID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NationalID.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.NationalID.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NationalID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.NationalID.Location = new System.Drawing.Point(332, 158);
+            this.NationalID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.NationalID.Name = "NationalID";
+            this.NationalID.Size = new System.Drawing.Size(153, 22);
+            this.NationalID.TabIndex = 1;
+            this.NationalID.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // maskedTextBox1
             // 
@@ -417,7 +416,6 @@ namespace clinical_system_N
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(153, 22);
             this.maskedTextBox1.TabIndex = 0;
-            this.maskedTextBox1.Text = "First name";
             this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // pictureBox1
@@ -430,6 +428,27 @@ namespace clinical_system_N
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "9:00 AM",
+            "9:30 AM",
+            "10:00 AM",
+            "10:30 AM",
+            "11:00 AM",
+            "12:00 AM",
+            "1:00 AM",
+            "1:30 AM",
+            "3:00 AM",
+            "3:30 AM",
+            "4:00 AM",
+            "4:30 AM"});
+            this.comboBox2.Location = new System.Drawing.Point(538, 390);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(177, 24);
+            this.comboBox2.TabIndex = 22;
             // 
             // AddAppointment
             // 
@@ -467,7 +486,7 @@ namespace clinical_system_N
         private System.Windows.Forms.Button btn_AddPatient;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox Phone;
+        private System.Windows.Forms.TextBox NationalID;
         private System.Windows.Forms.TextBox patientID;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label10;
@@ -489,5 +508,6 @@ namespace clinical_system_N
         private System.Windows.Forms.Label label_First_Name;
         private System.Windows.Forms.Label label_Patient_ID;
         private System.Windows.Forms.Label label_Phone_Number;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
