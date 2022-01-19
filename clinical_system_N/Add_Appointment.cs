@@ -64,33 +64,33 @@ namespace clinical_system_N
             {
                 Doctor doctor = GlobalManager.OrthoClinic.attending;
                 DaysOfWeeks day = ((DaysOfWeeks)(int)dateTimePicker1.Value.DayOfWeek);
-                string time = comboBox2.Text;
+                string time = comboBox2.SelectedItem.ToString();
                 OrthoAppointment app = OrthoAppointment.a9;
-                if (time == "9:00" || time == "9:30")
+                if (time == "9:00 AM" || time == "9:30 AM")
                 {
                     app = OrthoAppointment.a9;
                 }
-                if (time == "10:00" || time == "10:30")
+                if (time == "10:00 AM" || time == "10:30 AM")
                 {
                     app = OrthoAppointment.a10;
                 }
-                if (time == "11:00" || time == "11:30")
+                if (time == "11:00 AM" || time == "11:30 AM")
                 {
                     app = OrthoAppointment.a11;
                 }
-                if (time == "12:00" || time == "12:30")
+                if (time == "12:00 AM" || time == "12:30 AM")
                 {
                     app = OrthoAppointment.a12;
                 }
-                if (time == "1:00" || time == "1:30")
+                if (time == "1:00 AM" || time == "1:30 AM")
                 {
                     app = OrthoAppointment.a1;
                 }
-                if (time == "3:00" || time == "3:30")
+                if (time == "3:00 AM" || time == "3:30 AM")
                 {
                     app = OrthoAppointment.a3;
                 }
-                if (time == "4:00" || time == "4:30")
+                if (time == "4:00 AM" || time == "4:30 AM")
                 {
                     app = OrthoAppointment.a4;
                 }

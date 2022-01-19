@@ -9,12 +9,7 @@ namespace clinical_system_N.models
     internal static class AppointmentManager
     {
 
-        public static Appointment CreateAppointment(Patient patient, Doctor doctor, ClinicType clinic, OrthoAppointment orthoAppointment, DateTime dateTime)
-        {
-            Appointment appointment = new Appointment(patient, doctor, clinic, orthoAppointment, dateTime);
-            return appointment;
 
-        }
 
 
     }

@@ -219,24 +219,7 @@ namespace clinical_system_N.models
             DirectoryManager.InitializeApp();
             JsonManager jsonManager = new JsonManager();
             PhysioAppointments = jsonManager.LoadOpenAppointments();
-            Patient p3 = PatientFactory.CreatePatient("Omar", "Khale", "tezoo", "201068037112", "Male", "yarab@muslim.com", "01068037112", "Segada", "Single", "Student");
-            Doctor d3 = new Doctor();
-            d3.Name = "Omar";
-            d3.Id = "wjhbfewkj";
-            d3.clinic = ClinicType.physio;
-            d3.Email = "jskddsj@hdsch.com";
-            d3.Password = "sdfnadkc";
-            Appointment appointment = new Appointment(p3, d3, ClinicType.physio, PhysioAppointment.a9, DateTime.Now);
-            PhysioAppointments.Add(appointment);
-            Patient p2 = PatientFactory.CreatePatient("Oma", "Khale", "tezoo", "201068037112", "Male", "yarab@muslim.com", "01068037112", "Segada", "Single", "Student");
-            Doctor d2 = new Doctor();
-            d2.Name = "Oma";
-            d2.Id = "wjhbfewkj";
-            d2.clinic = ClinicType.physio;
-            d2.Email = "jskddsj@hdsch.com";
-            d2.Password = "sdfnadkc";
-            Appointment appointment2 = new Appointment(p2, d2, ClinicType.physio, PhysioAppointment.a1, DateTime.Now);
-            PhysioAppointments.Add(appointment2);
+            
         }
         public static List<Appointment> GetPhysioAppAt(DaysOfWeeks day, PhysioAppointment time) 
         {

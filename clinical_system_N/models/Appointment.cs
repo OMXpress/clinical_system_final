@@ -18,6 +18,7 @@ namespace clinical_system_N.models
         public ClinicType ClinicType;
         public bool open = true;
 
+        public Appointment() { }
         public Appointment(Patient patient, Doctor doctor, ClinicType clinic, OrthoAppointment appointment, DateTime dateofAppointment)
         {
             _patient = patient;

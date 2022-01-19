@@ -160,7 +160,7 @@ namespace clinical_system_N.models
         // if physio or ortho
         public void SaveAppointments(List<Appointment> appointments)
         {
-            string jsn = JsonConvert.SerializeObject(appointments, Formatting.Indented);
+            string jsn = JsonConvert.SerializeObject(appointments);
 
             using (StreamWriter sw = new StreamWriter(Path.Combine(appPath, "Appointments.json")))
             {
