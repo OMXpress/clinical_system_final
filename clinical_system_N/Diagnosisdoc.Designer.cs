@@ -81,11 +81,8 @@ namespace clinical_system_N
             this.label25 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Patient_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Symptoms = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Diagnosis = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.diagnosis = new System.Windows.Forms.RichTextBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel43.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -643,7 +640,7 @@ namespace clinical_system_N
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(734, 206);
+            this.label25.Location = new System.Drawing.Point(680, 206);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(196, 46);
             this.label25.TabIndex = 31;
@@ -658,6 +655,7 @@ namespace clinical_system_N
             this.button13.TabIndex = 6;
             this.button13.Text = "Save";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
@@ -668,41 +666,26 @@ namespace clinical_system_N
             this.button14.TabIndex = 36;
             this.button14.Text = "Delete";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
-            // listView1
+            // diagnosis
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ID,
-            this.Patient_Name,
-            this.Symptoms,
-            this.Diagnosis});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(221, 289);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1171, 440);
-            this.listView1.TabIndex = 37;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.diagnosis.Location = new System.Drawing.Point(171, 286);
+            this.diagnosis.Name = "diagnosis";
+            this.diagnosis.Size = new System.Drawing.Size(1253, 381);
+            this.diagnosis.TabIndex = 37;
+            this.diagnosis.Text = "";
+            this.diagnosis.TextChanged += new System.EventHandler(this.diagnosis_TextChanged);
             // 
-            // ID
+            // button5
             // 
-            this.ID.Text = "ID";
-            this.ID.Width = 94;
-            // 
-            // Patient_Name
-            // 
-            this.Patient_Name.Text = "Patient_Name";
-            this.Patient_Name.Width = 163;
-            // 
-            // Symptoms
-            // 
-            this.Symptoms.Text = "Symptoms";
-            this.Symptoms.Width = 159;
-            // 
-            // Diagnosis
-            // 
-            this.Diagnosis.Text = "Diagnosis";
-            this.Diagnosis.Width = 625;
+            this.button5.Location = new System.Drawing.Point(1099, 773);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 38;
+            this.button5.Text = "Validate";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // diagnosisdoc
             // 
@@ -710,7 +693,8 @@ namespace clinical_system_N
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1458, 811);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.diagnosis);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.label25);
@@ -787,10 +771,7 @@ namespace clinical_system_N
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader ID;
-        private System.Windows.Forms.ColumnHeader Patient_Name;
-        private System.Windows.Forms.ColumnHeader Symptoms;
-        private System.Windows.Forms.ColumnHeader Diagnosis;
+        private System.Windows.Forms.RichTextBox diagnosis;
+        private System.Windows.Forms.Button button5;
     }
 }
