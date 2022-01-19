@@ -639,10 +639,12 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(158, 266);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1300, 545);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1288, 533);
             this.flowLayoutPanel1.TabIndex = 20;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // app_label
             // 
@@ -650,7 +652,7 @@
             this.app_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.app_label.Location = new System.Drawing.Point(704, 213);
             this.app_label.Name = "app_label";
-            this.app_label.Size = new System.Drawing.Size(202, 32);
+            this.app_label.Size = new System.Drawing.Size(201, 32);
             this.app_label.TabIndex = 21;
             this.app_label.Text = "Appointments";
             // 

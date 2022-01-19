@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clinical_system_N.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -59,7 +60,12 @@ namespace clinical_system_N
 
         private void App_Load(object sender, EventArgs e)
         {
-
+            var x = GlobalManager.OrthoAppointments;
+            for (int i = 0; i < 10; i++)
+            {
+                AppointmentControl appointment = new AppointmentControl(x[1]);
+                flowLayoutPanel1.Controls.Add(appointment);
+            }
         }
 
         private void btn_investigation(object sender, EventArgs e)
@@ -105,6 +111,11 @@ namespace clinical_system_N
         }
 
         private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
