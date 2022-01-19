@@ -230,6 +230,7 @@
     <Compile Include="models\Perscription.cs" />
     <Compile Include="models\Person.cs" />
     <Compile Include="models\Service.cs" />
+    <Compile Include="models\TotalPrescription.cs" />
     <Compile Include="models\Visit.cs" />
     <Compile Include="new_prescription.cs">
       <SubType>UserControl</SubType>

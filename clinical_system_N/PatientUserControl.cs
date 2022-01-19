@@ -25,7 +25,6 @@ namespace clinical_system_N
             lblPatientID.Text = _patient.info.PatientId;
             lblPatientName.Text = _patient.info.PatientName;
             lblPhoneNumber.Text = _patient.info.Phone;
-
         }
 
         private void BtnOpenRecord_Click(object sender, EventArgs e)
@@ -33,6 +32,11 @@ namespace clinical_system_N
             General open = new General(_patient);
             this.Parent.Parent.Hide();
             open.Show();
+
+        }
+
+        private void lblPatientName_Click(object sender, EventArgs e)
+        {
 
         }
     }

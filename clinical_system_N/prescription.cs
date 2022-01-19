@@ -19,7 +19,25 @@ namespace clinical_system_N
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            listView1.View = View.Details;
+            listView1.FullRowSelect = true;
 
+            listView1.Columns.Add("Date", 150);
+            listView1.Columns.Add("Name",150);
+            listView1.Columns.Add("Dose",150);
+            listView1.Columns.Add("Doctor",150);
+
+            add("12/11/2013", "Marwan", "600ml", "Mohamed");
+
+        }
+
+        private void add(string date, string name, string dose, string doctor)
+        {
+            string[] row = {date, name, dose, doctor};
+
+            ListViewItem item = new ListViewItem(row);
+
+            listView1.Items.Add(item);
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)

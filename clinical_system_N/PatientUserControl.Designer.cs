@@ -43,6 +43,7 @@
             this.lblPatientName.Size = new System.Drawing.Size(129, 25);
             this.lblPatientName.TabIndex = 0;
             this.lblPatientName.Text = "Patient Name";
+            this.lblPatientName.Click += new System.EventHandler(this.lblPatientName_Click);
             // 
             // lblPatientID
             // 

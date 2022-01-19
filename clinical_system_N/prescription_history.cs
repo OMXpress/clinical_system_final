@@ -36,5 +36,10 @@ namespace clinical_system_N
         {
 
         }
+
+        private void prescription_history_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

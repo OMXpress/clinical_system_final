@@ -108,6 +108,20 @@ namespace clinical_system_N.models
             }
             return result;
         }
+        public List<PatientInformation> GetMedInfo()
+        {
+
+            var paths = Directory.GetDirectories(GlobalManager.PathToPatients);
+            var result = new List<PatientInformation>();
+            foreach (var path in paths)
+            {
+                var json = LoadJson(JsonType.Prescriptions, path);
+                var x = JsonConvert.DeserializeObject<PatientInformation>(json);
+                result.Add(x);
+
+            }
+            return result;
+        }
         public List<Appointment> LoadOpenAppointments()
         {
             string path = GlobalManager.PathToAppData;
