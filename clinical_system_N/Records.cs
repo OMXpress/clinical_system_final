@@ -97,5 +97,10 @@ namespace clinical_system_N
         {
 
         }
+
+        private void btn_AddPatient_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

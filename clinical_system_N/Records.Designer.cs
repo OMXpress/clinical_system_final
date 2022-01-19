@@ -64,7 +64,6 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(438, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 32);
             this.label1.Size = new System.Drawing.Size(425, 69);
             this.label1.TabIndex = 2;
             this.label1.Text = "Patient Record";
@@ -79,6 +78,7 @@
             this.btn_AddPatient.TabIndex = 1;
             this.btn_AddPatient.Text = "Add Patient";
             this.btn_AddPatient.UseVisualStyleBackColor = false;
+            this.btn_AddPatient.Click += new System.EventHandler(this.btn_AddPatient_Click_1);
             // 
             // toolStripContainer1
             // 
