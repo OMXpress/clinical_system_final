@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clinical_system_N.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +11,16 @@ using System.Windows.Forms;
 
 namespace clinical_system_N
 {
-    public partial class History : Form
+    internal partial class History : Form
     {
+        Patient patient;
         public History()
         {
+            InitializeComponent();
+        }
+        public History(Patient patient )
+        {
+            this.patient = patient;
             InitializeComponent();
         }
 
@@ -74,6 +81,17 @@ namespace clinical_system_N
             this.Hide();
             prescription C127 = new prescription();
             C127.Show();
+        }
+
+        private void Savebutton_Click(object sender, EventArgs e)
+        {
+            List<string> dic = new List<string>();
+
+            dic.Add( richTextBox2.Text);
+            dic.Add(richTextBox1.Text);
+            JsonManager JsonManager = new JsonManager();
+            JsonManager.AddJson(JsonType.History, patient.info.PatientId, dic);
+
         }
     }
 }

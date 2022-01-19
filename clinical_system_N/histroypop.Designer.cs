@@ -49,7 +49,7 @@ namespace clinical_system_N
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(12, 42);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(680, 429);
+            this.panel1.Size = new System.Drawing.Size(696, 429);
             this.panel1.TabIndex = 43;
             // 
             // label1
@@ -58,7 +58,7 @@ namespace clinical_system_N
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(275, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 32);
+            this.label1.Size = new System.Drawing.Size(137, 32);
             this.label1.TabIndex = 44;
             this.label1.Text = "Medicine";
             // 
