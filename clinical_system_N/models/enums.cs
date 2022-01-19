@@ -56,3 +56,14 @@ enum DaysOfWeeks
     Friday,
     Saturday
 }
+enum PhysioAppointment
+{
+
+    a9,
+    a10,
+    a11,
+    a12,
+    a1,
+    a3,
+    a4,
+}

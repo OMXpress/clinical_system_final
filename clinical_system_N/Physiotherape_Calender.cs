@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using clinical_system_N.models;
+
 
 namespace clinical_system_N
 {
@@ -19,6 +21,91 @@ namespace clinical_system_N
 
         private void Calendar_Load(object sender, EventArgs e)
         {
+            var apps = GlobalManager.PhysioAppointments;
+            int timeCounter = 0;
+            int dayCounter = 0;
+            for (int i = 0; i < 15; i++)
+            {
+
+                dayCounter = (dayCounter + 1) % 6;
+                if (dayCounter == 1)
+                {
+                    timeCounter++;
+                }
+                DaysOfWeeks day = DaysOfWeeks.Monday;
+                PhysioAppointment ment = PhysioAppointment.a3;
+                if (timeCounter == 1)
+                {
+                    ment = PhysioAppointment.a9;
+                }
+                if (timeCounter == 2)
+                {
+                    ment = PhysioAppointment.a10;
+                }
+                if (timeCounter == 3)
+                {
+                    ment = PhysioAppointment.a11;
+                }
+                if (timeCounter == 4)
+                {
+                    ment = PhysioAppointment.a12;
+                }
+                if (timeCounter == 5)
+                {
+                    ment = PhysioAppointment.a1;
+                }
+                if (timeCounter == 6)
+                {
+                    ment = PhysioAppointment.a3;
+                }
+                if (timeCounter == 7)
+                {
+                    ment = PhysioAppointment.a4;
+                }
+
+                if (dayCounter == 1)
+                {
+                    day = DaysOfWeeks.Sunday;
+                }
+                if (dayCounter == 2)
+                {
+                    day = DaysOfWeeks.Monday;
+                }
+                if (dayCounter == 3)
+                {
+                    day = DaysOfWeeks.Tuesday;
+                }
+                if (dayCounter == 4)
+                {
+                    day = DaysOfWeeks.Wednesday;
+                }
+                if (dayCounter == 5)
+                {
+                    day = DaysOfWeeks.Thursday;
+                }
+                if (dayCounter == 6)
+                {
+                    day = DaysOfWeeks.Saturday;
+                }
+
+
+
+                var ls = GlobalManager.GetPhysioAppAt(day, ment);
+                Physio_Calender physioBlock = new Physio_Calender();
+                if (ls.Count > 0)
+                {
+                    foreach (var item in ls)
+                    {
+                        Console.WriteLine(item._patient);
+                        physioBlock.AddPatient(item._patient);
+                    }
+                }
+                fl_AppContainer.Controls.Add(physioBlock);
+
+            }
+
+
+
 
         }
 

@@ -12,6 +12,7 @@ namespace clinical_system_N.models
         public Doctor _doctor;
         public DateTime DateCreated;
         public OrthoAppointment _orthoAppointment;
+        public PhysioAppointment _physioAppointment;
         public DateTime dateofAppointment;
         public string Id;
         public ClinicType ClinicType;
@@ -27,6 +28,17 @@ namespace clinical_system_N.models
             _orthoAppointment = appointment;
             this.dateofAppointment = dateofAppointment;
         }
+        public Appointment(Patient patient, Doctor doctor, ClinicType clinic, PhysioAppointment appointment, DateTime dateofAppointment)
+        {
+            _patient = patient;
+            _doctor = doctor;
+            DateCreated = DateTime.Now;
+            Id = Guid.NewGuid().ToString();
+            ClinicType = clinic;
+            _physioAppointment = appointment;
+            this.dateofAppointment = dateofAppointment;
+        }
+
         public void CloseAppointment()
         {
             open = false;

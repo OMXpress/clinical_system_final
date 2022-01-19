@@ -279,6 +279,12 @@
     <Compile Include="Physiotherapy.Designer.cs">
       <DependentUpon>Physiotherapy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Physio_Calender.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Physio_Calender.Designer.cs">
+      <DependentUpon>Physio_Calender.cs</DependentUpon>
+    </Compile>
     <Compile Include="prescription.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -415,6 +421,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Physiotherapy.resx">
       <DependentUpon>Physiotherapy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Physio_Calender.resx">
+      <DependentUpon>Physio_Calender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="prescription.resx">
       <DependentUpon>prescription.cs</DependentUpon>

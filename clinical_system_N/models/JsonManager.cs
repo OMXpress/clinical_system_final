@@ -143,6 +143,7 @@ namespace clinical_system_N.models
 
             return result;
         }
+        // if physio or ortho
         public void SaveAppointments(List<Appointment> appointments)
         {
             string jsn = JsonConvert.SerializeObject(appointments, Formatting.Indented);

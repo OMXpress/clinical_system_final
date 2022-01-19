@@ -10,7 +10,6 @@ namespace clinical_system_N.models
     internal static class DirectoryManager
     {
 
-
         private readonly static string dir = GlobalManager.PathToPatients;
 
         public static bool ReadyPatient(string id)
@@ -74,6 +73,7 @@ namespace clinical_system_N.models
                     string file = Path.Combine(f, files[i]);
                     using (FileStream fs = File.Create(file))
                     {
+
                     }
                 }   
             }

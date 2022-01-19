@@ -87,7 +87,8 @@ namespace clinical_system_N
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            GlobalManager.InitializeAll();
+            GlobalManager.InitializeOrtho();
+            GlobalManager.InitializePhysio();
         }
     }
 }
